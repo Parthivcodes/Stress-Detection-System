@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sechenov Polymer // Multimodal Stress Bio-Telemetry Cockpit</title>
+    <meta name="description" content="Next-generation retro-futuristic multimodal physiological stress detection and explainable AI telemetry cockpit inspired by Sechenov Polymer concept.">
+    
+    <!-- Google Fonts: Futuristic Display, Brutalist Condensed, and Monospace Readouts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Local three.js for 100% offline support with CDN fallback -->
+    <script src="three.min.js"></script>
+    <script>
+        if (typeof THREE === 'undefined') {
+            document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>');
+        }
+    </script>
+</head>
+<body class="theme-obsidian">
+    <!-- Background Sci-Fi CRT & Grid Overlay -->
+    <div class="crt-scanlines" aria-hidden="true"></div>
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <div class="grid-backdrop" aria-hidden="true"></div>
+
+    <!-- Main Container -->
+    <div class="cockpit-container">
+        
+        <!-- ================= TOP HUD HEADER ================= -->
+        <header class="hud-header">
+            <div class="header-left">
+                <div class="facility-stamp">
+                    <span class="facility-code">FACILITY 3826 // SEC-POLYMER LAB</span>
+                    <span class="system-tag">NEURAL BIO-TELEMETRY MK-IV</span>
+                </div>
+                <h1 class="hud-title">SECHENOV POLYMER // STRESS DETECTION COCKPIT</h1>
+            </div>
+
+            <div class="header-center">
+                <div class="telemetry-clock">
+                    <span class="clock-label">SYS.TIME [UTC]</span>
+                    <span class="clock-value" id="system-clock">12:00:00.000</span>
+                </div>
+                <div class="sync-badge">
+                    <span class="pulse-dot"></span>
+                    <span id="backend-status-text">NEURAL LINK: LOCAL SIMULATION</span>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <button id="btn-audio-toggle" class="hud-btn hud-btn-icon" title="Toggle Procedural Audio Synthesizer">
+                    <span class="btn-icon" id="audio-icon">🔇</span>
+                    <span class="btn-text" id="audio-text">AUDIO OFF</span>
+                </button>
+                <button id="btn-benchmark-modal" class="hud-btn hud-btn-outline" title="Open Benchmark Leaderboard">
+                    <span class="btn-icon">📊</span>
+                    <span class="btn-text">BENCHMARKS</span>
+                </button>
+                <button id="btn-reconnect-server" class="hud-btn hud-btn-primary" title="Connect to Live Python Bridge">
+                    <span class="btn-icon">⚡</span>
+                    <span class="btn-text" id="connect-text">BRIDGE API</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- ================= MAIN THREE-COLUMN WORKSPACE ================= -->
+        <main class="cockpit-grid">
+
+            <!-- ================= LEFT COLUMN: SENSOR TELEMETRY INPUTS ================= -->
+            <section class="hud-panel left-panel" aria-label="Physiological Sensor Controls">
+                <div class="panel-header">
+                    <div class="panel-title-wrap">
+                        <span class="panel-index">01</span>
+                        <h2 class="panel-title">PATIENT BIOSIGNAL TELEMETRY</h2>
+                    </div>
+                    <span class="panel-status-pill">INPUT MATRIX</span>
+                </div>
+
+                <div class="panel-content scrollable">
+                    
+                    <!-- Quick Preset Selectors -->
+                    <div class="preset-group">
+                        <span class="subhead-label">CALIBRATION PRESETS</span>
+                        <div class="preset-buttons">
+                            <button type="button" class="preset-btn preset-low" id="preset-low-btn">
+                                <span class="preset-dot"></span> 01 // ZEN REST
+                            </button>
+                            <button type="button" class="preset-btn preset-mod" id="preset-mod-btn">
+                                <span class="preset-dot"></span> 02 // MID SHIFT
+                            </button>
+                            <button type="button" class="preset-btn preset-high" id="preset-high-btn">
+                                <span class="preset-dot"></span> 03 // ACUTE CRISIS
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sensor Sliders: Cardiovascular Group -->
+                    <div class="input-section">
+                        <div class="section-title">
+                            <span class="section-icon">🫀</span>
+                            <h3>CARDIOVASCULAR SIGNALS</h3>
+                        </div>
+
+                        <!-- Heart Rate -->
+                        <div class="slider-control">
+                            <div class="slider-meta">
+                                <label for="input-heart-rate">HEART RATE</label>
+                                <div class="readout-box">
+                                    <span class="readout-val" id="val-heart-rate">75</span>
+                                    <span class="readout-unit">BPM</span>
+                                </div>
+                            </div>
+                            <input type="range" id="input-heart-rate" min="55" max="110" value="75" step="1" class="hud-slider">
+                            <div class="slider-range-labels">
+                                <span>55 (BRADY)</span>
+                                <span>75 (NORM)</span>
+                                <span>110 (TACHY)</span>
+                            </div>
+                        </div>
+
+                        <!-- Systolic BP -->
+                        <div class="slider-control">
+                            <div class="slider-meta">
+                                <label for="input-systolic-bp">SYSTOLIC BLOOD PRESSURE</label>
+                                <div class="readout-box">
+                                    <span class="readout-val" id="val-systolic-bp">126</span>
+                                    <span class="readout-unit">mmHg</span>
+                                </div>
+                            </div>
+                            <input type="range" id="input-systolic-bp" min="90" max="170" value="126" step="1" class="hud-slider">
+                            <div class="slider-range-labels">
+                                <span>90</span>
+                                <span>120</span>
+                                <span>170</span>
+                            </div>
+                        </div>
+
+                        <!-- Diastolic BP -->
+                        <div class="slider-control">
+                            <div class="slider-meta">
+                                <label for="input-diastolic-bp">DIASTOLIC BLOOD PRESSURE</label>
+                                <div class="readout-box">
+                                    <span class="readout-val" id="val-diastolic-bp">83</span>
+                                    <span class="readout-unit">mmHg</span>
+                                </div>
+                            </div>
+                            <input type="range" id="input-diastolic-bp" min="60" max="110" value="83" step="1" class="hud-slider">
+                            <div class="slider-range-labels">
+                                <span>60</span>
+                                <span>80</span>
+                                <span>110</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sensor Sliders: Movement & Sleep Group -->
+                    <div class="input-section">
+                        <div class="section-title">
+                            <span class="section-icon">🌙</span>
+                            <h3>CIRCADIAN & ACTIVITY SIGNALS</h3>
+                        </div>
+
+                        <!-- Sleep Duration -->
+                        <div class="slider-control">
+                            <div class="slider-meta">
+                                <label for="input-sleep-duration">SLEEP DURATION</label>
+                                <div class="readout-box">
+                                    <span class="readout-val" id="val-sleep-duration">7.2</span>
+                                    <span class="readout-unit">HOURS</span>
+                                </div>
+                            </div>
+                            <input type="range" id="input-sleep-duration" min="4.0" max="10.0" value="7.2" step="0.1" class="hud-slider">
+                            <div class="slider-range-labels">
+                                <span>4.0h</span>
+                                <span>7.0h</span>
+                                <span>10.0h</span>
+                            </div>
+                        </div>
+
+                        <!-- Quality of Sleep -->
+                        <div class="slider-control">
+                            <div class="slider-meta">
+                                <label for="input-quality-sleep">QUALITY OF SLEEP</label>
+                                <div class="readout-box">
+                                    <span class="readout-val" id="val-quality-sleep">7</span>
+                                    <span class="readout-unit">/10</span>
+                                </div>
+                            </div>
+                            <input type="range" id="input-quality-sleep" min="1" max="10" value="7" step="1" class="hud-slider">
+                            <div class="slider-range-labels">
+                                <span>1 (POOR)</span>
+                                <span>5 (MED)</span>
+                                <span>10 (EXC)</span>
+                            </div>
+                        </div>
+
+                        <!-- Physical Activity -->
+                        <div class="slider-control">
+                            <div class="slider-meta">
+                                <label for="input-physical-activity">PHYSICAL ACTIVITY</label>
+                                <div class="readout-box">
+                                    <span class="readout-val" id="val-physical-activity">60</span>
+                                    <span class="readout-unit">MIN/DAY</span>
+                                </div>
+                            </div>
+                            <input type="range" id="input-physical-activity" min="10" max="120" value="60" step="5" class="hud-slider">
+                        </div>
+
+                        <!-- Daily Steps -->
+                        <div class="slider-control">
+                            <div class="slider-meta">
+                                <label for="input-daily-steps">DAILY STEPS</label>
+                                <div class="readout-box">
+                                    <span class="readout-val" id="val-daily-steps">7000</span>
+                                    <span class="readout-unit">STEPS</span>
+                                </div>
+                            </div>
+                            <input type="range" id="input-daily-steps" min="2000" max="15000" value="7000" step="250" class="hud-slider">
+                        </div>
+                    </div>
+
+                    <!-- Demographics & Clinical Profile -->
+                    <div class="input-section">
+                        <div class="section-title">
+                            <span class="section-icon">👤</span>
+                            <h3>DEMOGRAPHICS & CLINICAL CONTEXT</h3>
+                        </div>
+
+                        <div class="grid-2col">
+                            <div class="select-control">
+                                <label for="input-age">AGE (YEARS)</label>
+                                <input type="number" id="input-age" min="18" max="75" value="35" class="hud-input">
+                            </div>
+
+                            <div class="select-control">
+                                <label for="input-gender">GENDER</label>
+                                <select id="input-gender" class="hud-select">
+                                    <option value="Male" selected>Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid-2col">
+                            <div class="select-control">
+                                <label for="input-bmi">BMI STATUS</label>
+                                <select id="input-bmi" class="hud-select">
+                                    <option value="Normal" selected>Normal</option>
+                                    <option value="Overweight">Overweight</option>
+                                    <option value="Obese">Obese</option>
+                                </select>
+                            </div>
+
+                            <div class="select-control">
+                                <label for="input-disorder">SLEEP DISORDER</label>
+                                <select id="input-disorder" class="hud-select">
+                                    <option value="None" selected>None</option>
+                                    <option value="Insomnia">Insomnia</option>
+                                    <option value="Sleep Apnea">Sleep Apnea</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="select-control">
+                            <label for="input-occupation">OCCUPATION CLASSIFICATION</label>
+                            <select id="input-occupation" class="hud-select">
+                                <option value="Software Engineer" selected>Software Engineer</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Nurse">Nurse</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Engineer">Engineer</option>
+                                <option value="Accountant">Accountant</option>
+                                <option value="Lawyer">Lawyer</option>
+                                <option value="Salesperson">Salesperson</option>
+                                <option value="Scientist">Scientist</option>
+                                <option value="Manager">Manager</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ================= CENTER COLUMN: 3D SECHENOV POLYMER CORE ================= -->
+            <section class="hud-panel center-panel" aria-label="3D Sechenov Polymer Containment Chamber">
+                <div class="panel-header">
+                    <div class="panel-title-wrap">
+                        <span class="panel-index">02</span>
+                        <h2 class="panel-title">SECHENOV POLYMER NEURAL CHAMBER</h2>
+                    </div>
+                    <div class="hud-tag-group">
+                        <span class="polymer-state-badge" id="polymer-state-text">CONTAINMENT: STABLE</span>
+                        <span class="chamber-temp-badge" id="chamber-temp-text">CORE TEMP: 36.8°C</span>
+                    </div>
+                </div>
+
+                <div class="viewport-stage">
+                    <!-- WebGL Canvas Container -->
+                    <div id="three-canvas-container" class="three-viewport">
+                        <!-- Canvas injected by app.js -->
+                    </div>
+
+                    <!-- Reticle & HUD Overlay Graphics -->
+                    <div class="viewport-overlay" aria-hidden="true">
+                        <div class="corner-bracket top-left"></div>
+                        <div class="corner-bracket top-right"></div>
+                        <div class="corner-bracket bottom-left"></div>
+                        <div class="corner-bracket bottom-right"></div>
+                        <div class="crosshair center-crosshair"></div>
+                        <div class="circular-reticle outer-reticle"></div>
+                        <div class="circular-reticle inner-reticle"></div>
+
+                        <!-- Top Floating Readouts -->
+                        <div class="overlay-data overlay-top-left">
+                            <span class="overlay-tag">POLYMER DENSITY</span>
+                            <span class="overlay-num" id="hud-viscosity">1.42 g/cm³</span>
+                        </div>
+                        <div class="overlay-data overlay-top-right">
+                            <span class="overlay-tag">AUTONOMIC ENTROPY</span>
+                            <span class="overlay-num" id="hud-entropy">0.142 ΔS</span>
+                        </div>
+                        
+                        <!-- Bottom Floating Warning Banner -->
+                        <div class="emergency-banner" id="emergency-banner">
+                            <span class="warning-icon">⚠️</span>
+                            <span class="warning-msg">CRITICAL SYMPATHETIC OVERDRIVE DETECTED</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive 3D Canvas Controls -->
+                    <div class="viewport-toolbar">
+                        <button type="button" class="tool-btn" id="btn-shockwave" title="Pulse Shockwave Ripple">
+                            <span>💥 SHOCKWAVE</span>
+                        </button>
+                        <button type="button" class="tool-btn" id="btn-wireframe" title="Toggle Wireframe Core">
+                            <span>🕸️ WIREFRAME</span>
+                        </button>
+                        <button type="button" class="tool-btn" id="btn-recenter" title="Recenter Camera">
+                            <span>🎯 RECENTER</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Photoplethysmogram (PPG) Arterial Oscilloscope Deck -->
+                <div class="oscilloscope-deck">
+                    <div class="deck-header">
+                        <div class="deck-title">
+                            <span class="pulse-icon">🫀</span>
+                            <span>REAL-TIME ARTERIAL PULSE OSCILLOSCOPE (PPG)</span>
+                        </div>
+                        <div class="wave-metrics">
+                            <span class="wave-stat">HR: <strong id="ppg-hr-label">75</strong> BPM</span>
+                            <span class="wave-stat">PULSE PRESSURE: <strong id="ppg-pp-label">43</strong> mmHg</span>
+                        </div>
+                    </div>
+                    <div class="canvas-wrap">
+                        <canvas id="ppg-canvas" width="600" height="90"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= RIGHT COLUMN: DIAGNOSTICS & MULTI-MODEL MATRIX ================= -->
+            <section class="hud-panel right-panel" aria-label="Diagnostic Verdict and Model Matrix">
+                <div class="panel-header">
+                    <div class="panel-title-wrap">
+                        <span class="panel-index">03</span>
+                        <h2 class="panel-title">MULTI-MODEL NEURAL CONSENSUS</h2>
+                    </div>
+                    <span class="panel-status-pill" id="consensus-pill">6/6 UNANIMOUS</span>
+                </div>
+
+                <div class="panel-content scrollable">
+
+                    <!-- Master Verdict Arc Display -->
+                    <div class="verdict-card" id="verdict-card">
+                        <div class="verdict-header">
+                            <span class="verdict-label">AUTONOMIC NERVOUS STATE CLASSIFICATION</span>
+                            <span class="verdict-model-count" id="verdict-confidence-badge">98.4% CONFIDENCE</span>
+                        </div>
+
+                        <div class="verdict-main">
+                            <div class="verdict-icon-wrap" id="verdict-icon-container">
+                                <span class="verdict-symbol" id="verdict-icon">🟢</span>
+                            </div>
+                            <div class="verdict-text-wrap">
+                                <div class="verdict-classification" id="verdict-text">LOW STRESS</div>
+                                <div class="verdict-clinical-sub" id="verdict-subtext">Parasympathetic Dominance // Physiological Homeostasis Maintained</div>
+                            </div>
+                        </div>
+
+                        <!-- Class Probability Distribution Bars -->
+                        <div class="probability-bars">
+                            <div class="prob-row">
+                                <div class="prob-labels">
+                                    <span>LOW STRESS</span>
+                                    <span id="prob-val-0">94.2%</span>
+                                </div>
+                                <div class="prob-track">
+                                    <div class="prob-fill fill-low" id="prob-bar-0" style="width: 94.2%"></div>
+                                </div>
+                            </div>
+                            <div class="prob-row">
+                                <div class="prob-labels">
+                                    <span>MODERATE STRAIN</span>
+                                    <span id="prob-val-1">4.6%</span>
+                                </div>
+                                <div class="prob-track">
+                                    <div class="prob-fill fill-mod" id="prob-bar-1" style="width: 4.6%"></div>
+                                </div>
+                            </div>
+                            <div class="prob-row">
+                                <div class="prob-labels">
+                                    <span>HIGH STRESS</span>
+                                    <span id="prob-val-2">1.2%</span>
+                                </div>
+                                <div class="prob-track">
+                                    <div class="prob-fill fill-high" id="prob-bar-2" style="width: 1.2%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Computed Hemodynamic Biomarkers Grid -->
+                    <div class="biomarkers-grid">
+                        <div class="bio-card">
+                            <span class="bio-tag">RPP (MYOCARDIAL O₂ LOAD)</span>
+                            <div class="bio-value-row">
+                                <span class="bio-num" id="bm-rpp">94.5</span>
+                                <span class="bio-status badge-ok" id="bm-rpp-status">NORMAL</span>
+                            </div>
+                            <span class="bio-formula">HR × SBP / 100</span>
+                        </div>
+
+                        <div class="bio-card">
+                            <span class="bio-tag">MEAN ARTERIAL PRESSURE (MAP)</span>
+                            <div class="bio-value-row">
+                                <span class="bio-num" id="bm-map">97.3</span>
+                                <span class="bio-unit">mmHg</span>
+                            </div>
+                            <span class="bio-formula">DBP + (PP / 3)</span>
+                        </div>
+
+                        <div class="bio-card">
+                            <span class="bio-tag">PULSE PRESSURE (PP)</span>
+                            <div class="bio-value-row">
+                                <span class="bio-num" id="bm-pp">43</span>
+                                <span class="bio-unit">mmHg</span>
+                            </div>
+                            <span class="bio-formula">SBP - DBP (Elasticity)</span>
+                        </div>
+
+                        <div class="bio-card">
+                            <span class="bio-tag">CARDIO STRESS INDEX (CSI)</span>
+                            <div class="bio-value-row">
+                                <span class="bio-num" id="bm-csi">1.10</span>
+                                <span class="bio-status badge-ok" id="bm-csi-status">OPTIMAL</span>
+                            </div>
+                            <span class="bio-formula">(HR/72) × (SBP/120)</span>
+                        </div>
+                    </div>
+
+                    <!-- 6-Model Neural Benchmark Matrix -->
+                    <div class="models-matrix-section">
+                        <div class="section-title">
+                            <span class="section-icon">🧠</span>
+                            <h3>6-ARCHITECTURE ENSEMBLE CONSENSUS</h3>
+                        </div>
+
+                        <div class="models-grid" id="models-grid">
+                            <!-- Model Cards Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Explainable AI (XAI) Signal Impact Factors -->
+                    <div class="xai-section">
+                        <div class="section-title">
+                            <span class="section-icon">🔍</span>
+                            <h3>XAI BIOMARKER ATTRIBUTION (SHAP / MDI)</h3>
+                        </div>
+
+                        <div class="xai-bars-container" id="xai-container">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- ================= BOTTOM STATUS FOOTER ================= -->
+        <footer class="hud-footer">
+            <div class="footer-left">
+                <span class="footer-chip">UNIVERSITY RESEARCH EVALUATION</span>
+                <span class="footer-chip">ZERO-DATA LEAKAGE PIPELINE</span>
+                <span class="footer-chip">6 MODELS TESTED (N=374)</span>
+            </div>
+            <div class="footer-center">
+                <span>INVENTED BY ACADEMIC CO-PILOT // INSPIRATION: NICOLAS JEY SECHENOV POLYMER</span>
+            </div>
+            <div class="footer-right">
+                <span class="render-fps" id="fps-display">60 FPS</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ================= UNIVERSITY BENCHMARKS MODAL ================= -->
+    <div class="hud-modal" id="benchmark-modal" aria-hidden="true" role="dialog">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-subtitle">EMPIRICAL VALIDATION // HOLDOUT TEST SET (20%)</span>
+                    <h2 class="modal-title">UNIVERSITY ARCHITECTURE BENCHMARK LEADERBOARD</h2>
+                </div>
+                <button type="button" class="modal-close-btn" id="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body scrollable">
+                <table class="benchmark-table">
+                    <thead>
+                        <tr>
+                            <th>MODEL ARCHITECTURE</th>
+                            <th>PARADIGM</th>
+                            <th>ACCURACY</th>
+                            <th>MACRO F1</th>
+                            <th>MACRO RECALL</th>
+                            <th>MACRO ROC-AUC</th>
+                            <th>RANK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-top">
+                            <td><strong>Random Forest</strong></td>
+                            <td>Non-Linear Bagging Ensemble</td>
+                            <td class="stat-best">94.67%</td>
+                            <td class="stat-best">0.9453</td>
+                            <td>0.9472</td>
+                            <td class="stat-best">0.9961</td>
+                            <td><span class="rank-badge gold">#1</span></td>
+                        </tr>
+                        <tr class="highlight-top">
+                            <td><strong>XGBoost</strong></td>
+                            <td>Gradient Boosted Decision Trees</td>
+                            <td class="stat-best">94.67%</td>
+                            <td class="stat-best">0.9453</td>
+                            <td>0.9472</td>
+                            <td>0.9956</td>
+                            <td><span class="rank-badge gold">#1</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CNN-LSTM</strong></td>
+                            <td>Hybrid Hierarchical Temporal DL</td>
+                            <td>92.00%</td>
+                            <td>0.9194</td>
+                            <td>0.9234</td>
+                            <td>0.9747</td>
+                            <td><span class="rank-badge silver">#3</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Logistic Regression</strong></td>
+                            <td>Linear Baseline Classifier</td>
+                            <td>92.00%</td>
+                            <td>0.9194</td>
+                            <td>0.9234</td>
+                            <td>0.9701</td>
+                            <td><span class="rank-badge silver">#3</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>1D CNN</strong></td>
+                            <td>Localized Biosignal Convolution</td>
+                            <td>89.33%</td>
+                            <td>0.8932</td>
+                            <td>0.8956</td>
+                            <td>0.9778</td>
+                            <td><span class="rank-badge bronze">#5</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>LSTM (Optimized)</strong></td>
+                            <td>Attention-Skip Recurrent Net</td>
+                            <td>89.33%</td>
+                            <td>0.8932</td>
+                            <td>0.8956</td>
+                            <td>0.9926</td>
+                            <td><span class="rank-badge bronze">#5</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="modal-callout">
+                    <h4>🔬 Empirical Findings (Research Question 1 & Ablation Study):</h4>
+                    <p>
+                        Tree-based non-linear architectures (<strong>Random Forest & XGBoost</strong>) achieve supreme generalization (94.67% test accuracy, 0.9961 ROC-AUC) over tabular physiological biosignals. Deep hybrid <strong>CNN-LSTM</strong> successfully captures localized feature interactions and sequential representations (92.00%), outperforming standalone 1D CNN and standard LSTM.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="hud-btn hud-btn-outline" id="modal-done-btn">CLOSE REPORT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
