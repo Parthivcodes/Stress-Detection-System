@@ -1,3 +1,5 @@
+REVIEW NOTICE (14 October 2026): Read SUBMISSION_REVIEW.md before using this document for submission. Its duplicate-profile audit, grouped validation results, and corrections supersede older zero-leakage, clinical, temporal, and readiness claims below.
+
 # Comparative Analysis of Machine Learning and Deep Learning Models for Stress Level Detection Using Multimodal Physiological Signals
 
 **Academic Project Report — Department of Computer Science & Engineering / Biomedical Informatics**  

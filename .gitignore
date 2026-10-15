@@ -47,3 +47,12 @@ desktop.ini
 
 # Logs
 *.log
+
+# Local verification dependencies
+.runtime/
+
+# Standalone wellness frontend
+wellness-dashboard/node_modules/
+wellness-dashboard/dist/
+wellness-dashboard/.npm-cache/
+wellness-dashboard/*.tsbuildinfo

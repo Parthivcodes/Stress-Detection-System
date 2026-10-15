@@ -12,6 +12,33 @@ import torch
 import numpy as np
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 import urllib.parse
+import math
+
+INPUT_RANGES = {
+    'heart_rate': (55, 110), 'systolic_bp': (90, 170),
+    'diastolic_bp': (60, 110), 'sleep_duration': (4, 10),
+    'quality_of_sleep': (1, 10), 'physical_activity': (0, 120),
+    'daily_steps': (0, 15000), 'age': (18, 100),
+}
+
+def validate_input(data):
+    if not isinstance(data, dict):
+        raise ValueError('Expected a JSON object.')
+    for key, (low, high) in INPUT_RANGES.items():
+        if key not in data or isinstance(data[key], bool):
+            raise ValueError(f'{key} is required and must be numeric.')
+        try:
+            value = float(data[key])
+        except (ValueError, TypeError):
+            raise ValueError(f'{key} must be numeric.')
+        if not math.isfinite(value) or not low <= value <= high:
+            raise ValueError(f'{key} must be between {low} and {high}.')
+    if float(data['systolic_bp']) <= float(data['diastolic_bp']):
+        raise ValueError('Systolic pressure must exceed diastolic pressure.')
+    for key, prefix in [('gender', 'Gender'), ('bmi_category', 'BMI Category'),
+                        ('sleep_disorder', 'Sleep Disorder'), ('occupation', 'Occupation')]:
+        if f'{prefix}_{data.get(key)}' not in ARTIFACTS['feature_cols']:
+            raise ValueError(f'Unsupported {key}.')
 
 # Import project architecture
 from src.models import Conv1DNet, LSTMNet, CNNLSTMNet, predict_deep_model
@@ -30,7 +57,7 @@ def init_models():
     if MODELS_LOADED:
         return
     
-    print("[SECHENOV BRIDGE] Loading neural and statistical model weights...")
+    print("[STILL RESEARCH] Loading neural and statistical model weights...")
     
     with open(os.path.join(BASE_DIR, "models", "feature_cols.json"), "r") as f:
         feature_cols = json.load(f)
@@ -70,9 +97,10 @@ def init_models():
         'CNN-LSTM': cnnlstm_model
     }
     MODELS_LOADED = True
-    print("[SECHENOV BRIDGE] All 6 models and scalers loaded successfully into memory.")
+    print("[STILL RESEARCH] All 6 models and scalers loaded successfully into memory.")
 
 def compute_prediction(data: dict) -> dict:
+    validate_input(data)
     feature_cols = ARTIFACTS['feature_cols']
     scaler = ARTIFACTS['scaler']
     
@@ -162,7 +190,8 @@ def compute_prediction(data: dict) -> dict:
         }
 
     # Consensus verdict
-    consensus_class = max(set(class_votes), key=class_votes.count)
+    # Ties resolve to the lowest class ID; agreement is not confidence.
+    consensus_class = max(range(3), key=class_votes.count)
     consensus_label = CLASS_NAMES[consensus_class]
     consensus_agreement = class_votes.count(consensus_class) / len(class_votes)
 
@@ -199,7 +228,9 @@ def compute_prediction(data: dict) -> dict:
             "hr_activity_ratio": round(hr_activity_ratio, 2),
             "steps_awake": round(steps_awake, 1)
         },
-        "contributions": contributions
+        "illustrative_indicators": contributions,
+        "indicator_note": "Formula-based illustrations, not model feature attributions.",
+        "tie_break_rule": "Lowest class ID among equally frequent votes"
     }
 
 class SechenovServerHandler(SimpleHTTPRequestHandler):
@@ -213,10 +244,21 @@ class SechenovServerHandler(SimpleHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Headers', 'Content-Type')
         self.end_headers()
 
+    def do_GET(self):
+        if self.path == '/api/health':
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps({'models_loaded': MODELS_LOADED}).encode())
+            return
+        super().do_GET()
+
     def do_POST(self):
         if self.path == "/api/predict":
             try:
                 content_length = int(self.headers.get('Content-Length', 0))
+                if not 0 < content_length <= 16384:
+                    raise ValueError('Request body must be between 1 and 16384 bytes.')
                 post_body = self.rfile.read(content_length)
                 req_data = json.loads(post_body.decode('utf-8'))
                 
@@ -228,7 +270,7 @@ class SechenovServerHandler(SimpleHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(json.dumps(result).encode('utf-8'))
             except Exception as e:
-                self.send_response(500)
+                self.send_response(400 if isinstance(e, (ValueError, TypeError)) else 500)
                 self.send_header('Content-Type', 'application/json')
                 self.send_header('Access-Control-Allow-Origin', '*')
                 self.end_headers()
@@ -248,13 +290,13 @@ if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')
     init_models()
     print("\n=======================================================")
-    print(" [*] SECHENOV POLYMER BIO-TELEMETRY STATION ACTIVE")
+    print(" [*] STILL STRESS INTELLIGENCE — LOCAL RESEARCH SERVER")
     print(f" URL: http://localhost:{PORT}")
     print(f" Static Assets: {STATIC_DIR}")
     print("=======================================================\n")
-    server = HTTPServer(('0.0.0.0', PORT), SechenovServerHandler)
+    server = HTTPServer(('127.0.0.1', PORT), SechenovServerHandler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\nShutting down Sechenov bridge server.")
+        print("\nShutting down research server.")
         server.server_close()

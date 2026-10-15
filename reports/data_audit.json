@@ -1,0 +1,16 @@
+{
+  "rows": 374,
+  "raw_unique_predictor_profiles": 132,
+  "normalized_unique_predictor_profiles": 132,
+  "original_train_rows": 261,
+  "original_validation_rows": 38,
+  "original_test_rows": 75,
+  "test_rows_matching_train": 58,
+  "test_rows_matching_train_or_validation": 58,
+  "class_counts": [
+    141,
+    113,
+    120
+  ],
+  "conflicting_label_groups": 0
+}

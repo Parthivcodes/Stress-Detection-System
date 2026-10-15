@@ -1,73 +1,69 @@
-# Stress Level Detection Using Multimodal Physiological Signals
+﻿# Stress Level Detection — Still Research Dashboard
 
-An end-to-end Machine Learning and Deep Learning pipeline for multimodal physiological stress-level classification based on clinical biosignals (Heart Rate, Blood Pressure, Physical Activity, Daily Steps, Sleep Duration, and Sleep Quality).
+A university research prototype comparing six classifiers on tabular physiological and lifestyle features. The interface includes a responsive 3D particle sculpture, profile controls, actual model predictions, archived benchmarks, and JSON result export. The sculpture is decorative, not a measured biosignal.
 
----
+## Run
 
-## 🚀 Quick Start
+### This PC: verified WSL backend
 
-### 1. Launch the Sechenov Polymer Bio-Telemetry Cockpit (Next-Gen UI)
-Run the high-performance Python bridge to launch the 3D procedural Sechenov Polymer WebGL cockpit:
-```bash
-python server.py
-```
-Open **[http://localhost:8000](http://localhost:8000)** in your browser (or simply double-click `sechenov_ui/index.html` for offline autonomous mode).
+Windows blocks native Python model libraries on this PC. The working backend now runs in Ubuntu/WSL with an isolated Python 3.12 environment at `/opt/stress-venv`. From this project folder, run:
 
-### 2. Launch the Streamlit University Dashboard
-Run the following command to start the standard academic demonstration application:
-```bash
-streamlit run app.py
-```
-Open **[http://localhost:8501](http://localhost:8501)** in your browser.
-
-### 3. Retrain All Models & Regenerate Plots
-To execute the complete zero-leakage training pipeline across all 6 architectures:
-```bash
-python train_pipeline.py
+```powershell
+.\Start-Dashboard.ps1
 ```
 
----
+Or use `.\Start-Dashboard-WSL.ps1` explicitly. Keep the terminal open and visit http://localhost:8000/#predictions (not the static preview on port 8001). The server runs as the unprivileged Linux `nobody` user and reads the existing project/model files; no model retraining or security-policy changes are involved. WSL can print a systemd user-session warning for this service account, but direct Python execution and prediction tests pass.
 
-## 📊 Benchmark Leaderboard (Holdout Test Set)
+Only CPU inference libraries are installed in the Linux environment. `requirements-inference.txt` excludes training/plotting/UI extras. PyTorch was installed first from its official CPU wheel index; XGBoost uses `xgboost-cpu`.
 
-| Model Architecture | Paradigm | Accuracy | Macro F1-Score | Macro Recall | Macro ROC-AUC |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Random Forest** | Non-Linear Bagging Ensemble | **94.67%** | **0.9453** | **0.9472** | **0.9961** |
-| **XGBoost** | Gradient Boosted Trees | **94.67%** | **0.9453** | **0.9472** | **0.9956** |
-| **CNN-LSTM** | Hybrid Hierarchical & Temporal DL | **92.00%** | **0.9194** | **0.9234** | **0.9747** |
-| **Logistic Regression**| Linear Baseline | **92.00%** | **0.9194** | **0.9234** | **0.9701** |
-| **1D CNN** | Localized Biosignal Convolution | **89.33%** | **0.8932** | **0.8956** | **0.9778** |
-| **LSTM (Optimized)** | Attention-Skip Recurrent Network | **89.33%** | **0.8932** | **0.8956** | **0.9926** |
+Verified on 15 October 2026: all six model artifacts and preprocessing parity (`verify_project.py`); live API health, three profiles, normalized probabilities, and invalid-input rejection (`tests/prediction-api.py`); dashboard Analyze button displays all six actual results with no browser console errors.
 
----
+### Other PCs: standard Python setup
 
-## 📁 Repository Structure
-```
-├── app.py                   # Interactive Streamlit Web Application
-├── train_pipeline.py        # End-to-end training and evaluation script
-├── load_data.py             # KaggleHub dataset loader script
-├── PROJECT_REPORT.md        # Comprehensive academic project report
-├── VIVA_DEFENSE_GUIDE.md    # Viva voce Q&A cheat sheet for university evaluation
-├── data/                    # Dataset directory (Sleep_health_and_lifestyle_dataset.csv)
-├── src/
-│   ├── preprocessing.py     # Feature engineering, hemodynamic biomarkers & split
-│   ├── models.py            # PyTorch DL (1D CNN, LSTM, CNN-LSTM) & Classical ML
-│   ├── evaluate.py          # Metric computation & high-res chart generation
-│   ├── ablation.py          # Multimodal signal ablation experiments (RQ1)
-│   └── explainability.py    # MDI and Permutation Importance analysis (XAI)
-├── models/                  # Saved weights (.joblib, .pt, scaler.pkl, feature_cols.json)
-├── figures/                 # Generated publication-quality figures (.png)
-└── reports/                 # Benchmark CSV exports (model_comparison.csv, ablation.csv)
+With Python 3.11–3.13 installed:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python -m pip install -r requirements.txt
+.\.venv\Scripts\python server.py
 ```
 
----
+Open http://localhost:8000. The frontend requires this backend for predictions. There is no fake offline inference. Assets and fonts work locally without a CDN.
 
-## 🎓 University Deliverables Alignment
-This implementation satisfies 100% of the project proposal requirements:
-- **Multimodal Physiological Signals**: Cardiovascular, Movement, Sleep, Clinical.
-- **Biomarker Engineering**: Pulse Pressure, MAP, Rate-Pressure Product (RPP), Cardiovascular Stress Index (CSI).
-- **All 6 Required Models**: Logistic Regression, Random Forest, XGBoost, 1D CNN, LSTM, and CNN-LSTM.
-- **Strict Leakage Prevention**: Scalers and transformations fitted strictly on train set.
-- **Multimodal Ablation Study**: Empirically answers Research Question 1.
-- **Explainability (XAI)**: MDI & Permutation feature importance (Section 12).
-- **Interactive System**: Live clinical simulator for viva voce demonstration.
+On this machine, Python 3.12 and a project-local `.venv` are now installed. Start the dashboard with:
+
+```powershell
+.\.venv\Scripts\python.exe server.py
+```
+
+The project environment includes scikit-learn 1.6.1 to match the saved models. `Start-Dashboard.ps1` also prefers this environment. The older `.runtime` directory is retained but is not needed by this command.
+
+### Native Windows runtime limitation (resolved for the dashboard through WSL)
+
+An independent NumPy import also failed because Application Control blocked its `_umath_linalg` native module. The restriction affects more than PyTorch; classical-model inference is not a verified fallback.
+
+Dependency installation into `.venv` completed and `pip check` passed. However, Windows Application Control rejects `torch_python.dll` with WinError 4551, including in the fresh environment. This is an operating-system code-integrity restriction, not a missing Python package. All six predictions remain unavailable until an approved PyTorch runtime can load. Do not disable security controls or treat the static preview on port 8001 as a working prediction backend. Obtain an approved runtime or run the project on another authorized environment, then run the verification below before the demonstration.
+
+## Verify and evaluate
+
+```powershell
+python verify_project.py
+python validate_submission.py
+```
+
+On this machine replace `python` with `.\.venv\Scripts\python.exe`.
+
+- `verify_project.py`: saved model evaluation, feature/scaler parity, valid probabilities, invalid input checks.
+- `validate_submission.py`: exact-profile audit and five outer / three inner group-aware folds, comparing fixed versus tuned LR, RF, and XGBoost, plus a dummy baseline.
+- `reports/grouped_validation_summary.csv`: new evaluation; does not replace original holdout metrics.
+- `SUBMISSION_REVIEW.md`: findings, tuning recommendation, and remaining submission work.
+- `train_pipeline.py`: original six-model row-split training workflow, retained for reproducibility. It is not the stricter grouped evaluation.
+- `app.py`: legacy Streamlit dashboard (`streamlit run app.py`). Use the new frontend for the current demo.
+
+## Important research limits
+
+The dataset contains 374 rows but only 132 distinct predictor profiles. In the original split, 58 of 75 test rows match training profiles. Original 94.67% RF/XGBoost test accuracy is reproducible, but that split is insufficient evidence of independent-profile generalization.
+
+These are tabular features, not ECG/PPG recordings or longitudinal sequences. Stress categories are project-defined bins, not clinically validated diagnoses. Probabilities are uncalibrated. The six-model vote has not been evaluated as a standalone ensemble. Original reports and defense guides must be read with the corrections in `SUBMISSION_REVIEW.md`.
+
+Dataset reference: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset. Verify source provenance, license, and collection details before submitting.

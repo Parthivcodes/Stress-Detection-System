@@ -1,0 +1,8 @@
+# Only the libraries needed by server.py and the saved models.
+numpy
+pandas
+scikit-learn==1.6.1
+scipy
+joblib
+torch
+xgboost-cpu==3.4.1

@@ -1,3 +1,5 @@
+REVIEW NOTICE (14 October 2026): Read SUBMISSION_REVIEW.md before using this document for submission. Its duplicate-profile audit, grouped validation results, and corrections supersede older zero-leakage, clinical, temporal, and readiness claims below.
+
 # Comprehensive Academic & Professor Defense Master Guide
 ## Stress Level Detection Using Multimodal Physiological Signals
 
