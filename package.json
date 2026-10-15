@@ -1,0 +1,9 @@
+{
+  "name": "stress-detection-system",
+  "version": "1.0.0",
+  "description": "Multimodal Physiological Stress Level Detection System",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix wellness-dashboard run build"
+  }
+}

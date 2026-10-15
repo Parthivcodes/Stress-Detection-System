@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/dashboard/(.*)", "destination": "/wellness-dashboard/dist/$1" },
+    { "source": "/dashboard", "destination": "/wellness-dashboard/dist/index.html" },
+    { "source": "/api/benchmarks", "destination": "/api/benchmarks.js" },
+    { "source": "/api/health", "destination": "/api/health.js" },
+    { "source": "/api/predict", "destination": "/api/predict.js" },
+    { "source": "/fonts/(.*)", "destination": "/sechenov_ui/fonts/$1" },
+    { "source": "/landing.(.*)", "destination": "/sechenov_ui/landing.$1" },
+    { "source": "/prediction.(.*)", "destination": "/sechenov_ui/prediction.$1" },
+    { "source": "/three.min.js", "destination": "/sechenov_ui/three.min.js" },
+    { "source": "/(.*\\.(?:js|css|ttf|woff2|png|jpg|svg|json))", "destination": "/sechenov_ui/$1" },
+    { "source": "/", "destination": "/sechenov_ui/index.html" },
+    { "source": "/(.*)", "destination": "/sechenov_ui/index.html" }
+  ]
+}
