@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Multimodal Physiological Stress Level Detection System",
   "private": true,
+  "workspaces": [
+    "wellness-dashboard"
+  ],
   "scripts": {
-    "build": "npm --prefix wellness-dashboard run build"
+    "build": "npm --prefix wellness-dashboard install && npm --prefix wellness-dashboard run build"
   }
 }
