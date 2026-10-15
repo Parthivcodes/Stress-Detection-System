@@ -1,0 +1,24 @@
+# Exclude Python dependency files from Vercel so it does not trigger @vercel/python
+requirements.txt
+requirements-inference.txt
+.venv/
+.runtime/
+__pycache__/
+*.py
+*.pyc
+
+# Heavy training datasets and local python model checkpoints
+data/
+*.joblib
+*.pkl
+*.pt
+
+# Local setup and shell scripts
+*.ps1
+verify_project.py
+validate_submission.py
+train_pipeline.py
+load_data.py
+run_local.py
+app.py
+server.py

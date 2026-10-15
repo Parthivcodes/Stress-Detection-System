@@ -1,11 +1,11 @@
-﻿numpy
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+numpy
 pandas
 scikit-learn==1.6.1
 scipy
 joblib
-torch
 xgboost
 matplotlib
 seaborn
 streamlit
-kagglehub[pandas-datasets]
