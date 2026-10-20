@@ -1,0 +1,13 @@
+{
+  "data/brfss2022/respondents_30000.csv": "431ef76edb2038773f4d70ff6ba67f4b189e2a43bcab1145caea3f136289f5b0",
+  "models/brfss2022/cnn_lstm_net.pt": "3b446efd87d198227b09a525b98379e81b87551576c5c90b136dd9493e7b7e9b",
+  "models/brfss2022/conv1d_net.pt": "8f50d2e60999a81d0818132c06f07a1932ad50a01ce6b31913a57edc846199ae",
+  "models/brfss2022/logistic_regression.joblib": "8ca1e7c8bbc859fbe2864ee4ee1a6b880ad9d1ac9ff9554aacd69d00e8245f51",
+  "models/brfss2022/lstm_net.pt": "9c9592e66c951fb538886cf0f5ecc24710700471cf226678ccdf145d2092107c",
+  "models/brfss2022/metrics.json": "32a80b459c68b5568294a62e1beaf8e7b0bf071627db0fedda15b0f50dc461b2",
+  "models/brfss2022/preprocessor.joblib": "32a465ae3433786cebf13f9b0a6b280413e0712210909228796f165fbc236788",
+  "models/brfss2022/random_forest.joblib": "3e7b06786c7fa23f011973eea982ed09cbe8cdb2634cd0db3aa11070de11fdc6",
+  "models/brfss2022/READY.json": "1047faaf38fbfec628e5d29c04117d790fb419b924fb9369fbe635644b7a1d13",
+  "models/brfss2022/schema.json": "5d2cb952a2e38b53cec82fec489a3655574bb29b24e9af6587004f4e35ed59ba",
+  "models/brfss2022/xgboost.joblib": "80d1504196fd91cbfcd70cada7977dfb88f23b1f7017fbb0ed93c2bd05b290fb"
+}

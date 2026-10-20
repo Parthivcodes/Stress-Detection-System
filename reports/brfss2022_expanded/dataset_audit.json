@@ -1,0 +1,98 @@
+{
+  "source_records": 445132,
+  "eligible_records": 183040,
+  "unique_respondents": 183040,
+  "new_respondents_not_in_original": 153458,
+  "split_counts": {
+    "train": 128248,
+    "test": 30718,
+    "validation": 15197,
+    "quarantine": 8877
+  },
+  "class_counts_by_split": {
+    "0": {
+      "quarantine": 5782,
+      "test": 20207,
+      "train": 84466,
+      "validation": 9981
+    },
+    "1": {
+      "quarantine": 2019,
+      "test": 6891,
+      "train": 28672,
+      "validation": 3437
+    },
+    "2": {
+      "quarantine": 1076,
+      "test": 3620,
+      "train": 15110,
+      "validation": 1779
+    }
+  },
+  "invalid_counts_overlapping": {
+    "bmi": 48806,
+    "income": 96047,
+    "stress_raw": 195599,
+    "support": 195186,
+    "isolation": 194007,
+    "job_loss": 193993,
+    "food_insecurity": 194025,
+    "bill_difficulty": 194110,
+    "utility_threat": 194049,
+    "transport_barrier": 194250,
+    "unhealthy_days": 10927,
+    "general_health": 1198,
+    "sleep_duration": 5453,
+    "employment": 11240,
+    "medical_cost": 1609,
+    "education": 2383,
+    "marital": 4802,
+    "exercise": 1093
+  },
+  "new_predictor_dictionary": {
+    "isolation": [
+      363,
+      1,
+      5,
+      "SDHISOLT"
+    ],
+    "job_loss": [
+      364,
+      1,
+      2,
+      "SDHEMPLY"
+    ],
+    "food_insecurity": [
+      366,
+      1,
+      5,
+      "SDHFOOD1"
+    ],
+    "bill_difficulty": [
+      367,
+      1,
+      2,
+      "SDHBILLS"
+    ],
+    "utility_threat": [
+      368,
+      1,
+      2,
+      "SDHUTILS"
+    ],
+    "transport_barrier": [
+      369,
+      1,
+      2,
+      "SDHTRNSP"
+    ],
+    "medical_cost": [
+      111,
+      1,
+      2,
+      "MEDCOST1"
+    ]
+  },
+  "source_sha256": "ce4e8453afd8685977a13e56da85418eff83e628547604b00e3463eb60c2fc74",
+  "no_previous_respondents_or_profiles_in_validation_or_test": true
+}

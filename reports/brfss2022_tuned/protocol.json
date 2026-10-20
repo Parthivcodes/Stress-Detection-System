@@ -1,0 +1,19 @@
+{
+  "seed": 2026,
+  "same_30000_records": true,
+  "same_splits": true,
+  "selection": "Maximize mean of validation accuracy and macro F1, subject to macro F1 >= original validation F1, balanced accuracy >= original minus .03, usually/always recall >= .30. Original retained as fallback.",
+  "probability_prior_exponents": [
+    0,
+    0.15,
+    0.3,
+    0.45,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "neural_max_epochs": 15,
+  "neural_patience": 5,
+  "test_policy": "Freeze all six selections before evaluating test once. Test was evaluated in the earlier project iteration, so this is a reused internal holdout, not new external validation.",
+  "probabilities": "Class-prior-adjusted uncalibrated estimates, not clinically calibrated probabilities."
+}

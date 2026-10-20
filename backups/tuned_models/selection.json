@@ -1,0 +1,126 @@
+{
+  "Logistic Regression": {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6532177392464155,
+      "Balanced accuracy": 0.5458779135837851,
+      "F1-Score (Macro)": 0.5321779922484592,
+      "Recall by class": [
+        0.7983581323755772,
+        0.27035330261136714,
+        0.568922305764411
+      ]
+    },
+    "eligible": true
+  },
+  "Random Forest": {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6395465155051684,
+      "Balanced accuracy": 0.543657454874822,
+      "F1-Score (Macro)": 0.5302044853915842,
+      "Recall by class": [
+        0.7696254489481785,
+        0.29493087557603687,
+        0.5664160401002506
+      ]
+    },
+    "eligible": true
+  },
+  "XGBoost": {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6722240746915639,
+      "Balanced accuracy": 0.536629618093187,
+      "F1-Score (Macro)": 0.5369590178413708,
+      "Recall by class": [
+        0.8440225756798359,
+        0.25960061443932414,
+        0.506265664160401
+      ]
+    },
+    "eligible": true
+  },
+  "1D CNN": {
+    "candidate": "original",
+    "exponent": 0,
+    "multipliers": [
+      1,
+      1,
+      1
+    ],
+    "validation": {
+      "Accuracy": 0.6528842947649216,
+      "Balanced accuracy": 0.5353999706560464,
+      "F1-Score (Macro)": 0.5292894256772787,
+      "Recall by class": [
+        0.806054386865059,
+        0.26881720430107525,
+        0.531328320802005
+      ]
+    }
+  },
+  "LSTM": {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6465488496165388,
+      "Balanced accuracy": 0.5530813550258462,
+      "F1-Score (Macro)": 0.5423153196032591,
+      "Recall by class": [
+        0.7706516162134428,
+        0.3271889400921659,
+        0.5614035087719298
+      ]
+    },
+    "eligible": true
+  },
+  "CNN-LSTM": {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6715571857285761,
+      "Balanced accuracy": 0.5265808833752345,
+      "F1-Score (Macro)": 0.5193691226472569,
+      "Recall by class": [
+        0.8619805028219599,
+        0.1889400921658986,
+        0.5288220551378446
+      ]
+    },
+    "eligible": true
+  }
+}

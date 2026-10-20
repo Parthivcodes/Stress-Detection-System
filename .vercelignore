@@ -3,22 +3,22 @@ requirements.txt
 requirements-inference.txt
 .venv/
 .runtime/
+.cleanup/
 __pycache__/
 *.py
 *.pyc
 
 # Heavy training datasets and local python model checkpoints
 data/
+backups/
 *.joblib
 *.pkl
 *.pt
 
 # Local setup and shell scripts
 *.ps1
-verify_project.py
-validate_submission.py
-train_pipeline.py
-load_data.py
-run_local.py
-app.py
+training/
+tests/
+tools/
+legacy/
 server.py

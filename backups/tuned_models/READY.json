@@ -1,0 +1,14 @@
+{
+  "models": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "1D CNN",
+    "LSTM",
+    "CNN-LSTM"
+  ],
+  "dataset_sha256": "431ef76edb2038773f4d70ff6ba67f4b189e2a43bcab1145caea3f136289f5b0",
+  "selection_sha256": "3258c73311829303f470855ac9b8b517ee355d2664f8020a861cdebac607b527",
+  "originals_unchanged": true,
+  "version": "brfss2022_tuned"
+}

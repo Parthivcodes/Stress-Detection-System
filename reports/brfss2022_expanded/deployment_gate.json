@@ -1,0 +1,25 @@
+{
+  "all_models_and_ensemble_pass": true,
+  "ensemble_pass": true,
+  "ensemble_metrics": {
+    "original": {
+      "accuracy": 0.6206133211797643,
+      "high_recall": 0.5649171270718232,
+      "macro_f1": 0.517833793594902
+    },
+    "tuned": {
+      "accuracy": 0.6620873754801745,
+      "high_recall": 0.49171270718232046,
+      "macro_f1": 0.5177828891947327
+    },
+    "expanded": {
+      "accuracy": 0.6861774855133798,
+      "high_recall": 0.5988950276243094,
+      "macro_f1": 0.5262990988260013
+    }
+  },
+  "source_spot_checks": 100,
+  "saved_model_parity_checks": 96,
+  "originals_unchanged": true,
+  "selection_sha256": "a089ded428672dc1974f0bdf92045556a61e25fa3ace870af4f1c476fdc05f2d"
+}

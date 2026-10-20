@@ -1,0 +1,51 @@
+{
+  "seed": 20261018,
+  "predictors": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ],
+  "excluded": [
+    "SDHSTRE1 and target-derived fields",
+    "MENTHLTH",
+    "LSATISFY",
+    "ADDEPEV3",
+    "respondent IDs and state"
+  ],
+  "selection": "Highest validation accuracy satisfying high-frequency recall >= max(original,tuned)+0.02 and macro F1 >= max(original,tuned). Otherwise report candidate as ineligible.",
+  "adjustment_grid": {
+    "sometimes": [
+      0.7,
+      1,
+      1.3
+    ],
+    "usually_always": [
+      0.8,
+      1,
+      1.25,
+      1.5,
+      2,
+      3
+    ]
+  },
+  "epochs_max": 14,
+  "early_stop_patience": 4,
+  "evaluation": "Freeze all six choices before test. Compare all three versions on identical new respondents. No test-based retuning. No deployment if high-frequency recall or accuracy is worse than either prior model on final holdout.",
+  "limitations": "New internal same-year holdout, not external validation; complete cases, unweighted US survey; concurrent associations, not future prediction."
+}

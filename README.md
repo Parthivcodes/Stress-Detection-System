@@ -1,69 +1,94 @@
-﻿# Stress Level Detection — Still Research Dashboard
+# Stress Prediction Project
 
-A university research prototype comparing six classifiers on tabular physiological and lifestyle features. The interface includes a responsive 3D particle sculpture, profile controls, actual model predictions, archived benchmarks, and JSON result export. The sculpture is decorative, not a measured biosignal.
-
-## Run
-
-### This PC: verified WSL backend
-
-Windows blocks native Python model libraries on this PC. The working backend now runs in Ubuntu/WSL with an isolated Python 3.12 environment at `/opt/stress-venv`. From this project folder, run:
+## Start the website
 
 ```powershell
-.\Start-Dashboard.ps1
+.\Start-Website.ps1
 ```
 
-Or use `.\Start-Dashboard-WSL.ps1` explicitly. Keep the terminal open and visit http://localhost:8000/#predictions (not the static preview on port 8001). The server runs as the unprivileged Linux `nobody` user and reads the existing project/model files; no model retraining or security-policy changes are involved. WSL can print a systemd user-session warning for this service account, but direct Python execution and prediction tests pass.
+Open **http://127.0.0.1:8004/#predictions** and keep the terminal running.
+This uses your existing WSL Python environment and the six expanded models.
+No reinstall is needed.
 
-Only CPU inference libraries are installed in the Linux environment. `requirements-inference.txt` excludes training/plotting/UI extras. PyTorch was installed first from its official CPU wheel index; XGBoost uses `xgboost-cpu`.
+## Project structure — line by line
 
-Verified on 15 October 2026: all six model artifacts and preprocessing parity (`verify_project.py`); live API health, three profiles, normalized probabilities, and invalid-input rejection (`tests/prediction-api.py`); dashboard Analyze button displays all six actual results with no browser console errors.
+```text
+stressleveldetection/
+├── Start-Website.ps1                 Main launcher, port 8004
+├── server.py                        Website and prediction API
+├── README.md                        Start here
+├── data/
+│   ├── original_sleep_dataset/      Original 374-row sleep/lifestyle data
+│   ├── baseline_survey_dataset/     First 30,000-person survey and raw CDC source
+│   └── expanded_survey_dataset/     Current 183,040-person dataset with splits
+├── models/
+│   ├── active_model.json            Default model selection
+│   └── current_models/              Six expanded models and preprocessing files
+├── backups/
+│   ├── original_models/             Original sleep/lifestyle models
+│   ├── baseline_models/             First BRFSS model set
+│   ├── tuned_models/                Tuned BRFSS model set
+│   └── previous_active_model.json   Previous default selection
+├── frontend/
+│   ├── index.html                   Main page
+│   ├── landing.js / landing.css     Main-page animation and appearance
+│   ├── prediction.js / prediction.css  Form and prediction results
+│   ├── fonts/                       Local fonts and licenses
+│   └── dashboard/                   Additional React dashboard
+├── src/
+│   ├── model_paths.py               Central model locations and historical aliases
+│   ├── brfss_inference.py           Load survey models and predict
+│   ├── models.py                    Classifier/neural-network definitions
+│   └── preprocessing.py             Original-data preprocessing
+├── training/
+│   ├── train_expanded_models.py     Current training workflow
+│   ├── train_baseline_models.py     First BRFSS training workflow
+│   ├── tune_baseline_models.py      Baseline tuning
+│   ├── train_original_models.py     Original sleep/lifestyle training
+│   └── download_original_dataset.py Original download helper
+├── tests/                           Model, data, website and integrity checks
+├── reports/                         Evaluation results and historical audits
+├── docs/                            Earlier project report and README
+├── tools/                           Setup, alternate launchers and migration helpers
+├── legacy/                          Original Streamlit application
+├── api/                             Older Vercel adapters, not local Python inference
+├── figures/                         Research plots
+└── output/                          Reference images and prior verification outputs
+```
 
-### Other PCs: standard Python setup
+Hidden `.venv` and `.runtime` are retained environments. `.cleanup` contains
+recoverable earlier cleanup files. These are not training datasets.
 
-With Python 3.11–3.13 installed:
+## The six current model files
+
+| File in `models/current_models/` | Algorithm |
+| --- | --- |
+| `logistic_regression.joblib` | Logistic Regression |
+| `random_forest.joblib` | Random Forest |
+| `xgboost.joblib` | XGBoost |
+| `conv1d_net.pt` | 1D CNN |
+| `lstm_net.pt` | LSTM |
+| `cnn_lstm_net.pt` | CNN-LSTM |
+
+`preprocessor.joblib` transforms inputs; `schema.json` defines the 19 inputs;
+`selection.json` stores prediction adjustments; `metrics.json` and `READY.json`
+record evaluation and completion. Never mix these files between model versions.
+
+## Verification and training
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\python -m pip install -r requirements.txt
-.\.venv\Scripts\python server.py
+wsl.exe -d Ubuntu -u nobody --cd $PWD.Path --exec /opt/stress-venv/bin/python -B tests/model_layout_validation.py --inference
 ```
 
-Open http://localhost:8000. The frontend requires this backend for predictions. There is no fake offline inference. Assets and fonts work locally without a CDN.
+Run training from the root using module names, for example
+`python -m training.train_expanded_models`. Completed model sets are protected
+against accidental retraining. Do not remove those guards to chase test scores.
 
-On this machine, Python 3.12 and a project-local `.venv` are now installed. Start the dashboard with:
+Internal version IDs and historical report folders keep their BRFSS names so
+existing evidence remains traceable. Friendly model folders are mapped in
+`src/model_paths.py`. Old-to-new paths and original checksums are recorded in
+`reports/project_cleanup/reorganization.json`.
 
-```powershell
-.\.venv\Scripts\python.exe server.py
-```
-
-The project environment includes scikit-learn 1.6.1 to match the saved models. `Start-Dashboard.ps1` also prefers this environment. The older `.runtime` directory is retained but is not needed by this command.
-
-### Native Windows runtime limitation (resolved for the dashboard through WSL)
-
-An independent NumPy import also failed because Application Control blocked its `_umath_linalg` native module. The restriction affects more than PyTorch; classical-model inference is not a verified fallback.
-
-Dependency installation into `.venv` completed and `pip check` passed. However, Windows Application Control rejects `torch_python.dll` with WinError 4551, including in the fresh environment. This is an operating-system code-integrity restriction, not a missing Python package. All six predictions remain unavailable until an approved PyTorch runtime can load. Do not disable security controls or treat the static preview on port 8001 as a working prediction backend. Obtain an approved runtime or run the project on another authorized environment, then run the verification below before the demonstration.
-
-## Verify and evaluate
-
-```powershell
-python verify_project.py
-python validate_submission.py
-```
-
-On this machine replace `python` with `.\.venv\Scripts\python.exe`.
-
-- `verify_project.py`: saved model evaluation, feature/scaler parity, valid probabilities, invalid input checks.
-- `validate_submission.py`: exact-profile audit and five outer / three inner group-aware folds, comparing fixed versus tuned LR, RF, and XGBoost, plus a dummy baseline.
-- `reports/grouped_validation_summary.csv`: new evaluation; does not replace original holdout metrics.
-- `SUBMISSION_REVIEW.md`: findings, tuning recommendation, and remaining submission work.
-- `train_pipeline.py`: original six-model row-split training workflow, retained for reproducibility. It is not the stricter grouped evaluation.
-- `app.py`: legacy Streamlit dashboard (`streamlit run app.py`). Use the new frontend for the current demo.
-
-## Important research limits
-
-The dataset contains 374 rows but only 132 distinct predictor profiles. In the original split, 58 of 75 test rows match training profiles. Original 94.67% RF/XGBoost test accuracy is reproducible, but that split is insufficient evidence of independent-profile generalization.
-
-These are tabular features, not ECG/PPG recordings or longitudinal sequences. Stress categories are project-defined bins, not clinically validated diagnoses. Probabilities are uncalibrated. The six-model vote has not been evaluated as a standalone ensemble. Original reports and defense guides must be read with the corrections in `SUBMISSION_REVIEW.md`.
-
-Dataset reference: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset. Verify source provenance, license, and collection details before submitting.
+This is a research demonstration, not a clinical diagnosis. Legacy documentation
+in `docs/` contains older accuracy figures, not current expanded-model results.
+Use the local Python website for actual predictions, not the older Vercel API.

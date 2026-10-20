@@ -41,33 +41,41 @@ def validate_input(data):
             raise ValueError(f'Unsupported {key}.')
 
 # Import project architecture
+from src.model_paths import LEGACY_ROOT
 from src.models import Conv1DNet, LSTMNet, CNNLSTMNet, predict_deep_model
 from src.preprocessing import CLASS_NAMES
 
-PORT = 8000
+PORT = int(os.environ.get('PORT', '8000'))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_DIR = os.path.join(BASE_DIR, "sechenov_ui")
+STATIC_DIR = os.path.join(BASE_DIR, "frontend")
 
 # Global model container
 MODELS_LOADED = False
 ARTIFACTS = {}
+BRFSS = None
 
 def init_models():
-    global MODELS_LOADED, ARTIFACTS
+    global MODELS_LOADED, ARTIFACTS, BRFSS
     if MODELS_LOADED:
+        return
+    if os.environ.get('STRESS_DATASET', 'brfss2022') != 'legacy':
+        from src.brfss_inference import BRFSSPredictor
+        BRFSS = BRFSSPredictor()
+        MODELS_LOADED = True
+        print('[NERVA] Six BRFSS 2022 models loaded.')
         return
     
     print("[STILL RESEARCH] Loading neural and statistical model weights...")
     
-    with open(os.path.join(BASE_DIR, "models", "feature_cols.json"), "r") as f:
+    with open(os.path.join(LEGACY_ROOT, "feature_cols.json"), "r") as f:
         feature_cols = json.load(f)
         
-    scaler = joblib.load(os.path.join(BASE_DIR, "models", "scaler.pkl"))
+    scaler = joblib.load(os.path.join(LEGACY_ROOT, "scaler.pkl"))
     
     # Classical Models
-    lr_model = joblib.load(os.path.join(BASE_DIR, "models", "logistic_regression.joblib"))
-    rf_model = joblib.load(os.path.join(BASE_DIR, "models", "random_forest.joblib"))
-    xgb_model = joblib.load(os.path.join(BASE_DIR, "models", "xgboost.joblib"))
+    lr_model = joblib.load(os.path.join(LEGACY_ROOT, "logistic_regression.joblib"))
+    rf_model = joblib.load(os.path.join(LEGACY_ROOT, "random_forest.joblib"))
+    xgb_model = joblib.load(os.path.join(LEGACY_ROOT, "xgboost.joblib"))
     
     num_features = len(feature_cols)
 
@@ -75,15 +83,15 @@ def init_models():
     device = torch.device('cpu')
     
     cnn_model = Conv1DNet(input_dim=num_features, num_classes=3)
-    cnn_model.load_state_dict(torch.load(os.path.join(BASE_DIR, "models", "conv1d_net.pt"), map_location=device, weights_only=True))
+    cnn_model.load_state_dict(torch.load(os.path.join(LEGACY_ROOT, "conv1d_net.pt"), map_location=device, weights_only=True))
     cnn_model.eval()
 
     lstm_model = LSTMNet(input_dim=num_features, hidden_dim=32, num_layers=1, num_classes=3)
-    lstm_model.load_state_dict(torch.load(os.path.join(BASE_DIR, "models", "lstm_net.pt"), map_location=device, weights_only=True))
+    lstm_model.load_state_dict(torch.load(os.path.join(LEGACY_ROOT, "lstm_net.pt"), map_location=device, weights_only=True))
     lstm_model.eval()
 
     cnnlstm_model = CNNLSTMNet(input_dim=num_features, num_classes=3)
-    cnnlstm_model.load_state_dict(torch.load(os.path.join(BASE_DIR, "models", "cnn_lstm_net.pt"), map_location=device, weights_only=True))
+    cnnlstm_model.load_state_dict(torch.load(os.path.join(LEGACY_ROOT, "cnn_lstm_net.pt"), map_location=device, weights_only=True))
     cnnlstm_model.eval()
 
     ARTIFACTS = {
@@ -100,6 +108,8 @@ def init_models():
     print("[STILL RESEARCH] All 6 models and scalers loaded successfully into memory.")
 
 def compute_prediction(data: dict) -> dict:
+    if BRFSS is not None:
+        return BRFSS.predict(data)
     validate_input(data)
     feature_cols = ARTIFACTS['feature_cols']
     scaler = ARTIFACTS['scaler']
@@ -237,6 +247,14 @@ class SechenovServerHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=STATIC_DIR, **kwargs)
 
+    def translate_path(self, path):
+        translated = super().translate_path(path)
+        dashboard = os.path.join(STATIC_DIR, 'dashboard')
+        # Serve the relocated React build, not its TypeScript source index.
+        if os.path.commonpath([dashboard, translated]) == dashboard:
+            return os.path.join(dashboard, 'dist', os.path.relpath(translated, dashboard))
+        return translated
+
     def do_OPTIONS(self):
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
@@ -245,11 +263,33 @@ class SechenovServerHandler(SimpleHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
+        if self.path == '/api/schema' and BRFSS:
+            expanded = BRFSS.version == 'brfss2022_expanded'
+            report = 'brfss2022_expanded' if expanded else 'brfss2022'
+            with open(os.path.join(BASE_DIR, 'reports', report, 'dataset_audit.json')) as f:
+                audit = json.load(f)
+            result = {'model_version': BRFSS.version, 'input_count': len(BRFSS.schema['numeric'])+len(BRFSS.schema['categorical']),
+                      'respondents': audit['eligible_records'] if expanded else audit['sample_records'],
+                      'test_respondents': audit['split_counts']['test'] if expanded else audit['splits']['test'],
+                      'training_respondents': audit['split_counts']['train'] if expanded else audit['splits']['train']}
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps(result).encode())
+            return
+        if self.path == '/api/benchmarks':
+            path = str(BRFSS.root / 'metrics.json') if BRFSS else os.path.join(STATIC_DIR, 'benchmarks.json')
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            with open(path, 'rb') as f:
+                self.wfile.write(f.read())
+            return
         if self.path == '/api/health':
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            self.wfile.write(json.dumps({'models_loaded': MODELS_LOADED}).encode())
+            self.wfile.write(json.dumps({'models_loaded': MODELS_LOADED, 'dataset': 'brfss2022' if BRFSS else 'legacy', 'model_version': BRFSS.version if BRFSS else 'legacy'}).encode())
             return
         super().do_GET()
 

@@ -52,7 +52,10 @@ desktop.ini
 .runtime/
 
 # Standalone wellness frontend
-wellness-dashboard/node_modules/
-wellness-dashboard/dist/
-wellness-dashboard/.npm-cache/
-wellness-dashboard/*.tsbuildinfo
+frontend/dashboard/node_modules/
+frontend/dashboard/dist/
+frontend/dashboard/.npm-cache/
+frontend/dashboard/*.tsbuildinfo
+
+# Recoverable local project cleanup (not application assets)
+.cleanup/

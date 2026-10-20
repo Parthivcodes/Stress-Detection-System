@@ -1,0 +1,4706 @@
+[
+  {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.600866955651884,
+      "Balanced accuracy": 0.5615590640813624,
+      "F1-Score (Macro)": 0.5188745905690187,
+      "Recall by class": [
+        0.6752180605438687,
+        0.3302611367127496,
+        0.6791979949874687
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6278759586528843,
+      "Balanced accuracy": 0.5516237533814786,
+      "F1-Score (Macro)": 0.5251303201784742,
+      "Recall by class": [
+        0.7408927655207799,
+        0.29493087557603687,
+        0.6190476190476191
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6532177392464155,
+      "Balanced accuracy": 0.5458779135837851,
+      "F1-Score (Macro)": 0.5321779922484592,
+      "Recall by class": [
+        0.7983581323755772,
+        0.27035330261136714,
+        0.568922305764411
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6692230743581193,
+      "Balanced accuracy": 0.5298872149340066,
+      "F1-Score (Macro)": 0.5246780779389119,
+      "Recall by class": [
+        0.8496664956387892,
+        0.22119815668202766,
+        0.518796992481203
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6865621873957986,
+      "Balanced accuracy": 0.524617001050434,
+      "F1-Score (Macro)": 0.5236040055611119,
+      "Recall by class": [
+        0.8932786044125193,
+        0.18433179723502305,
+        0.49624060150375937
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6875625208402801,
+      "Balanced accuracy": 0.4955972800525011,
+      "F1-Score (Macro)": 0.49798339035929623,
+      "Recall by class": [
+        0.9261159569009748,
+        0.13210445468509985,
+        0.42857142857142855
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6952317439146383,
+      "Balanced accuracy": 0.48412654857211773,
+      "F1-Score (Macro)": 0.48988776730033995,
+      "Recall by class": [
+        0.9533093894304772,
+        0.11059907834101383,
+        0.38847117794486213
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=0.1, sqrt weights",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6792264088029343,
+      "Balanced accuracy": 0.5313022289914362,
+      "F1-Score (Macro)": 0.5278144989911362,
+      "Recall by class": [
+        0.8696767573114418,
+        0.21044546850998463,
+        0.5137844611528822
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=0.1, sqrt weights",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6855618539513171,
+      "Balanced accuracy": 0.5173895142143192,
+      "F1-Score (Macro)": 0.5176291281848421,
+      "Recall by class": [
+        0.8989225243714726,
+        0.17204301075268819,
+        0.48120300751879697
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=0.1, sqrt weights",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6895631877292431,
+      "Balanced accuracy": 0.4986342451238906,
+      "F1-Score (Macro)": 0.5020265172518689,
+      "Recall by class": [
+        0.9271421241662391,
+        0.13517665130568357,
+        0.43358395989974935
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=0.1, sqrt weights",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6928976325441814,
+      "Balanced accuracy": 0.4859455501384975,
+      "F1-Score (Macro)": 0.4906799965764996,
+      "Recall by class": [
+        0.9466393022062596,
+        0.1152073732718894,
+        0.39598997493734334
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=0.1, sqrt weights",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6885628542847616,
+      "Balanced accuracy": 0.46192680098100225,
+      "F1-Score (Macro)": 0.4631248523664248,
+      "Recall by class": [
+        0.9625448948178553,
+        0.07987711213517665,
+        0.3433583959899749
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=0.1, sqrt weights",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6842280760253417,
+      "Balanced accuracy": 0.43695550024423563,
+      "F1-Score (Macro)": 0.43217996489539434,
+      "Recall by class": [
+        0.9779374037968189,
+        0.05222734254992319,
+        0.2807017543859649
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=0.1, sqrt weights",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6782260753584528,
+      "Balanced accuracy": 0.41252831123915595,
+      "F1-Score (Macro)": 0.4003347325639532,
+      "Recall by class": [
+        0.9876859928168291,
+        0.03686635944700461,
+        0.21303258145363407
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=1, sqrt weights",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6788929643214405,
+      "Balanced accuracy": 0.5314898217810424,
+      "F1-Score (Macro)": 0.5286120511846714,
+      "Recall by class": [
+        0.8681375064135454,
+        0.21505376344086022,
+        0.5112781954887218
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=1, sqrt weights",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6858952984328109,
+      "Balanced accuracy": 0.5182425518769698,
+      "F1-Score (Macro)": 0.5189105198590688,
+      "Recall by class": [
+        0.8984094407388404,
+        0.17511520737327188,
+        0.48120300751879697
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=1, sqrt weights",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6882294098032677,
+      "Balanced accuracy": 0.49696235048524895,
+      "F1-Score (Macro)": 0.5005368422925409,
+      "Recall by class": [
+        0.9256028732683428,
+        0.13671274961597543,
+        0.42857142857142855
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=1, sqrt weights",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6922307435811937,
+      "Balanced accuracy": 0.4852801052654532,
+      "F1-Score (Macro)": 0.48998246691458824,
+      "Recall by class": [
+        0.9456131349409954,
+        0.11674347158218126,
+        0.39348370927318294
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=1, sqrt weights",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6872290763587863,
+      "Balanced accuracy": 0.4622304725992918,
+      "F1-Score (Macro)": 0.46282969659329587,
+      "Recall by class": [
+        0.9599794766546947,
+        0.07834101382488479,
+        0.3483709273182957
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=1, sqrt weights",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6842280760253417,
+      "Balanced accuracy": 0.4382842882652545,
+      "F1-Score (Macro)": 0.4331970351576266,
+      "Recall by class": [
+        0.9769112365315546,
+        0.05222734254992319,
+        0.2857142857142857
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=1, sqrt weights",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6785595198399467,
+      "Balanced accuracy": 0.412716954891297,
+      "F1-Score (Macro)": 0.40103998631029647,
+      "Recall by class": [
+        0.9876859928168291,
+        0.039938556067588324,
+        0.21052631578947367
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=10, sqrt weights",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6785595198399467,
+      "Balanced accuracy": 0.5313187939034985,
+      "F1-Score (Macro)": 0.5284284914471068,
+      "Recall by class": [
+        0.8676244227809133,
+        0.21505376344086022,
+        0.5112781954887218
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=10, sqrt weights",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6862287429143048,
+      "Balanced accuracy": 0.5190779737650232,
+      "F1-Score (Macro)": 0.5196429735397027,
+      "Recall by class": [
+        0.8984094407388404,
+        0.17511520737327188,
+        0.48370927318295737
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=10, sqrt weights",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6882294098032677,
+      "Balanced accuracy": 0.49696235048524895,
+      "F1-Score (Macro)": 0.5005240435317905,
+      "Recall by class": [
+        0.9256028732683428,
+        0.13671274961597543,
+        0.42857142857142855
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=10, sqrt weights",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.691563854618206,
+      "Balanced accuracy": 0.4842560397252586,
+      "F1-Score (Macro)": 0.4880700371715612,
+      "Recall by class": [
+        0.9456131349409954,
+        0.11367127496159754,
+        0.39348370927318294
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=10, sqrt weights",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6872290763587863,
+      "Balanced accuracy": 0.4622304725992918,
+      "F1-Score (Macro)": 0.46282969659329587,
+      "Recall by class": [
+        0.9599794766546947,
+        0.07834101382488479,
+        0.3483709273182957
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=10, sqrt weights",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6842280760253417,
+      "Balanced accuracy": 0.4382842882652545,
+      "F1-Score (Macro)": 0.4331970351576266,
+      "Recall by class": [
+        0.9769112365315546,
+        0.05222734254992319,
+        0.2857142857142857
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Logistic Regression",
+    "candidate": "LR C=10, sqrt weights",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6785595198399467,
+      "Balanced accuracy": 0.412716954891297,
+      "F1-Score (Macro)": 0.40103998631029647,
+      "Recall by class": [
+        0.9876859928168291,
+        0.039938556067588324,
+        0.21052631578947367
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.610536845615205,
+      "Balanced accuracy": 0.5546478592139551,
+      "F1-Score (Macro)": 0.5261275414166097,
+      "Recall by class": [
+        0.6967675731144176,
+        0.3456221198156682,
+        0.6215538847117794
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6395465155051684,
+      "Balanced accuracy": 0.543657454874822,
+      "F1-Score (Macro)": 0.5302044853915842,
+      "Recall by class": [
+        0.7696254489481785,
+        0.29493087557603687,
+        0.5664160401002506
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6662220740246749,
+      "Balanced accuracy": 0.5271601022118678,
+      "F1-Score (Macro)": 0.5259102800710954,
+      "Recall by class": [
+        0.8419702411493073,
+        0.2457757296466974,
+        0.49373433583959897
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6832277425808603,
+      "Balanced accuracy": 0.5112710192037799,
+      "F1-Score (Macro)": 0.5136305152294195,
+      "Recall by class": [
+        0.8973832734735762,
+        0.1827956989247312,
+        0.45363408521303256
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6928976325441814,
+      "Balanced accuracy": 0.4877034219250549,
+      "F1-Score (Macro)": 0.4921922592337413,
+      "Recall by class": [
+        0.9425346331452027,
+        0.13210445468509985,
+        0.38847117794486213
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6868956318772924,
+      "Balanced accuracy": 0.4477661656084965,
+      "F1-Score (Macro)": 0.44811882156281496,
+      "Recall by class": [
+        0.9707542329399692,
+        0.07680491551459294,
+        0.2957393483709273
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.679893297765922,
+      "Balanced accuracy": 0.4146417755495067,
+      "F1-Score (Macro)": 0.4004817588992704,
+      "Recall by class": [
+        0.991277578245254,
+        0.02457757296466974,
+        0.22807017543859648
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=12, weight exponent=0.5",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6735578526175392,
+      "Balanced accuracy": 0.5157712688735083,
+      "F1-Score (Macro)": 0.5193351245323475,
+      "Recall by class": [
+        0.870702924576706,
+        0.21044546850998463,
+        0.46616541353383456
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=12, weight exponent=0.5",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6822274091363788,
+      "Balanced accuracy": 0.49976901073584673,
+      "F1-Score (Macro)": 0.5067489276149697,
+      "Recall by class": [
+        0.905079527963058,
+        0.1781874039938556,
+        0.41604010025062654
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=12, weight exponent=0.5",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6878959653217739,
+      "Balanced accuracy": 0.4838620630646666,
+      "F1-Score (Macro)": 0.4903717719141976,
+      "Recall by class": [
+        0.9343252950230888,
+        0.141321044546851,
+        0.37593984962406013
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=12, weight exponent=0.5",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6902300766922308,
+      "Balanced accuracy": 0.4659038317254929,
+      "F1-Score (Macro)": 0.47174470944922325,
+      "Recall by class": [
+        0.9589533093894305,
+        0.10291858678955453,
+        0.3358395989974937
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=12, weight exponent=0.5",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.4459834464538457,
+      "F1-Score (Macro)": 0.44722382784568376,
+      "Recall by class": [
+        0.9779374037968189,
+        0.07680491551459294,
+        0.2832080200501253
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=12, weight exponent=0.5",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.677892630876959,
+      "Balanced accuracy": 0.41063464312424863,
+      "F1-Score (Macro)": 0.3957301222604188,
+      "Recall by class": [
+        0.9902514109799897,
+        0.026113671274961597,
+        0.21553884711779447
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=12, weight exponent=0.5",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6695565188396132,
+      "Balanced accuracy": 0.3876502192438012,
+      "F1-Score (Macro)": 0.35959326201415337,
+      "Recall by class": [
+        0.9948691636736788,
+        0.007680491551459293,
+        0.16040100250626566
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=20, weight exponent=0.5",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6705568522840947,
+      "Balanced accuracy": 0.5146082544173595,
+      "F1-Score (Macro)": 0.5174644536758541,
+      "Recall by class": [
+        0.8645459209851206,
+        0.21812596006144394,
+        0.46115288220551376
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=20, weight exponent=0.5",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6812270756918973,
+      "Balanced accuracy": 0.5019663504690435,
+      "F1-Score (Macro)": 0.5085796779283974,
+      "Recall by class": [
+        0.8999486916367367,
+        0.18740399385560677,
+        0.41854636591478694
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=20, weight exponent=0.5",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6882294098032677,
+      "Balanced accuracy": 0.4884133072216117,
+      "F1-Score (Macro)": 0.4959119459256957,
+      "Recall by class": [
+        0.9297075423293997,
+        0.15207373271889402,
+        0.38345864661654133
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=20, weight exponent=0.5",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6925641880626876,
+      "Balanced accuracy": 0.4744622083076961,
+      "F1-Score (Macro)": 0.4815595679573726,
+      "Recall by class": [
+        0.9553617239610056,
+        0.11213517665130568,
+        0.3558897243107769
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=20, weight exponent=0.5",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6885628542847616,
+      "Balanced accuracy": 0.4506144870277449,
+      "F1-Score (Macro)": 0.45157979852883773,
+      "Recall by class": [
+        0.9717804002052335,
+        0.07680491551459294,
+        0.3032581453634085
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=20, weight exponent=0.5",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6792264088029343,
+      "Balanced accuracy": 0.4136705573331034,
+      "F1-Score (Macro)": 0.40002826206937003,
+      "Recall by class": [
+        0.9897383273473577,
+        0.030721966205837174,
+        0.22055137844611528
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=20, weight exponent=0.5",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6722240746915639,
+      "Balanced accuracy": 0.3923580280912978,
+      "F1-Score (Macro)": 0.36699237567798626,
+      "Recall by class": [
+        0.995895330938943,
+        0.010752688172043012,
+        0.17042606516290726
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=16, weight exponent=0",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6902300766922308,
+      "Balanced accuracy": 0.47900924901450176,
+      "F1-Score (Macro)": 0.48839749831397977,
+      "Recall by class": [
+        0.9445869676757311,
+        0.12903225806451613,
+        0.3634085213032581
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=16, weight exponent=0",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6882294098032677,
+      "Balanced accuracy": 0.46019167483746853,
+      "F1-Score (Macro)": 0.4654054572166771,
+      "Recall by class": [
+        0.9604925602873269,
+        0.0967741935483871,
+        0.3233082706766917
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=16, weight exponent=0",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6862287429143048,
+      "Balanced accuracy": 0.4401333915124018,
+      "F1-Score (Macro)": 0.44257547453876267,
+      "Recall by class": [
+        0.9748589020010262,
+        0.07987711213517665,
+        0.2656641604010025
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=16, weight exponent=0",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6808936312104035,
+      "Balanced accuracy": 0.4172889674104437,
+      "F1-Score (Macro)": 0.4093373731360015,
+      "Recall by class": [
+        0.987172909184197,
+        0.04915514592933948,
+        0.21553884711779447
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=16, weight exponent=0",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6738912970990331,
+      "Balanced accuracy": 0.397610999533016,
+      "F1-Score (Macro)": 0.37847619682816847,
+      "Recall by class": [
+        0.9928168291431503,
+        0.02457757296466974,
+        0.17543859649122806
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=16, weight exponent=0",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6665555185061687,
+      "Balanced accuracy": 0.37813824021979175,
+      "F1-Score (Macro)": 0.34557803542997306,
+      "Recall by class": [
+        0.9964084145715751,
+        0.007680491551459293,
+        0.13032581453634084
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "Random Forest",
+    "candidate": "RF depth=16, weight exponent=0",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6632210736912304,
+      "Balanced accuracy": 0.36741460286598143,
+      "F1-Score (Macro)": 0.326403157041252,
+      "Recall by class": [
+        0.9994869163673679,
+        0.0,
+        0.10275689223057644
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.5998666222074025,
+      "Balanced accuracy": 0.561022059498924,
+      "F1-Score (Macro)": 0.524136518011644,
+      "Recall by class": [
+        0.6649563878912262,
+        0.38402457757296465,
+        0.6340852130325815
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6278759586528843,
+      "Balanced accuracy": 0.5598607181265477,
+      "F1-Score (Macro)": 0.535508046847971,
+      "Recall by class": [
+        0.7270395074397127,
+        0.34101382488479265,
+        0.6115288220551378
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6548849616538847,
+      "Balanced accuracy": 0.5512365796730858,
+      "F1-Score (Macro)": 0.5410522210983957,
+      "Recall by class": [
+        0.7922011287839917,
+        0.30261136712749614,
+        0.5588972431077694
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6722240746915639,
+      "Balanced accuracy": 0.536629618093187,
+      "F1-Score (Macro)": 0.5369590178413708,
+      "Recall by class": [
+        0.8440225756798359,
+        0.25960061443932414,
+        0.506265664160401
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6835611870623541,
+      "Balanced accuracy": 0.5191970807370634,
+      "F1-Score (Macro)": 0.5244519112230983,
+      "Recall by class": [
+        0.8886608517188301,
+        0.20276497695852536,
+        0.46616541353383456
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6912304101367123,
+      "Balanced accuracy": 0.49695511889175253,
+      "F1-Score (Macro)": 0.5056229140522458,
+      "Recall by class": [
+        0.9281682914315034,
+        0.15668202764976957,
+        0.40601503759398494
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6892297432477492,
+      "Balanced accuracy": 0.4646735067585602,
+      "F1-Score (Macro)": 0.46864510860120084,
+      "Recall by class": [
+        0.9594663930220626,
+        0.09370199692780339,
+        0.3408521303258145
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0.5",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6755585195065021,
+      "Balanced accuracy": 0.5281978289650152,
+      "F1-Score (Macro)": 0.528565634682988,
+      "Recall by class": [
+        0.8619805028219599,
+        0.22887864823348694,
+        0.49373433583959897
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0.5",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6892297432477492,
+      "Balanced accuracy": 0.518012495944673,
+      "F1-Score (Macro)": 0.5220742793465991,
+      "Recall by class": [
+        0.9035402770651616,
+        0.18433179723502305,
+        0.46616541353383456
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0.5",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6938979659886629,
+      "Balanced accuracy": 0.49891727282422615,
+      "F1-Score (Macro)": 0.5048204616620618,
+      "Recall by class": [
+        0.9338122113904567,
+        0.1443932411674347,
+        0.41854636591478694
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0.5",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.472323896629252,
+      "F1-Score (Macro)": 0.47453412997645533,
+      "Recall by class": [
+        0.9548486403283736,
+        0.09370199692780339,
+        0.3684210526315789
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0.5",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6885628542847616,
+      "Balanced accuracy": 0.45361306796233597,
+      "F1-Score (Macro)": 0.4555564048177619,
+      "Recall by class": [
+        0.9692149820420729,
+        0.07834101382488479,
+        0.3132832080200501
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0.5",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6848949649883295,
+      "Balanced accuracy": 0.43029499522707915,
+      "F1-Score (Macro)": 0.42414192817952684,
+      "Recall by class": [
+        0.9851205746536685,
+        0.047619047619047616,
+        0.2581453634085213
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0.5",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6745581860620207,
+      "Balanced accuracy": 0.3989232226419726,
+      "F1-Score (Macro)": 0.3786130713121585,
+      "Recall by class": [
+        0.9938429964084146,
+        0.019969278033794162,
+        0.18295739348370926
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=5, weight exponent=0.5",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6672224074691564,
+      "Balanced accuracy": 0.5279965749624562,
+      "F1-Score (Macro)": 0.5289210910652135,
+      "Recall by class": [
+        0.8435094920472037,
+        0.24423963133640553,
+        0.49624060150375937
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=5, weight exponent=0.5",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6845615205068356,
+      "Balanced accuracy": 0.5137130025005135,
+      "F1-Score (Macro)": 0.5199977392556958,
+      "Recall by class": [
+        0.8953309389430477,
+        0.19969278033794163,
+        0.44611528822055135
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=5, weight exponent=0.5",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6848949649883295,
+      "Balanced accuracy": 0.49566353970075006,
+      "F1-Score (Macro)": 0.5016174478513854,
+      "Recall by class": [
+        0.9179066187788609,
+        0.15053763440860216,
+        0.41854636591478694
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=5, weight exponent=0.5",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6912304101367123,
+      "Balanced accuracy": 0.48280907115048693,
+      "F1-Score (Macro)": 0.48872240289143615,
+      "Recall by class": [
+        0.9445869676757311,
+        0.1228878648233487,
+        0.38095238095238093
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=5, weight exponent=0.5",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6928976325441814,
+      "Balanced accuracy": 0.47023540413124204,
+      "F1-Score (Macro)": 0.4755995129283732,
+      "Recall by class": [
+        0.961518727552591,
+        0.09831029185867896,
+        0.3508771929824561
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=5, weight exponent=0.5",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6882294098032677,
+      "Balanced accuracy": 0.4373908891849832,
+      "F1-Score (Macro)": 0.43465614365174643,
+      "Recall by class": [
+        0.9840944073884043,
+        0.059907834101382486,
+        0.2681704260651629
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=5, weight exponent=0.5",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6808936312104035,
+      "Balanced accuracy": 0.41188573645338294,
+      "F1-Score (Macro)": 0.39915563643149654,
+      "Recall by class": [
+        0.9938429964084146,
+        0.03379416282642089,
+        0.20802005012531327
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.4686785374587486,
+      "F1-Score (Macro)": 0.471243488801582,
+      "Recall by class": [
+        0.9574140584915342,
+        0.09523809523809523,
+        0.3533834586466165
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6885628542847616,
+      "Balanced accuracy": 0.45196089082336083,
+      "F1-Score (Macro)": 0.45454373393595965,
+      "Recall by class": [
+        0.9702411493073371,
+        0.07987711213517665,
+        0.3057644110275689
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6855618539513171,
+      "Balanced accuracy": 0.4336708634659523,
+      "F1-Score (Macro)": 0.42935912019138667,
+      "Recall by class": [
+        0.982555156490508,
+        0.055299539170506916,
+        0.2631578947368421
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6795598532844281,
+      "Balanced accuracy": 0.411525014061163,
+      "F1-Score (Macro)": 0.39765580509950665,
+      "Recall by class": [
+        0.9917906618778861,
+        0.03225806451612903,
+        0.21052631578947367
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6722240746915639,
+      "Balanced accuracy": 0.3930400378764043,
+      "F1-Score (Macro)": 0.3689897211356143,
+      "Recall by class": [
+        0.9948691636736788,
+        0.013824884792626729,
+        0.17042606516290726
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6658886295431811,
+      "Balanced accuracy": 0.37546199754062215,
+      "F1-Score (Macro)": 0.3405860762237674,
+      "Recall by class": [
+        0.9974345818368394,
+        0.006144393241167435,
+        0.12280701754385964
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "XGBoost",
+    "candidate": "XGB depth=3, weight exponent=0",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6615538512837612,
+      "Balanced accuracy": 0.36259071518980174,
+      "F1-Score (Macro)": 0.318371723279157,
+      "Recall by class": [
+        0.9994869163673679,
+        0.0030721966205837174,
+        0.08521303258145363
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6528842947649216,
+      "Balanced accuracy": 0.5353999706560464,
+      "F1-Score (Macro)": 0.5292894256772787,
+      "Recall by class": [
+        0.806054386865059,
+        0.26881720430107525,
+        0.531328320802005
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6712237412470824,
+      "Balanced accuracy": 0.5206240829236732,
+      "F1-Score (Macro)": 0.525081544370366,
+      "Recall by class": [
+        0.8604412519240636,
+        0.2227342549923195,
+        0.47869674185463656
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6815605201733911,
+      "Balanced accuracy": 0.49969749677492353,
+      "F1-Score (Macro)": 0.5078174923640942,
+      "Recall by class": [
+        0.90559261159569,
+        0.1674347158218126,
+        0.42606516290726815
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6805601867289096,
+      "Balanced accuracy": 0.4715919432194637,
+      "F1-Score (Macro)": 0.47557236798863406,
+      "Recall by class": [
+        0.935351462288353,
+        0.10599078341013825,
+        0.37343358395989973
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6828942980993664,
+      "Balanced accuracy": 0.4507055940440872,
+      "F1-Score (Macro)": 0.45171443164724634,
+      "Recall by class": [
+        0.9604925602873269,
+        0.07834101382488479,
+        0.3132832080200501
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.677892630876959,
+      "Balanced accuracy": 0.4199361592713806,
+      "F1-Score (Macro)": 0.406693216866772,
+      "Recall by class": [
+        0.9830682401231401,
+        0.026113671274961597,
+        0.2506265664160401
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.67189063021007,
+      "Balanced accuracy": 0.3975197680724262,
+      "F1-Score (Macro)": 0.3748116512785564,
+      "Recall by class": [
+        0.9907644946126218,
+        0.013824884792626729,
+        0.18796992481203006
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6792264088029343,
+      "Balanced accuracy": 0.5104833147710911,
+      "F1-Score (Macro)": 0.4960300512721629,
+      "Recall by class": [
+        0.9014879425346332,
+        0.11367127496159754,
+        0.5162907268170426
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.683894631543848,
+      "Balanced accuracy": 0.4931459634372015,
+      "F1-Score (Macro)": 0.4832388299452903,
+      "Recall by class": [
+        0.9276552077988712,
+        0.09062980030721966,
+        0.46115288220551376
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6848949649883295,
+      "Balanced accuracy": 0.4755618668147055,
+      "F1-Score (Macro)": 0.4648077909722148,
+      "Recall by class": [
+        0.9476654694715239,
+        0.0629800307219662,
+        0.41604010025062654
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6815605201733911,
+      "Balanced accuracy": 0.4520738170644396,
+      "F1-Score (Macro)": 0.43734096031390574,
+      "Recall by class": [
+        0.9645972293483838,
+        0.030721966205837174,
+        0.3609022556390977
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6812270756918973,
+      "Balanced accuracy": 0.43285305735249596,
+      "F1-Score (Macro)": 0.41361608323630733,
+      "Recall by class": [
+        0.9820420728578758,
+        0.010752688172043012,
+        0.3057644110275689
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6762254084694899,
+      "Balanced accuracy": 0.40865079441128627,
+      "F1-Score (Macro)": 0.3851058131572744,
+      "Recall by class": [
+        0.9923037455105183,
+        0.0030721966205837174,
+        0.23057644110275688
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6715571857285761,
+      "Balanced accuracy": 0.392627519022928,
+      "F1-Score (Macro)": 0.36498948360601924,
+      "Recall by class": [
+        0.995895330938943,
+        0.0015360983102918587,
+        0.18045112781954886
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6558852950983661,
+      "Balanced accuracy": 0.5437895455300228,
+      "F1-Score (Macro)": 0.5168542172618178,
+      "Recall by class": [
+        0.8183683940482298,
+        0.1889400921658986,
+        0.6240601503759399
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.67189063021007,
+      "Balanced accuracy": 0.5281398517727975,
+      "F1-Score (Macro)": 0.5065704286963923,
+      "Recall by class": [
+        0.8691636736788096,
+        0.141321044546851,
+        0.5739348370927319
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6815605201733911,
+      "Balanced accuracy": 0.512668293042365,
+      "F1-Score (Macro)": 0.4965199417660477,
+      "Recall by class": [
+        0.9045664443304259,
+        0.11213517665130568,
+        0.5213032581453634
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6872290763587863,
+      "Balanced accuracy": 0.4931336019752786,
+      "F1-Score (Macro)": 0.4797773027402767,
+      "Recall by class": [
+        0.9358645459209851,
+        0.07987711213517665,
+        0.46365914786967416
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6828942980993664,
+      "Balanced accuracy": 0.4694382419357397,
+      "F1-Score (Macro)": 0.452848678329654,
+      "Recall by class": [
+        0.9517701385325809,
+        0.043010752688172046,
+        0.41353383458646614
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6825608536178727,
+      "Balanced accuracy": 0.44418508880541996,
+      "F1-Score (Macro)": 0.42425668541091505,
+      "Recall by class": [
+        0.9753719856336582,
+        0.013824884792626729,
+        0.3433583959899749
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.675891963987996,
+      "Balanced accuracy": 0.4118017365862894,
+      "F1-Score (Macro)": 0.3884157970101354,
+      "Recall by class": [
+        0.9892252437147255,
+        0.0030721966205837174,
+        0.24310776942355888
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.67189063021007,
+      "Balanced accuracy": 0.532396757630019,
+      "F1-Score (Macro)": 0.5042359041236519,
+      "Recall by class": [
+        0.8676244227809133,
+        0.130568356374808,
+        0.5989974937343359
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6805601867289096,
+      "Balanced accuracy": 0.5160534945998041,
+      "F1-Score (Macro)": 0.4917813554277852,
+      "Recall by class": [
+        0.9025141097998974,
+        0.0967741935483871,
+        0.5488721804511278
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6865621873957986,
+      "Balanced accuracy": 0.5004056536791534,
+      "F1-Score (Macro)": 0.4812247198048054,
+      "Recall by class": [
+        0.9297075423293997,
+        0.07526881720430108,
+        0.49624060150375937
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6858952984328109,
+      "Balanced accuracy": 0.4776742802625215,
+      "F1-Score (Macro)": 0.4614592501353621,
+      "Recall by class": [
+        0.9497178040020523,
+        0.05222734254992319,
+        0.43107769423558895
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6805601867289096,
+      "Balanced accuracy": 0.4525132850110789,
+      "F1-Score (Macro)": 0.433163856346576,
+      "Recall by class": [
+        0.9635710620831196,
+        0.02304147465437788,
+        0.37092731829573933
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.679893297765922,
+      "Balanced accuracy": 0.4288117442405785,
+      "F1-Score (Macro)": 0.40709200379505034,
+      "Recall by class": [
+        0.9835813237557722,
+        0.004608294930875576,
+        0.2982456140350877
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6752250750250083,
+      "Balanced accuracy": 0.40479812495150996,
+      "F1-Score (Macro)": 0.38029329785281313,
+      "Recall by class": [
+        0.9938429964084146,
+        0.0,
+        0.22055137844611528
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6688896298766256,
+      "Balanced accuracy": 0.5361726588161981,
+      "F1-Score (Macro)": 0.5040677378214489,
+      "Recall by class": [
+        0.8589020010261673,
+        0.130568356374808,
+        0.6190476190476191
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6765588529509836,
+      "Balanced accuracy": 0.5166587361113133,
+      "F1-Score (Macro)": 0.4894991581324275,
+      "Recall by class": [
+        0.8943047716777834,
+        0.0967741935483871,
+        0.5588972431077694
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6862287429143048,
+      "Balanced accuracy": 0.5065375610141504,
+      "F1-Score (Macro)": 0.48254820771362533,
+      "Recall by class": [
+        0.9245767060030785,
+        0.07373271889400922,
+        0.5213032581453634
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6862287429143048,
+      "Balanced accuracy": 0.4841658591272036,
+      "F1-Score (Macro)": 0.4650716005773383,
+      "Recall by class": [
+        0.9451000513083633,
+        0.053763440860215055,
+        0.45363408521303256
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.679893297765922,
+      "Balanced accuracy": 0.4551521944159847,
+      "F1-Score (Macro)": 0.4329502933902955,
+      "Recall by class": [
+        0.9604925602873269,
+        0.021505376344086023,
+        0.38345864661654133
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6808936312104035,
+      "Balanced accuracy": 0.4326467979257577,
+      "F1-Score (Macro)": 0.4105908234557085,
+      "Recall by class": [
+        0.982555156490508,
+        0.004608294930875576,
+        0.3107769423558897
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.675891963987996,
+      "Balanced accuracy": 0.4068099736201701,
+      "F1-Score (Macro)": 0.3826513019493604,
+      "Recall by class": [
+        0.9933299127757824,
+        0.0015360983102918587,
+        0.22556390977443608
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6792264088029343,
+      "Balanced accuracy": 0.5217603971751543,
+      "F1-Score (Macro)": 0.4993342971722592,
+      "Recall by class": [
+        0.8932786044125193,
+        0.11059907834101383,
+        0.5614035087719298
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6842280760253417,
+      "Balanced accuracy": 0.5012368721170676,
+      "F1-Score (Macro)": 0.48203774152228496,
+      "Recall by class": [
+        0.9235505387378142,
+        0.08141321044546851,
+        0.49874686716791977
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6872290763587863,
+      "Balanced accuracy": 0.48302676562086067,
+      "F1-Score (Macro)": 0.46642582879888916,
+      "Recall by class": [
+        0.9476654694715239,
+        0.055299539170506916,
+        0.44611528822055135
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6855618539513171,
+      "Balanced accuracy": 0.4618107221523191,
+      "F1-Score (Macro)": 0.44721588642511473,
+      "Recall by class": [
+        0.9635710620831196,
+        0.03840245775729647,
+        0.38345864661654133
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.679893297765922,
+      "Balanced accuracy": 0.43378589143210067,
+      "F1-Score (Macro)": 0.41113657321843505,
+      "Recall by class": [
+        0.9799897383273474,
+        0.0030721966205837174,
+        0.3182957393483709
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6775591863954652,
+      "Balanced accuracy": 0.41199248196350013,
+      "F1-Score (Macro)": 0.38899747595553175,
+      "Recall by class": [
+        0.9923037455105183,
+        0.0030721966205837174,
+        0.24060150375939848
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "1D CNN",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6698899633211071,
+      "Balanced accuracy": 0.3884504095826606,
+      "F1-Score (Macro)": 0.35881346654208374,
+      "Recall by class": [
+        0.995895330938943,
+        0.0015360983102918587,
+        0.16791979949874686
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6228742914304768,
+      "Balanced accuracy": 0.558371161964838,
+      "F1-Score (Macro)": 0.5371381749445229,
+      "Recall by class": [
+        0.7162647511544382,
+        0.3548387096774194,
+        0.6040100250626567
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6465488496165388,
+      "Balanced accuracy": 0.5530813550258462,
+      "F1-Score (Macro)": 0.5423153196032591,
+      "Recall by class": [
+        0.7706516162134428,
+        0.3271889400921659,
+        0.5614035087719298
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6635545181727243,
+      "Balanced accuracy": 0.5359515628697248,
+      "F1-Score (Macro)": 0.5361192071468454,
+      "Recall by class": [
+        0.8245253976398152,
+        0.27956989247311825,
+        0.5037593984962406
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6825608536178727,
+      "Balanced accuracy": 0.5288260650080433,
+      "F1-Score (Macro)": 0.5350027497804557,
+      "Recall by class": [
+        0.8742945100051308,
+        0.23348694316436253,
+        0.47869674185463656
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.5103113604752597,
+      "F1-Score (Macro)": 0.5178456722719648,
+      "Recall by class": [
+        0.9127757824525398,
+        0.17204301075268819,
+        0.44611528822055135
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6925641880626876,
+      "Balanced accuracy": 0.47771371526185497,
+      "F1-Score (Macro)": 0.4806412556295958,
+      "Recall by class": [
+        0.9548486403283736,
+        0.09984639016897082,
+        0.37844611528822053
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6905635211737245,
+      "Balanced accuracy": 0.4532047525589989,
+      "F1-Score (Macro)": 0.44999702780122813,
+      "Recall by class": [
+        0.9763981528989225,
+        0.059907834101382486,
+        0.3233082706766917
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6708902967655885,
+      "Balanced accuracy": 0.5360398906312052,
+      "F1-Score (Macro)": 0.5280640534927393,
+      "Recall by class": [
+        0.8486403283735249,
+        0.21812596006144394,
+        0.5413533834586466
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6852284094698233,
+      "Balanced accuracy": 0.5266433129060867,
+      "F1-Score (Macro)": 0.5255224922938826,
+      "Recall by class": [
+        0.887634684453566,
+        0.1935483870967742,
+        0.49874686716791977
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6878959653217739,
+      "Balanced accuracy": 0.5074744740996469,
+      "F1-Score (Macro)": 0.5076433141640654,
+      "Recall by class": [
+        0.9153412006157003,
+        0.14592933947772657,
+        0.46115288220551376
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6935645215071691,
+      "Balanced accuracy": 0.49316685624365064,
+      "F1-Score (Macro)": 0.4905927816178688,
+      "Recall by class": [
+        0.9451000513083633,
+        0.09831029185867896,
+        0.43609022556390975
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6935645215071691,
+      "Balanced accuracy": 0.47334703575115916,
+      "F1-Score (Macro)": 0.4659955295830019,
+      "Recall by class": [
+        0.9666495638789122,
+        0.059907834101382486,
+        0.39348370927318294
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6875625208402801,
+      "Balanced accuracy": 0.4488669994222883,
+      "F1-Score (Macro)": 0.43757617219184436,
+      "Recall by class": [
+        0.9779374037968189,
+        0.03533026113671275,
+        0.3333333333333333
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6788929643214405,
+      "Balanced accuracy": 0.41702157820388314,
+      "F1-Score (Macro)": 0.3962116294855293,
+      "Recall by class": [
+        0.9902514109799897,
+        0.007680491551459293,
+        0.2531328320802005
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6735578526175392,
+      "Balanced accuracy": 0.5343390696185782,
+      "F1-Score (Macro)": 0.5261857809091564,
+      "Recall by class": [
+        0.8573627501282709,
+        0.20430107526881722,
+        0.5413533834586466
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6842280760253417,
+      "Balanced accuracy": 0.5216971656702624,
+      "F1-Score (Macro)": 0.5182553331393435,
+      "Recall by class": [
+        0.8927655207798871,
+        0.17357910906298002,
+        0.49874686716791977
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.5053963657827377,
+      "F1-Score (Macro)": 0.5022611266144653,
+      "Recall by class": [
+        0.9240636223704464,
+        0.1259600614439324,
+        0.46616541353383456
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6965655218406135,
+      "Balanced accuracy": 0.49300108267878073,
+      "F1-Score (Macro)": 0.4890983347012188,
+      "Recall by class": [
+        0.9522832221652129,
+        0.09062980030721966,
+        0.43609022556390975
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6942314104701567,
+      "Balanced accuracy": 0.471984067043481,
+      "F1-Score (Macro)": 0.46255207511689306,
+      "Recall by class": [
+        0.9702411493073371,
+        0.05222734254992319,
+        0.39348370927318294
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6875625208402801,
+      "Balanced accuracy": 0.4461741918310565,
+      "F1-Score (Macro)": 0.4331191902125345,
+      "Recall by class": [
+        0.9810159055926116,
+        0.029185867895545316,
+        0.3283208020050125
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6772257419139713,
+      "Balanced accuracy": 0.41381463611748437,
+      "F1-Score (Macro)": 0.3909630989642842,
+      "Recall by class": [
+        0.9902514109799897,
+        0.0030721966205837174,
+        0.24812030075187969
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.67189063021007,
+      "Balanced accuracy": 0.5332310042112901,
+      "F1-Score (Macro)": 0.5273560910490278,
+      "Recall by class": [
+        0.8527449974345819,
+        0.21812596006144394,
+        0.5288220551378446
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6868956318772924,
+      "Balanced accuracy": 0.5244470240354246,
+      "F1-Score (Macro)": 0.5229746498198717,
+      "Recall by class": [
+        0.8943047716777834,
+        0.1827956989247312,
+        0.49624060150375937
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.503009331534865,
+      "F1-Score (Macro)": 0.498494359300423,
+      "Recall by class": [
+        0.9276552077988712,
+        0.1152073732718894,
+        0.46616541353383456
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6968989663221073,
+      "Balanced accuracy": 0.4914847018681556,
+      "F1-Score (Macro)": 0.4867107557091037,
+      "Recall by class": [
+        0.9548486403283736,
+        0.08602150537634409,
+        0.43358395989974935
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6922307435811937,
+      "Balanced accuracy": 0.46857086553034405,
+      "F1-Score (Macro)": 0.4560755478596088,
+      "Recall by class": [
+        0.9707542329399692,
+        0.041474654377880185,
+        0.39348370927318294
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6865621873957986,
+      "Balanced accuracy": 0.4439736995102552,
+      "F1-Score (Macro)": 0.4294569966650836,
+      "Recall by class": [
+        0.9815289892252437,
+        0.02457757296466974,
+        0.3258145363408521
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6765588529509836,
+      "Balanced accuracy": 0.4121437923413774,
+      "F1-Score (Macro)": 0.38912167709438955,
+      "Recall by class": [
+        0.9902514109799897,
+        0.0030721966205837174,
+        0.24310776942355888
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6738912970990331,
+      "Balanced accuracy": 0.5347038710166899,
+      "F1-Score (Macro)": 0.5323628018552317,
+      "Recall by class": [
+        0.8522319138019497,
+        0.23809523809523808,
+        0.5137844611528822
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6872290763587863,
+      "Balanced accuracy": 0.5243475101188038,
+      "F1-Score (Macro)": 0.52618323312559,
+      "Recall by class": [
+        0.8932786044125193,
+        0.1935483870967742,
+        0.48621553884711777
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6912304101367123,
+      "Balanced accuracy": 0.5027585072403667,
+      "F1-Score (Macro)": 0.5020002913214029,
+      "Recall by class": [
+        0.9286813750641355,
+        0.1259600614439324,
+        0.45363408521303256
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6958986328776259,
+      "Balanced accuracy": 0.48635609171115163,
+      "F1-Score (Macro)": 0.4843122505693809,
+      "Recall by class": [
+        0.9558748075936377,
+        0.09216589861751152,
+        0.41102756892230574
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.464392705227542,
+      "F1-Score (Macro)": 0.45334775895649065,
+      "Recall by class": [
+        0.9692149820420729,
+        0.043010752688172046,
+        0.38095238095238093
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6865621873957986,
+      "Balanced accuracy": 0.4413513550174116,
+      "F1-Score (Macro)": 0.42964330590285504,
+      "Recall by class": [
+        0.982555156490508,
+        0.030721966205837174,
+        0.3107769423558897
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6768922974324775,
+      "Balanced accuracy": 0.41098603219790264,
+      "F1-Score (Macro)": 0.3879970358723339,
+      "Recall by class": [
+        0.9917906618778861,
+        0.0030721966205837174,
+        0.23809523809523808
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6692230743581193,
+      "Balanced accuracy": 0.5415933811036083,
+      "F1-Score (Macro)": 0.5333044073638132,
+      "Recall by class": [
+        0.8383786557208825,
+        0.2350230414746544,
+        0.5513784461152882
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.679893297765922,
+      "Balanced accuracy": 0.5238364037669937,
+      "F1-Score (Macro)": 0.5190574105749483,
+      "Recall by class": [
+        0.8814776808619805,
+        0.18125960061443933,
+        0.5087719298245614
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.510099971180095,
+      "F1-Score (Macro)": 0.5070005712095905,
+      "Recall by class": [
+        0.9189327860441252,
+        0.13517665130568357,
+        0.47619047619047616
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6948982994331444,
+      "Balanced accuracy": 0.4948387508822924,
+      "F1-Score (Macro)": 0.4909430973178968,
+      "Recall by class": [
+        0.9466393022062596,
+        0.0967741935483871,
+        0.44110275689223055
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6935645215071691,
+      "Balanced accuracy": 0.47359996177072716,
+      "F1-Score (Macro)": 0.46134996413399326,
+      "Recall by class": [
+        0.9687018984094408,
+        0.04608294930875576,
+        0.40601503759398494
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6875625208402801,
+      "Balanced accuracy": 0.4471619749595221,
+      "F1-Score (Macro)": 0.43282408370214775,
+      "Recall by class": [
+        0.9805028219599795,
+        0.027649769585253458,
+        0.3333333333333333
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6788929643214405,
+      "Balanced accuracy": 0.4179917455577517,
+      "F1-Score (Macro)": 0.3959002549323853,
+      "Recall by class": [
+        0.9902514109799897,
+        0.0030721966205837174,
+        0.2606516290726817
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6085361787262421,
+      "Balanced accuracy": 0.5451141854094568,
+      "F1-Score (Macro)": 0.518414575167474,
+      "Recall by class": [
+        0.7060030785017958,
+        0.3102918586789555,
+        0.6190476190476191
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6438812937645882,
+      "Balanced accuracy": 0.5440348666233518,
+      "F1-Score (Macro)": 0.5274430959392565,
+      "Recall by class": [
+        0.7829656233966137,
+        0.2626728110599078,
+        0.5864661654135338
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6618872957652551,
+      "Balanced accuracy": 0.5283530939045368,
+      "F1-Score (Macro)": 0.5193951177877038,
+      "Recall by class": [
+        0.8394048229861467,
+        0.20430107526881722,
+        0.5413533834586466
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6765588529509836,
+      "Balanced accuracy": 0.5120721359609266,
+      "F1-Score (Macro)": 0.509411924041819,
+      "Recall by class": [
+        0.8866085171883017,
+        0.16589861751152074,
+        0.48370927318295737
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6882294098032677,
+      "Balanced accuracy": 0.5026185074618775,
+      "F1-Score (Macro)": 0.502317101227819,
+      "Recall by class": [
+        0.9209851205746536,
+        0.1382488479262673,
+        0.44862155388471175
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6925641880626876,
+      "Balanced accuracy": 0.4797245130679803,
+      "F1-Score (Macro)": 0.48088016033569964,
+      "Recall by class": [
+        0.952796305797845,
+        0.10291858678955453,
+        0.38345864661654133
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "original checkpoint, prior adjustment",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6835611870623541,
+      "Balanced accuracy": 0.4435807737121981,
+      "F1-Score (Macro)": 0.43705815298193307,
+      "Recall by class": [
+        0.9717804002052335,
+        0.05069124423963134,
+        0.3082706766917293
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6705568522840947,
+      "Balanced accuracy": 0.5120450624235161,
+      "F1-Score (Macro)": 0.5106293267751559,
+      "Recall by class": [
+        0.8732683427398666,
+        0.17665130568356374,
+        0.48621553884711777
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6828942980993664,
+      "Balanced accuracy": 0.5005640712062794,
+      "F1-Score (Macro)": 0.4998076529682116,
+      "Recall by class": [
+        0.9117496151872755,
+        0.141321044546851,
+        0.44862155388471175
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.691563854618206,
+      "Balanced accuracy": 0.49323416675443443,
+      "F1-Score (Macro)": 0.4936066297273687,
+      "Recall by class": [
+        0.9384299640841457,
+        0.1152073732718894,
+        0.42606516290726815
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6878959653217739,
+      "Balanced accuracy": 0.4691988526848771,
+      "F1-Score (Macro)": 0.464871859778282,
+      "Recall by class": [
+        0.9563878912262699,
+        0.07526881720430108,
+        0.37593984962406013
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6855618539513171,
+      "Balanced accuracy": 0.4488814626092809,
+      "F1-Score (Macro)": 0.439211176582263,
+      "Recall by class": [
+        0.9728065674704977,
+        0.043010752688172046,
+        0.3308270676691729
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6805601867289096,
+      "Balanced accuracy": 0.4252731305801924,
+      "F1-Score (Macro)": 0.4113428581733742,
+      "Recall by class": [
+        0.9846074910210364,
+        0.02304147465437788,
+        0.2681704260651629
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 1",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6752250750250083,
+      "Balanced accuracy": 0.40255201690041376,
+      "F1-Score (Macro)": 0.3808234831783543,
+      "Recall by class": [
+        0.9933299127757824,
+        0.013824884792626729,
+        0.20050125313283207
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6715571857285761,
+      "Balanced accuracy": 0.5265808833752345,
+      "F1-Score (Macro)": 0.5193691226472569,
+      "Recall by class": [
+        0.8619805028219599,
+        0.1889400921658986,
+        0.5288220551378446
+      ]
+    },
+    "eligible": true
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6808936312104035,
+      "Balanced accuracy": 0.5044592038087461,
+      "F1-Score (Macro)": 0.4985561395253026,
+      "Recall by class": [
+        0.9066187788609543,
+        0.130568356374808,
+        0.47619047619047616
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6895631877292431,
+      "Balanced accuracy": 0.49310770374465046,
+      "F1-Score (Macro)": 0.4860879430297563,
+      "Recall by class": [
+        0.9374037968188815,
+        0.09831029185867896,
+        0.44360902255639095
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6912304101367123,
+      "Balanced accuracy": 0.47918763292978966,
+      "F1-Score (Macro)": 0.47126448872301846,
+      "Recall by class": [
+        0.9558748075936377,
+        0.0706605222734255,
+        0.41102756892230574
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6835611870623541,
+      "Balanced accuracy": 0.4477848322456284,
+      "F1-Score (Macro)": 0.4327614716421054,
+      "Recall by class": [
+        0.9717804002052335,
+        0.030721966205837174,
+        0.3408521303258145
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6832277425808603,
+      "Balanced accuracy": 0.4299280921038977,
+      "F1-Score (Macro)": 0.41364006263851333,
+      "Recall by class": [
+        0.987172909184197,
+        0.016897081413210446,
+        0.2857142857142857
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 2",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6755585195065021,
+      "Balanced accuracy": 0.4050220001528451,
+      "F1-Score (Macro)": 0.38241566451364656,
+      "Recall by class": [
+        0.9928168291431503,
+        0.009216589861751152,
+        0.21303258145363407
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6688896298766256,
+      "Balanced accuracy": 0.5181396364842493,
+      "F1-Score (Macro)": 0.5104212261862734,
+      "Recall by class": [
+        0.8660851718830169,
+        0.17204301075268819,
+        0.5162907268170426
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6855618539513171,
+      "Balanced accuracy": 0.5105341848140602,
+      "F1-Score (Macro)": 0.5051798736392855,
+      "Recall by class": [
+        0.9102103642893792,
+        0.13517665130568357,
+        0.48621553884711777
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6892297432477492,
+      "Balanced accuracy": 0.492272281856597,
+      "F1-Score (Macro)": 0.4856472654938128,
+      "Recall by class": [
+        0.9374037968188815,
+        0.09831029185867896,
+        0.44110275689223055
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.47649272361348816,
+      "F1-Score (Macro)": 0.4677772471917581,
+      "Recall by class": [
+        0.9558748075936377,
+        0.06758832565284179,
+        0.40601503759398494
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6862287429143048,
+      "Balanced accuracy": 0.45418004978129406,
+      "F1-Score (Macro)": 0.4413129130904266,
+      "Recall by class": [
+        0.9707542329399692,
+        0.03840245775729647,
+        0.3533834586466165
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6845615205068356,
+      "Balanced accuracy": 0.43229961230224306,
+      "F1-Score (Macro)": 0.41806604602343206,
+      "Recall by class": [
+        0.987172909184197,
+        0.021505376344086023,
+        0.2882205513784461
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 3",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6748916305435145,
+      "Balanced accuracy": 0.40365692972009737,
+      "F1-Score (Macro)": 0.37932871567948584,
+      "Recall by class": [
+        0.9933299127757824,
+        0.004608294930875576,
+        0.21303258145363407
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6652217405801933,
+      "Balanced accuracy": 0.5342321996642135,
+      "F1-Score (Macro)": 0.5168411033774934,
+      "Recall by class": [
+        0.8455618265777322,
+        0.1781874039938556,
+        0.5789473684210527
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6782260753584528,
+      "Balanced accuracy": 0.5180662696867516,
+      "F1-Score (Macro)": 0.5052739548960329,
+      "Recall by class": [
+        0.8902001026167266,
+        0.13517665130568357,
+        0.5288220551378446
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6892297432477492,
+      "Balanced accuracy": 0.503225975142704,
+      "F1-Score (Macro)": 0.49085000790248684,
+      "Recall by class": [
+        0.9291944586967675,
+        0.0967741935483871,
+        0.48370927318295737
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6885628542847616,
+      "Balanced accuracy": 0.4817529266487027,
+      "F1-Score (Macro)": 0.46672699906546794,
+      "Recall by class": [
+        0.9502308876346844,
+        0.06144393241167435,
+        0.43358395989974935
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6885628542847616,
+      "Balanced accuracy": 0.46862989358509677,
+      "F1-Score (Macro)": 0.4499775489134601,
+      "Recall by class": [
+        0.9651103129810159,
+        0.03225806451612903,
+        0.40852130325814534
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6842280760253417,
+      "Balanced accuracy": 0.43774950985213357,
+      "F1-Score (Macro)": 0.42045095011005174,
+      "Recall by class": [
+        0.9830682401231401,
+        0.016897081413210446,
+        0.3132832080200501
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 4",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6792264088029343,
+      "Balanced accuracy": 0.41683398541427685,
+      "F1-Score (Macro)": 0.3944210518062028,
+      "Recall by class": [
+        0.9917906618778861,
+        0.0030721966205837174,
+        0.2556390977443609
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6722240746915639,
+      "Balanced accuracy": 0.5199203783580778,
+      "F1-Score (Macro)": 0.5163240824284512,
+      "Recall by class": [
+        0.8691636736788096,
+        0.18433179723502305,
+        0.506265664160401
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6842280760253417,
+      "Balanced accuracy": 0.5045877685435999,
+      "F1-Score (Macro)": 0.5034458239449425,
+      "Recall by class": [
+        0.9107234479220113,
+        0.1443932411674347,
+        0.45864661654135336
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6905635211737245,
+      "Balanced accuracy": 0.4923448466800549,
+      "F1-Score (Macro)": 0.4902243584983956,
+      "Recall by class": [
+        0.9384299640841457,
+        0.10752688172043011,
+        0.43107769423558895
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6908969656552184,
+      "Balanced accuracy": 0.47501262521459203,
+      "F1-Score (Macro)": 0.4687770358173761,
+      "Recall by class": [
+        0.9589533093894305,
+        0.06758832565284179,
+        0.39849624060150374
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6862287429143048,
+      "Balanced accuracy": 0.4461897058805839,
+      "F1-Score (Macro)": 0.43409336594250564,
+      "Recall by class": [
+        0.9774243201641868,
+        0.03533026113671275,
+        0.3258145363408521
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6818939646548849,
+      "Balanced accuracy": 0.42459322252015563,
+      "F1-Score (Macro)": 0.4080783290679196,
+      "Recall by class": [
+        0.9887121600820934,
+        0.016897081413210446,
+        0.2681704260651629
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 5",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6725575191730577,
+      "Balanced accuracy": 0.39748558738576695,
+      "F1-Score (Macro)": 0.3721658543628461,
+      "Recall by class": [
+        0.9933299127757824,
+        0.006144393241167435,
+        0.19298245614035087
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 6",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6672224074691564,
+      "Balanced accuracy": 0.5229230382985607,
+      "F1-Score (Macro)": 0.5113844515398842,
+      "Recall by class": [
+        0.8594150846587993,
+        0.17050691244239632,
+        0.5388471177944862
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 6",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6835611870623541,
+      "Balanced accuracy": 0.5121655935908337,
+      "F1-Score (Macro)": 0.5043335029164709,
+      "Recall by class": [
+        0.905079527963058,
+        0.13517665130568357,
+        0.49624060150375937
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 6",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6878959653217739,
+      "Balanced accuracy": 0.49392235727050243,
+      "F1-Score (Macro)": 0.48625422747539343,
+      "Recall by class": [
+        0.9332991277578245,
+        0.09984639016897082,
+        0.44862155388471175
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 6",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6902300766922308,
+      "Balanced accuracy": 0.477974923737454,
+      "F1-Score (Macro)": 0.4675967400339635,
+      "Recall by class": [
+        0.9558748075936377,
+        0.06451612903225806,
+        0.41353383458646614
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 6",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6852284094698233,
+      "Balanced accuracy": 0.452320562353046,
+      "F1-Score (Macro)": 0.4389992425464983,
+      "Recall by class": [
+        0.9707542329399692,
+        0.03533026113671275,
+        0.3508771929824561
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 6",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6845615205068356,
+      "Balanced accuracy": 0.4326230014201992,
+      "F1-Score (Macro)": 0.417687486698988,
+      "Recall by class": [
+        0.987172909184197,
+        0.019969278033794162,
+        0.2907268170426065
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 6",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6748916305435145,
+      "Balanced accuracy": 0.4039979346126506,
+      "F1-Score (Macro)": 0.3799019654259264,
+      "Recall by class": [
+        0.9928168291431503,
+        0.006144393241167435,
+        0.21303258145363407
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 7",
+    "exponent": 0,
+    "multipliers": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "validation": {
+      "Accuracy": 0.6672224074691564,
+      "Balanced accuracy": 0.5259392350077486,
+      "F1-Score (Macro)": 0.5136321616406452,
+      "Recall by class": [
+        0.8563365828630066,
+        0.17511520737327188,
+        0.5463659147869674
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 7",
+    "exponent": 0.15,
+    "multipliers": [
+      0.9392905777495058,
+      0.7988378182911757,
+      0.7253745984092064
+    ],
+    "validation": {
+      "Accuracy": 0.6805601867289096,
+      "Balanced accuracy": 0.5129252980678247,
+      "F1-Score (Macro)": 0.5029743364064391,
+      "Recall by class": [
+        0.8994356080041047,
+        0.130568356374808,
+        0.5087719298245614
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 7",
+    "exponent": 0.3,
+    "multipliers": [
+      0.8822667894490003,
+      0.6381418599322054,
+      0.5261683080173174
+    ],
+    "validation": {
+      "Accuracy": 0.6892297432477492,
+      "Balanced accuracy": 0.4986104486183321,
+      "F1-Score (Macro)": 0.49046334219264276,
+      "Recall by class": [
+        0.9317598768599281,
+        0.10291858678955453,
+        0.46115288220551376
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 7",
+    "exponent": 0.45,
+    "multipliers": [
+      0.828704882390753,
+      0.509771851148516,
+      0.38166912512371315
+    ],
+    "validation": {
+      "Accuracy": 0.6898966322107369,
+      "Balanced accuracy": 0.47983230944063243,
+      "F1-Score (Macro)": 0.47041681267914875,
+      "Recall by class": [
+        0.952796305797845,
+        0.0706605222734255,
+        0.41604010025062654
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 7",
+    "exponent": 0.6,
+    "multipliers": [
+      0.7783946877646466,
+      0.40722503339773447,
+      0.2768530883618066
+    ],
+    "validation": {
+      "Accuracy": 0.6872290763587863,
+      "Balanced accuracy": 0.460672679508511,
+      "F1-Score (Macro)": 0.4472739041887978,
+      "Recall by class": [
+        0.9676757311441765,
+        0.03840245775729647,
+        0.37593984962406013
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 7",
+    "exponent": 0.8,
+    "multipliers": [
+      0.7160331862475668,
+      0.30184173609573284,
+      0.18043986633430434
+    ],
+    "validation": {
+      "Accuracy": 0.6832277425808603,
+      "Balanced accuracy": 0.43325006215644485,
+      "F1-Score (Macro)": 0.4170797028283357,
+      "Recall by class": [
+        0.9846074910210364,
+        0.016897081413210446,
+        0.2982456140350877
+      ]
+    },
+    "eligible": false
+  },
+  {
+    "model": "CNN-LSTM",
+    "candidate": "fine-tuned sqrt weights epoch 7",
+    "exponent": 1.0,
+    "multipliers": [
+      0.6586678093605676,
+      0.22372994334142743,
+      0.11760224729800504
+    ],
+    "validation": {
+      "Accuracy": 0.6765588529509836,
+      "Balanced accuracy": 0.4088218222888303,
+      "F1-Score (Macro)": 0.3853500404326078,
+      "Recall by class": [
+        0.9928168291431503,
+        0.0030721966205837174,
+        0.23057644110275688
+      ]
+    },
+    "eligible": false
+  }
+]

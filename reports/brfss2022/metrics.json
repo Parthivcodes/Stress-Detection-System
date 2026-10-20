@@ -1,0 +1,170 @@
+[
+  {
+    "Model": "Training-prior baseline",
+    "Accuracy": 0.6485495165055019,
+    "Balanced accuracy": 0.3333333333333333,
+    "F1-Score (Macro)": 0.2622707659115426,
+    "ROC-AUC (Macro)": 0.5,
+    "confusion_matrix": [
+      [
+        3890,
+        0,
+        0
+      ],
+      [
+        1400,
+        0,
+        0
+      ],
+      [
+        708,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "Model": "Logistic Regression",
+    "Accuracy": 0.5885295098366122,
+    "Balanced accuracy": 0.5490960140755358,
+    "F1-Score (Macro)": 0.5014504471180299,
+    "ROC-AUC (Macro)": 0.7416221441524135,
+    "confusion_matrix": [
+      [
+        2599,
+        794,
+        497
+      ],
+      [
+        475,
+        481,
+        444
+      ],
+      [
+        110,
+        148,
+        450
+      ]
+    ]
+  },
+  {
+    "Model": "Random Forest",
+    "Accuracy": 0.6085361787262421,
+    "Balanced accuracy": 0.5582216115354105,
+    "F1-Score (Macro)": 0.523357314365539,
+    "ROC-AUC (Macro)": 0.7463532658135944,
+    "confusion_matrix": [
+      [
+        2693,
+        852,
+        345
+      ],
+      [
+        503,
+        529,
+        368
+      ],
+      [
+        117,
+        163,
+        428
+      ]
+    ]
+  },
+  {
+    "Model": "XGBoost",
+    "Accuracy": 0.5965321773924641,
+    "Balanced accuracy": 0.5637971959585397,
+    "F1-Score (Macro)": 0.5201705879784297,
+    "ROC-AUC (Macro)": 0.7448009778802028,
+    "confusion_matrix": [
+      [
+        2576,
+        913,
+        401
+      ],
+      [
+        460,
+        553,
+        387
+      ],
+      [
+        95,
+        164,
+        449
+      ]
+    ]
+  },
+  {
+    "Model": "1D CNN",
+    "Accuracy": 0.6362120706902301,
+    "Balanced accuracy": 0.5146443319895456,
+    "F1-Score (Macro)": 0.507569840482677,
+    "ROC-AUC (Macro)": 0.7330293248085834,
+    "confusion_matrix": [
+      [
+        3110,
+        557,
+        223
+      ],
+      [
+        796,
+        362,
+        242
+      ],
+      [
+        185,
+        179,
+        344
+      ]
+    ]
+  },
+  {
+    "Model": "LSTM",
+    "Accuracy": 0.6217072357452484,
+    "Balanced accuracy": 0.557521420721717,
+    "F1-Score (Macro)": 0.5308956784476225,
+    "ROC-AUC (Macro)": 0.7509033783550234,
+    "confusion_matrix": [
+      [
+        2792,
+        800,
+        298
+      ],
+      [
+        544,
+        528,
+        328
+      ],
+      [
+        119,
+        180,
+        409
+      ]
+    ]
+  },
+  {
+    "Model": "CNN-LSTM",
+    "Accuracy": 0.6173724574858286,
+    "Balanced accuracy": 0.5585597024163972,
+    "F1-Score (Macro)": 0.5251188674066586,
+    "ROC-AUC (Macro)": 0.7469431119970463,
+    "confusion_matrix": [
+      [
+        2769,
+        762,
+        359
+      ],
+      [
+        526,
+        509,
+        365
+      ],
+      [
+        133,
+        150,
+        425
+      ]
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "source": "https://www.cdc.gov/brfss/annual_data/2022/files/LLCP2022ASC.zip",
+  "sha256": "ce4e8453afd8685977a13e56da85418eff83e628547604b00e3463eb60c2fc74",
+  "source_records": 445132,
+  "unique_source_keys": 445132,
+  "eligible_complete_cases": 185816,
+  "invalid_per_field_overlapping": {
+    "bmi": 48806,
+    "income": 96047,
+    "stress_raw": 195599,
+    "support": 195186,
+    "unhealthy_days": 10927,
+    "general_health": 1198,
+    "sleep_duration": 5453,
+    "employment": 11240,
+    "education": 2383,
+    "marital": 4802,
+    "exercise": 1093
+  },
+  "raw_stress_counts": {
+    "4": 69465,
+    "5": 94681,
+    "3": 55913,
+    "7": 794,
+    "-1": 193921,
+    "1": 12295,
+    "2": 17179,
+    "9": 884
+  },
+  "sample_records": 30000,
+  "unique_sample_keys": 30000,
+  "class_counts": {
+    "0": 19673,
+    "1": 6750,
+    "2": 3577
+  },
+  "splits": {
+    "train": 21003,
+    "test": 5998,
+    "validation": 2999
+  },
+  "seed": 42,
+  "identical_profiles_kept_in_same_split": true
+}

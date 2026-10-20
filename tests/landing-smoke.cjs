@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 const path = require('node:path');
-const code = fs.readFileSync(path.join(__dirname, '../sechenov_ui/landing.js'), 'utf8');
+const code = fs.readFileSync(path.join(__dirname, '../frontend/landing.js'), 'utf8');
 function boot({reduce=false,mobile=false,webgl=true}={}) {
   const elements = new Map(), frames = new Map(); let nextFrame=0, geometry;
   class Element {

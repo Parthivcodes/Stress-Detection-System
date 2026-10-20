@@ -1,0 +1,4 @@
+{
+  "version": "brfss2022_tuned",
+  "note": "Validation-selected accuracy-oriented version. Original BRFSS models remain available; see reports/brfss2022_tuned/README.md for minority-recall trade-offs."
+}

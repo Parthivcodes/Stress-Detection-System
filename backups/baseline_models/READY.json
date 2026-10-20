@@ -1,0 +1,12 @@
+{
+  "models": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "1D CNN",
+    "LSTM",
+    "CNN-LSTM"
+  ],
+  "dataset_sha256": "431ef76edb2038773f4d70ff6ba67f4b189e2a43bcab1145caea3f136289f5b0",
+  "legacy_verified_unchanged": true
+}

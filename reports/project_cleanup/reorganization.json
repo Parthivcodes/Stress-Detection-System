@@ -1,0 +1,698 @@
+[
+  {
+    "before": "data/Sleep_health_and_lifestyle_dataset.csv",
+    "after": "data/original_sleep_dataset/sleep_lifestyle.csv",
+    "sha256": "1EFE7B6F781FF88078D08D81FE136CFF98B1B0C32560F35F8650CA5984B77841",
+    "bytes": 24137
+  },
+  {
+    "before": "data/brfss2022/respondents_30000.csv",
+    "after": "data/baseline_survey_dataset/respondents_30000.csv",
+    "sha256": "431EF76EDB2038773F4D70FF6BA67F4B189E2A43BCAB1145CAEA3F136289F5B0",
+    "bytes": 2886111
+  },
+  {
+    "before": "data/brfss2022/raw/codebook.zip",
+    "after": "data/baseline_survey_dataset/raw/codebook.zip",
+    "sha256": "A2B6852972131929E9DC6D1A161A48A24429B61917E7E678E6D1239477796250",
+    "bytes": 89270
+  },
+  {
+    "before": "data/brfss2022/raw/LLCP2022ASC.zip",
+    "after": "data/baseline_survey_dataset/raw/LLCP2022ASC.zip",
+    "sha256": "CE4E8453AFD8685977A13E56DA85418EFF83E628547604B00E3463EB60C2FC74",
+    "bytes": 52345542
+  },
+  {
+    "before": "data/brfss2022/raw/codebook/USCODE22_LLCP_102523.HTML",
+    "after": "data/baseline_survey_dataset/raw/codebook/USCODE22_LLCP_102523.HTML",
+    "sha256": "93FFFCCA27ACA85DA9BBF583D31849841E84D1D27C06AE7D2E9CDDF7CAA82317",
+    "bytes": 1865637
+  },
+  {
+    "before": "data/brfss2022_expanded/respondents.csv",
+    "after": "data/expanded_survey_dataset/respondents.csv",
+    "sha256": "77A74029DB2EF51193B8E58A4C3FF56FB87B99C576D4F75A2DB827E325DCADBE",
+    "bytes": 34664696
+  },
+  {
+    "before": "models/brfss2022_expanded/cnn_lstm_net.pt",
+    "after": "models/current_models/cnn_lstm_net.pt",
+    "sha256": "FAEAAD7C5AF07E8C600D53177B32A27DD92442FF5BF8C810BAF0CB655A01670A",
+    "bytes": 115743
+  },
+  {
+    "before": "models/brfss2022_expanded/conv1d_net.pt",
+    "after": "models/current_models/conv1d_net.pt",
+    "sha256": "B609B805369E4D67783610C3863EBEB8C8A6AAE6653C3455316778BAE47145E9",
+    "bytes": 99765
+  },
+  {
+    "before": "models/brfss2022_expanded/logistic_regression.joblib",
+    "after": "models/current_models/logistic_regression.joblib",
+    "sha256": "0A7B7F35C779FD0DBC859CCEE4EA68B5E005AE621397861AEAD7863357D92977",
+    "bytes": 2671
+  },
+  {
+    "before": "models/brfss2022_expanded/lstm_net.pt",
+    "after": "models/current_models/lstm_net.pt",
+    "sha256": "30458A29A67BA26CAC888246C8ECFF72556EC2E0EBBA35D6673E6B20A246EDDA",
+    "bytes": 63625
+  },
+  {
+    "before": "models/brfss2022_expanded/metrics.json",
+    "after": "models/current_models/metrics.json",
+    "sha256": "2B0E678404E3265F8983468419D9573898C7AF65DEFBC7205A531BF7ACEBD7E6",
+    "bytes": 3774
+  },
+  {
+    "before": "models/brfss2022_expanded/preprocessor.joblib",
+    "after": "models/current_models/preprocessor.joblib",
+    "sha256": "B4CCE3086CD3499CF29F0AA5B99336A4DDF0C9CD76FC9DB0159A270FEF08CC97",
+    "bytes": 4810
+  },
+  {
+    "before": "models/brfss2022_expanded/random_forest.joblib",
+    "after": "models/current_models/random_forest.joblib",
+    "sha256": "7F719A1A0EBFD87D476E82A0CF45A5E4324E04483F312A3AFDD9FCCEC464F6A6",
+    "bytes": 188145217
+  },
+  {
+    "before": "models/brfss2022_expanded/READY.json",
+    "after": "models/current_models/READY.json",
+    "sha256": "24259DC6126931A7F69FA4B7FAB2A3E79FBF38490BBC381705CAD68094684A67",
+    "bytes": 563
+  },
+  {
+    "before": "models/brfss2022_expanded/schema.json",
+    "after": "models/current_models/schema.json",
+    "sha256": "009170C197656BC754B6FFBE0BABFCC1F5256DEB7A45B5243FC765325B063CEF",
+    "bytes": 1448
+  },
+  {
+    "before": "models/brfss2022_expanded/selection.json",
+    "after": "models/current_models/selection.json",
+    "sha256": "A089DED428672DC1974F0BDF92045556A61E25FA3ACE870AF4F1C476FDC05F2D",
+    "bytes": 5249
+  },
+  {
+    "before": "models/brfss2022_expanded/xgboost.joblib",
+    "after": "models/current_models/xgboost.joblib",
+    "sha256": "104C2B08AEA58DE52D33869D1411A0305DF89710B27AF7EB793F3240F233E521",
+    "bytes": 2758841
+  },
+  {
+    "before": "models/brfss_active.json",
+    "after": "models/active_model.json",
+    "sha256": "0830885A8BAC583E344CCC1DEA77377FE3728F83C773A8B1371E2BAEB395A9D5",
+    "bytes": 224
+  },
+  {
+    "before": "backups/models/legacy/cnn_lstm_net.pt",
+    "after": "backups/original_models/cnn_lstm_net.pt",
+    "sha256": "F2A179427E5C88F96F1392E1AB7BA5F986521C509C34CD078DB34497B0C5C8D6",
+    "bytes": 115743
+  },
+  {
+    "before": "backups/models/legacy/conv1d_net.pt",
+    "after": "backups/original_models/conv1d_net.pt",
+    "sha256": "B58EA2910BEE11C5F1A2923CE27E9B0C33C7E0944D858FAF8BA69B34272530ED",
+    "bytes": 99765
+  },
+  {
+    "before": "backups/models/legacy/feature_cols.json",
+    "after": "backups/original_models/feature_cols.json",
+    "sha256": "EA97611F92021B0C51C9A122BC57227A13EC6385E688C53BFB2758D96F3D1696",
+    "bytes": 860
+  },
+  {
+    "before": "backups/models/legacy/logistic_regression.joblib",
+    "after": "backups/original_models/logistic_regression.joblib",
+    "sha256": "352FE4F164F1D201B4DC11B2337E9D242D8B3DAC9D2F487FC22909280B2A2773",
+    "bytes": 1727
+  },
+  {
+    "before": "backups/models/legacy/lstm_net.pt",
+    "after": "backups/original_models/lstm_net.pt",
+    "sha256": "5E7E8E731460D74282C4C4DB29C8836D35CDB47779CDD5CC9EBE4D1CD8389F78",
+    "bytes": 59145
+  },
+  {
+    "before": "backups/models/legacy/random_forest.joblib",
+    "after": "backups/original_models/random_forest.joblib",
+    "sha256": "A79123477337B6B590032A7CF5FD019DAC8CE9CEBD524684D0CB6F53287D9DD9",
+    "bytes": 440849
+  },
+  {
+    "before": "backups/models/legacy/scaler.pkl",
+    "after": "backups/original_models/scaler.pkl",
+    "sha256": "C54A1D071D15CFA81313F3E6A5016B13095ACDA9FBED8C118A5CA6D752DE26EE",
+    "bytes": 1431
+  },
+  {
+    "before": "backups/models/legacy/xgboost.joblib",
+    "after": "backups/original_models/xgboost.joblib",
+    "sha256": "0CE80A44467DD1553BDDD58BA8597CB7E18F0340A4810B17D9DA8853A8378BBA",
+    "bytes": 342622
+  },
+  {
+    "before": "backups/models/brfss2022/cnn_lstm_net.pt",
+    "after": "backups/baseline_models/cnn_lstm_net.pt",
+    "sha256": "3B446EFD87D198227B09A525B98379E81B87551576C5C90B136DD9493E7B7E9B",
+    "bytes": 115743
+  },
+  {
+    "before": "backups/models/brfss2022/conv1d_net.pt",
+    "after": "backups/baseline_models/conv1d_net.pt",
+    "sha256": "8F50D2E60999A81D0818132C06F07A1932AD50A01CE6B31913A57EDC846199AE",
+    "bytes": 99765
+  },
+  {
+    "before": "backups/models/brfss2022/logistic_regression.joblib",
+    "after": "backups/baseline_models/logistic_regression.joblib",
+    "sha256": "8CA1E7C8BBC859FBE2864EE4EE1A6B880AD9D1AC9FF9554AACD69D00E8245F51",
+    "bytes": 2095
+  },
+  {
+    "before": "backups/models/brfss2022/lstm_net.pt",
+    "after": "backups/baseline_models/lstm_net.pt",
+    "sha256": "9C9592E66C951FB538886CF0F5ECC24710700471CF226678CCDF145D2092107C",
+    "bytes": 61065
+  },
+  {
+    "before": "backups/models/brfss2022/metrics.json",
+    "after": "backups/baseline_models/metrics.json",
+    "sha256": "32A80B459C68B5568294A62E1BEAF8E7B0BF071627DB0FEDDA15B0F50DC461B2",
+    "bytes": 2401
+  },
+  {
+    "before": "backups/models/brfss2022/preprocessor.joblib",
+    "after": "backups/baseline_models/preprocessor.joblib",
+    "sha256": "32A465AE3433786CEBF13F9B0A6B280413E0712210909228796F165FBC236788",
+    "bytes": 3796
+  },
+  {
+    "before": "backups/models/brfss2022/random_forest.joblib",
+    "after": "backups/baseline_models/random_forest.joblib",
+    "sha256": "3E7B06786C7FA23F011973EEA982ED09CBE8CDB2634CD0DB3AA11070DE11FDC6",
+    "bytes": 16970785
+  },
+  {
+    "before": "backups/models/brfss2022/READY.json",
+    "after": "backups/baseline_models/READY.json",
+    "sha256": "1047FAAF38FBFEC628E5D29C04117D790FB419B924FB9369FBE635644B7A1D13",
+    "bytes": 250
+  },
+  {
+    "before": "backups/models/brfss2022/schema.json",
+    "after": "backups/baseline_models/schema.json",
+    "sha256": "5D2CB952A2E38B53CEC82FEC489A3655574BB29B24E9AF6587004F4E35ED59BA",
+    "bytes": 980
+  },
+  {
+    "before": "backups/models/brfss2022/xgboost.joblib",
+    "after": "backups/baseline_models/xgboost.joblib",
+    "sha256": "80D1504196FD91CBFCD70CADA7977DFB88F23B1F7017FBB0ED93C2BD05B290FB",
+    "bytes": 1023896
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/cnn_lstm_net.pt",
+    "after": "backups/tuned_models/cnn_lstm_net.pt",
+    "sha256": "C3D9A8B51385F98796AF24B75EEA93ADEBC058F767957D0BA460893A6567553C",
+    "bytes": 115743
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/conv1d_net.pt",
+    "after": "backups/tuned_models/conv1d_net.pt",
+    "sha256": "8F50D2E60999A81D0818132C06F07A1932AD50A01CE6B31913A57EDC846199AE",
+    "bytes": 99765
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/logistic_regression.joblib",
+    "after": "backups/tuned_models/logistic_regression.joblib",
+    "sha256": "8CA1E7C8BBC859FBE2864EE4EE1A6B880AD9D1AC9FF9554AACD69D00E8245F51",
+    "bytes": 2095
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/lstm_net.pt",
+    "after": "backups/tuned_models/lstm_net.pt",
+    "sha256": "9C9592E66C951FB538886CF0F5ECC24710700471CF226678CCDF145D2092107C",
+    "bytes": 61065
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/metrics.json",
+    "after": "backups/tuned_models/metrics.json",
+    "sha256": "7F298C6051661DF02A4DAE515999BD3FF51EA898A1A40210CFC36EAD3BA3E0F8",
+    "bytes": 3057
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/preprocessor.joblib",
+    "after": "backups/tuned_models/preprocessor.joblib",
+    "sha256": "32A465AE3433786CEBF13F9B0A6B280413E0712210909228796F165FBC236788",
+    "bytes": 3796
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/random_forest.joblib",
+    "after": "backups/tuned_models/random_forest.joblib",
+    "sha256": "E0813C69C2818922D0D6C55CCF8310E47563A2663C3CA7A31AAB122EAC2AAA33",
+    "bytes": 16971041
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/READY.json",
+    "after": "backups/tuned_models/READY.json",
+    "sha256": "FEAFCD5430E1AD09B4C95CD0CE39E6947383AE18CE8A4FD43A8E3687781665F9",
+    "bytes": 366
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/schema.json",
+    "after": "backups/tuned_models/schema.json",
+    "sha256": "5D2CB952A2E38B53CEC82FEC489A3655574BB29B24E9AF6587004F4E35ED59BA",
+    "bytes": 980
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/selection.json",
+    "after": "backups/tuned_models/selection.json",
+    "sha256": "3258C73311829303F470855AC9B8B517EE355D2664F8020A861CDEBAC607B527",
+    "bytes": 3002
+  },
+  {
+    "before": "backups/models/brfss2022_tuned/xgboost.joblib",
+    "after": "backups/tuned_models/xgboost.joblib",
+    "sha256": "80D1504196FD91CBFCD70CADA7977DFB88F23B1F7017FBB0ED93C2BD05B290FB",
+    "bytes": 1023896
+  },
+  {
+    "before": "backups/models/brfss_active.before-expanded.json",
+    "after": "backups/previous_active_model.json",
+    "sha256": "8A1875FA5344E85B9633CC6A75AD7A476D28A5FFA3DAB41F5283106B5ED62E12",
+    "bytes": 205
+  },
+  {
+    "before": "backups/models/README.md",
+    "after": "backups/README.md",
+    "sha256": "0FF58B0B4076E6986164797E8BD82008D8081235B56AD455BA988798F869A6A7",
+    "bytes": 1863
+  },
+  {
+    "before": "sechenov_ui/benchmarks.json",
+    "after": "frontend/benchmarks.json",
+    "sha256": "A3B394D727C5A0282FBB706E78F56FDB4ACDFF58D504C5A1E6A998A255AF520F",
+    "bytes": 2518
+  },
+  {
+    "before": "sechenov_ui/index.html",
+    "after": "frontend/index.html",
+    "sha256": "65E0EC4BB2D4DEE99AA85F3D94EAB347335DD2E3845CEFB8DA2956FFA50A8102",
+    "bytes": 9832
+  },
+  {
+    "before": "sechenov_ui/landing.css",
+    "after": "frontend/landing.css",
+    "sha256": "F9EE3998DF12ADBE6197F94BFE9402B9AF728ED64B8827D1B36A52D352C23445",
+    "bytes": 9457
+  },
+  {
+    "before": "sechenov_ui/landing.js",
+    "after": "frontend/landing.js",
+    "sha256": "CB897CFF71CD6AF08F3D1EED134A760D5FB9D6C0FCD359A4DE7C074A85A8519C",
+    "bytes": 12969
+  },
+  {
+    "before": "sechenov_ui/prediction.css",
+    "after": "frontend/prediction.css",
+    "sha256": "4A13C2281250A481D8FBDDD3488A9F3A1D3E2EA10EEA727B43FB5387664DD487",
+    "bytes": 12048
+  },
+  {
+    "before": "sechenov_ui/prediction.js",
+    "after": "frontend/prediction.js",
+    "sha256": "3E277924B8A8FE87D86A749E79C6E7240B8D516612DBAE19622CBE00A7FB4917",
+    "bytes": 14097
+  },
+  {
+    "before": "sechenov_ui/three.min.js",
+    "after": "frontend/three.min.js",
+    "sha256": "7AE04663BB431808BC025280122162029EA3A354EFC5FCCA8BD8F95D1A1933E9",
+    "bytes": 603451
+  },
+  {
+    "before": "sechenov_ui/workspace.html",
+    "after": "frontend/workspace.html",
+    "sha256": "FA9F98EBFBF1A39FFAEFCD18FD3AA2ED35A244EB74BBBFDCD274091D68FBE25C",
+    "bytes": 489
+  },
+  {
+    "before": "sechenov_ui/fonts/instrument-serif-OFL.txt",
+    "after": "frontend/fonts/instrument-serif-OFL.txt",
+    "sha256": "129ED7618959716959F2941FDD5B49E0AD6E6C1D78726761786A00253D865521",
+    "bytes": 4405
+  },
+  {
+    "before": "sechenov_ui/fonts/InstrumentSerif-Italic.ttf",
+    "after": "frontend/fonts/InstrumentSerif-Italic.ttf",
+    "sha256": "08939B8BDF534AFEC24AE0EF5E03F948940CD9A8FE08E7FECBAD040E62327385",
+    "bytes": 71592
+  },
+  {
+    "before": "sechenov_ui/fonts/InstrumentSerif-Regular.ttf",
+    "after": "frontend/fonts/InstrumentSerif-Regular.ttf",
+    "sha256": "498EFD461F6DDFCB7A111BF9A565709D2085D48201D501EAD960D93E84FFBB88",
+    "bytes": 70012
+  },
+  {
+    "before": "sechenov_ui/fonts/outfit-latin-400-normal.woff2",
+    "after": "frontend/fonts/outfit-latin-400-normal.woff2",
+    "sha256": "71F028FD2349990B3F8AA643ABE767E82E0F596BE407AE66F0004FF164121BDB",
+    "bytes": 14032
+  },
+  {
+    "before": "sechenov_ui/fonts/outfit-LICENSE.txt",
+    "after": "frontend/fonts/outfit-LICENSE.txt",
+    "sha256": "0E5FCEF5D93BFCAE273C11C00F0BB453D3B5491860E1AC8B658767B7577C938F",
+    "bytes": 4387
+  },
+  {
+    "before": "wellness-dashboard/.gitignore",
+    "after": "frontend/dashboard/.gitignore",
+    "sha256": "25F40BD7A2B2A290E367515BFA1D7C9AB9206D61235CAC049903A00366C966BC",
+    "bytes": 50
+  },
+  {
+    "before": "wellness-dashboard/index.html",
+    "after": "frontend/dashboard/index.html",
+    "sha256": "8DDE5D2ED98EED8C8903A1B95EE7D5F642DB3A22824C393E79921201C2CE2046",
+    "bytes": 429
+  },
+  {
+    "before": "wellness-dashboard/package-lock.json",
+    "after": "frontend/dashboard/package-lock.json",
+    "sha256": "12BBF223DBD9EBE0156EAFEB3FAC715B777DA586F38BD78802B1B4D2CC41E2A6",
+    "bytes": 126191
+  },
+  {
+    "before": "wellness-dashboard/package.json",
+    "after": "frontend/dashboard/package.json",
+    "sha256": "FABCAFAD2A95F6D9208E877EC2A51EFD6E5491E3690A3D666F430CA992EC5CDC",
+    "bytes": 832
+  },
+  {
+    "before": "wellness-dashboard/README.md",
+    "after": "frontend/dashboard/README.md",
+    "sha256": "3054E76C37D194DFB43AA347C6B21396256FA100F91522E63B39122AF0B71F52",
+    "bytes": 6271
+  },
+  {
+    "before": "wellness-dashboard/tsconfig.json",
+    "after": "frontend/dashboard/tsconfig.json",
+    "sha256": "152BD8302C97C2D858D55555FB2571C46C72D3344C5122DF7D951789130F58D2",
+    "bytes": 394
+  },
+  {
+    "before": "wellness-dashboard/vite.config.ts",
+    "after": "frontend/dashboard/vite.config.ts",
+    "sha256": "A86708830A4585542AD9D882ACDA4C3C2F7DD1DA3DCC6E72C9570E9935BE4E34",
+    "bytes": 202
+  },
+  {
+    "before": "wellness-dashboard/dist/index.html",
+    "after": "frontend/dashboard/dist/index.html",
+    "sha256": "46C8655059D52C84347B33A35412EAA7C8F761D7D9DB605AEFFB9101483CF150",
+    "bytes": 527
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/BodyViewer3D-D4uIVo9C.js",
+    "after": "frontend/dashboard/dist/assets/BodyViewer3D-D4uIVo9C.js",
+    "sha256": "99B414CE2646B961C862D0EE37C9400069320120E479B02D94754863E9576068",
+    "bytes": 902425
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/index-DtGDj18Y.js",
+    "after": "frontend/dashboard/dist/assets/index-DtGDj18Y.js",
+    "sha256": "11A8EE5A7A47919AC1FD0724A5F3F33A168CA7CF6CA6B485368175A2E77DB0DE",
+    "bytes": 398197
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/index-gldJgElS.css",
+    "after": "frontend/dashboard/dist/assets/index-gldJgElS.css",
+    "sha256": "DC40B7ECD40B1E5D5B607D014DEA9ABC035D474832A9F415F8228F67A86BE104",
+    "bytes": 32991
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-300-normal-AWLfuCom.woff",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-300-normal-AWLfuCom.woff",
+    "sha256": "BCC41559359A3CB79105F71979B7E70F9BBA8EE39460DB790057D3F3C0CC77EB",
+    "bytes": 18196
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-300-normal-CRYTwY6m.woff2",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-300-normal-CRYTwY6m.woff2",
+    "sha256": "EF88E74F63CE75B54CCE4D5A4087C6F180750B9EBAE6AB6E5BF2A9939BF6958F",
+    "bytes": 13956
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+    "sha256": "71F028FD2349990B3F8AA643ABE767E82E0F596BE407AE66F0004FF164121BDB",
+    "bytes": 14032
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-400-normal-DMwTpYkH.woff",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-400-normal-DMwTpYkH.woff",
+    "sha256": "F329DC36D2D9285431FB8322F5E951DEF9CAC4A42C1CADA679747F7C64B04916",
+    "bytes": 18232
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-500-normal-ClnHRwRh.woff",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-500-normal-ClnHRwRh.woff",
+    "sha256": "40083BE5D9C1935C562BFE9BE662D5A2798910DEEE9E8049509142549A995626",
+    "bytes": 17688
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-500-normal-DKnIMDSk.woff2",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-500-normal-DKnIMDSk.woff2",
+    "sha256": "FC9BFF941DEF6D924A71632BD8A93190528872EAE6414844F3C367FF948D92FD",
+    "bytes": 13528
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-ext-300-normal-BYS6Dpvq.woff2",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-ext-300-normal-BYS6Dpvq.woff2",
+    "sha256": "463EEC2E5944CE6534089376531A533EAE99B6DFAE1AF87924756FA5AF6BA1C0",
+    "bytes": 6384
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-ext-300-normal-CMIMshEd.woff",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-ext-300-normal-CMIMshEd.woff",
+    "sha256": "5C78F172CF303E7DF8FBA666F3CC1D7003DE656E6822B0F99BFC733E4A9AFF38",
+    "bytes": 8548
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-ext-400-normal-5tcqmc2S.woff2",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-ext-400-normal-5tcqmc2S.woff2",
+    "sha256": "E279FD5005B5936E4F4D20FD21E1FDD6A35D724FF576623D31E7C425C356B7AC",
+    "bytes": 6380
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-ext-400-normal-DHm7mdGe.woff",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-ext-400-normal-DHm7mdGe.woff",
+    "sha256": "A6697DAB76AB8386FC4244F9F6D3ED8639FCE59E3BE228C146D6C4586C835022",
+    "bytes": 8640
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-ext-500-normal-DrCvqoFD.woff",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-ext-500-normal-DrCvqoFD.woff",
+    "sha256": "0BEE549F28F292AC938F04FF97B235DC9FA0B42FBBD8B53A279355DA59443CD2",
+    "bytes": 8492
+  },
+  {
+    "before": "wellness-dashboard/dist/assets/outfit-latin-ext-500-normal-zeox_O30.woff2",
+    "after": "frontend/dashboard/dist/assets/outfit-latin-ext-500-normal-zeox_O30.woff2",
+    "sha256": "89894A600BEA0EC4724988D191EA32A0353BB1C9C130CBDF346654D356B1BA84",
+    "bytes": 6244
+  },
+  {
+    "before": "wellness-dashboard/src/App.tsx",
+    "after": "frontend/dashboard/src/App.tsx",
+    "sha256": "E0178317E8258410E1399C7908F495DA2E359333788A33152A08580ECC1447E7",
+    "bytes": 11148
+  },
+  {
+    "before": "wellness-dashboard/src/main.tsx",
+    "after": "frontend/dashboard/src/main.tsx",
+    "sha256": "A97126270FE692E21739BBCC545DB65B79DD1690160810DDAEFFC5C7B1507DB9",
+    "bytes": 440
+  },
+  {
+    "before": "wellness-dashboard/src/components/BodyViewer3D.tsx",
+    "after": "frontend/dashboard/src/components/BodyViewer3D.tsx",
+    "sha256": "4BD277CF8896C00A8FF358F86D4CF6FA4F7A561C4DEEEA3AE6902F3FC861F67F",
+    "bytes": 5823
+  },
+  {
+    "before": "wellness-dashboard/src/components/DotPlot.tsx",
+    "after": "frontend/dashboard/src/components/DotPlot.tsx",
+    "sha256": "D85A05E89A3871B31682C40F8DC49DB0DCB2D09E31429BED8EFB4E74866E3B1E",
+    "bytes": 1617
+  },
+  {
+    "before": "wellness-dashboard/src/components/GlassCard.tsx",
+    "after": "frontend/dashboard/src/components/GlassCard.tsx",
+    "sha256": "40C0389FED64AAE20D99199D56AE89638D59F128B9C89AC85515B4EF1B4DA9BA",
+    "bytes": 347
+  },
+  {
+    "before": "wellness-dashboard/src/components/MetricCard.tsx",
+    "after": "frontend/dashboard/src/components/MetricCard.tsx",
+    "sha256": "5C728C8E7F0712B1D83D576CEBCFC79D5A813403976C121B4260A6CD80D38A82",
+    "bytes": 1431
+  },
+  {
+    "before": "wellness-dashboard/src/components/Modal.tsx",
+    "after": "frontend/dashboard/src/components/Modal.tsx",
+    "sha256": "592D59742E39D279A4E539D94614CA185D49D376C289F4AB091E3C2C1766409A",
+    "bytes": 997
+  },
+  {
+    "before": "wellness-dashboard/src/components/ProfilePanel.tsx",
+    "after": "frontend/dashboard/src/components/ProfilePanel.tsx",
+    "sha256": "97B1E0B5F975CB64F58DEA547BEFA51AC5470FD77BD13A12D5CE6233D625E380",
+    "bytes": 4594
+  },
+  {
+    "before": "wellness-dashboard/src/components/RegionDetailCard.tsx",
+    "after": "frontend/dashboard/src/components/RegionDetailCard.tsx",
+    "sha256": "E8B8DD78C0FE849A3F0158BB304F4F7029514D17651A4EE20DBF30183E00AECF",
+    "bytes": 1172
+  },
+  {
+    "before": "wellness-dashboard/src/components/StatusChip.tsx",
+    "after": "frontend/dashboard/src/components/StatusChip.tsx",
+    "sha256": "38A56B366C54A414FC20D782B4931FF870C0A9173DF092CD07361C04D371EFAD",
+    "bytes": 493
+  },
+  {
+    "before": "wellness-dashboard/src/components/TimelineBar.tsx",
+    "after": "frontend/dashboard/src/components/TimelineBar.tsx",
+    "sha256": "F7A8AFFDD9434B07F6520ACC2860E071DF605D79196307D27C15819E4B2E0621",
+    "bytes": 1137
+  },
+  {
+    "before": "wellness-dashboard/src/data/wellness.test.ts",
+    "after": "frontend/dashboard/src/data/wellness.test.ts",
+    "sha256": "5D778855291C994CD3231B335CFCC2EF917E6DB0CD68D94E951447A7C1FC3D51",
+    "bytes": 1916
+  },
+  {
+    "before": "wellness-dashboard/src/data/wellness.ts",
+    "after": "frontend/dashboard/src/data/wellness.ts",
+    "sha256": "150DBF883D784D603BBF94739E5A20210573B450D9DBE9C8ACCEF81B67D419F4",
+    "bytes": 7032
+  },
+  {
+    "before": "wellness-dashboard/src/hooks/useAnimatedNumber.ts",
+    "after": "frontend/dashboard/src/hooks/useAnimatedNumber.ts",
+    "sha256": "F1498F385432097E9C29E9085FC2B8B1BCB23A88FCE22DFDA7ECCF9EAFC36F2C",
+    "bytes": 439
+  },
+  {
+    "before": "wellness-dashboard/src/styles/index.css",
+    "after": "frontend/dashboard/src/styles/index.css",
+    "sha256": "8EC786F5D1770B642087528CD9EAE9968423C295664078D2629EFB0541CD3A70",
+    "bytes": 23130
+  },
+  {
+    "before": "brfss_pipeline.py",
+    "after": "training/train_baseline_models.py",
+    "sha256": "EB1CFFC30498DFE927DBFC67C77EEBC7CD2131B5D8274314ECD23C564EDA2D2B",
+    "bytes": 9265
+  },
+  {
+    "before": "expand_brfss.py",
+    "after": "training/train_expanded_models.py",
+    "sha256": "C012AC842DF083CA3A0E63A51FDF7CD3C1BAC61D008CF65E82BAF40F382C377E",
+    "bytes": 12338
+  },
+  {
+    "before": "tune_brfss.py",
+    "after": "training/tune_baseline_models.py",
+    "sha256": "B4F1541DE16DAECE7C54FB8C176176632D9A19DED671F9856B78DDF046E61A54",
+    "bytes": 8603
+  },
+  {
+    "before": "train_pipeline.py",
+    "after": "training/train_original_models.py",
+    "sha256": "3EFA01375A04B316647D41605C719E21003FE436CEB21F292AB184D59C130559",
+    "bytes": 8548
+  },
+  {
+    "before": "load_data.py",
+    "after": "training/download_original_dataset.py",
+    "sha256": "4A70CB16E28739B7BB54DC0B77D35287B37722254720E0582E8CF9C5870B8361",
+    "bytes": 649
+  },
+  {
+    "before": "app.py",
+    "after": "legacy/original_dashboard.py",
+    "sha256": "A6663FB56F6D92A0FB9497B9FBD0D7495493717408284C1105BD108F95A5E04C",
+    "bytes": 20675
+  },
+  {
+    "before": "streamlit_app.py",
+    "after": "legacy/streamlit_app.py",
+    "sha256": "76D547A15068B33036E91EE6849D87D647B9F953CF113C64EAE3615277D05028",
+    "bytes": 91
+  },
+  {
+    "before": "Start-BRFSS-Expanded.ps1",
+    "after": "Start-Website.ps1",
+    "sha256": "6D8C33942306879F019276F1D318328CDCC646866E18C599C748E473671C4A4A",
+    "bytes": 474
+  },
+  {
+    "before": "Start-BRFSS.ps1",
+    "after": "tools/Start-Alternate-Port.ps1",
+    "sha256": "79833A59D8A2888D8382A4518C7993498BB1BE048FFCBBDFB3018FC505C15DD3",
+    "bytes": 397
+  },
+  {
+    "before": "Start-Dashboard.ps1",
+    "after": "tools/Start-AutoDetect.ps1",
+    "sha256": "74048A75B19DC1D259BD8C736257CC33960A4746D8C4F0DDC44B1E7BA9D6F6C1",
+    "bytes": 1019
+  },
+  {
+    "before": "Start-Dashboard-WSL.ps1",
+    "after": "tools/Start-WSL.ps1",
+    "sha256": "96DD8A4ABA2D6DB986A65CB7383251FD37FBC9A58CD1313823C873DF39C11DB0",
+    "bytes": 394
+  },
+  {
+    "before": "Install-ProjectWSL.ps1",
+    "after": "tools/Install-WSL.ps1",
+    "sha256": "F17EC1435302AF519CBF643225D33A5BC9D79C0A73DA130991107F2AA50644FF",
+    "bytes": 415
+  },
+  {
+    "before": "run_local.py",
+    "after": "tools/run_windows_fallback.py",
+    "sha256": "F83DDCD00EED12E8487120065B7DC29FF35C89EF432CA7C2901C8E3262726DF9",
+    "bytes": 668
+  },
+  {
+    "before": "verify_project.py",
+    "after": "tests/verify_original_models.py",
+    "sha256": "03426B889688B5CB2531F814408086B187C40AEA7538429E200D07A07259B8A1",
+    "bytes": 3170
+  },
+  {
+    "before": "validate_submission.py",
+    "after": "tests/validate_original_dataset.py",
+    "sha256": "2E48C300A50779C5DC40844F786C3F326E58716E8A8F523E2B697833AF5904EE",
+    "bytes": 4733
+  },
+  {
+    "before": "PROJECT_REPORT.md",
+    "after": "docs/ORIGINAL_PROJECT_REPORT.md",
+    "sha256": "C806B9959530DE3A5E0731C5E8AB69948F1AF7964FDF1B5D44C33771B55E6ACC",
+    "bytes": 14724
+  }
+]

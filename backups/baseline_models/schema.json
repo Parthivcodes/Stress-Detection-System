@@ -1,0 +1,79 @@
+{
+  "numeric": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi"
+  ],
+  "categorical": [
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support"
+  ],
+  "limits": {
+    "age": [
+      18,
+      80
+    ],
+    "sleep_duration": [
+      1,
+      24
+    ],
+    "unhealthy_days": [
+      0,
+      30
+    ],
+    "bmi": [
+      1,
+      99.98
+    ],
+    "sex": [
+      1,
+      2
+    ],
+    "exercise": [
+      1,
+      2
+    ],
+    "general_health": [
+      1,
+      5
+    ],
+    "marital": [
+      1,
+      6
+    ],
+    "education": [
+      1,
+      6
+    ],
+    "employment": [
+      1,
+      8
+    ],
+    "income": [
+      1,
+      11
+    ],
+    "support": [
+      1,
+      5
+    ],
+    "stress_raw": [
+      1,
+      5
+    ]
+  },
+  "labels": [
+    "Rarely / never",
+    "Sometimes",
+    "Usually / always"
+  ],
+  "input_dim": 49,
+  "dataset": "CDC BRFSS 2022, 30,000 unique respondent records"
+}
