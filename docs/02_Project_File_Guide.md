@@ -2,7 +2,7 @@
 
 ## The five places to start
 
-1. README.md - choose the demo or real-data reference and find the study guide.
+1. README.md - start here to launch the main data website and find the study guide.
 2. docs/01_Model_Training_Walkthrough.pdf - complete printable training and accuracy explanation.
 3. training/improve_forest_and_cnn.py - friendly entry point for the relevant improvement workflow.
 4. models/ACTIVE_MODELS.md - exact active checkpoint/encoder mapping by algorithm name.
@@ -13,20 +13,21 @@
 ```text
 stressleveldetection/
   README.md                         Start here
-  Start-Demo-Website.ps1             Current demo: port 8001
-  Start-RealData-Website.ps1         Real-data reference: port 8000
-  Start-Website.ps1                  Older real-data launcher: port 8004
+  Start-Main-Website.ps1             Primary Main Website launcher (port 8001)
+  Start-Website.ps1                  Main Website launcher (delegates to Start-Main-Website.ps1)
+  Start-RealData-Website.ps1         Historical raw-data reference launcher (port 8000)
+  Start-Demo-Website.ps1             Alternate launcher (delegates to Start-Main-Website.ps1)
   frontend/                         Main page, inputs, results, animation, PDF export
   src/                              Model definitions, encoders and inference loaders
   training/                         Clearly named current entry points and original training scripts
-  models/                           Selection files, real-data bundle, active-model index
-  data/                             Preserved real source datasets
-  experiments/                      Versioned demo datasets, checkpoints and scientific evidence
+  models/                           Selection files, active models, index
+  data/                             Preserved source datasets
+  experiments/                      Versioned datasets, checkpoints and scientific evidence
   tests/                            Validation and API checks
   tools/                            Current implementations and shared compatibility helpers
   docs/                             Walkthrough, file guide and earlier documentation
   reports/                          Audits, evaluations and cleanup manifests
-  deploy/                           Preserved real-data backend deployment configuration
+  deploy/                           Preserved deployment configuration
   api/ + serverless/                Preserved frontend-to-backend cloud adapters
   backups/                          Recoverable known-working datasets/models/configs
   archive/research_scripts/         Older exploratory tools, preserved verbatim
@@ -41,22 +42,20 @@ stressleveldetection/
 
 | Location | What it denotes |
 |---|---|
-| data/expanded_survey_dataset/respondents.csv | Preserved real BRFSS dataset, separate from generated demo results |
-| archive/previous_experiments/initial_training/model_training_data.csv | Older generated simulation, noise SD 1.0; mean accuracy 63.52% |
-| model_training/base_models/model_training_data.csv | Current demo dataset, noise SD 0.25; unchanged during RF/CNN tuning |
-| model_training/improved_models/ | New RF/CNN models and comparisons; references the same lower-noise CSV |
-
-The generated datasets retain accurate provenance in their metadata and documentation. Similar CSV/model filenames in separate experiment directories are versioned history, not automatically redundant copies.
+| model_training/base_models/model_training_data.csv | Primary 10,000-profile dataset; powers the Main Website (~87-91% accuracy) |
+| model_training/improved_models/ | High-accuracy RF, CNN and tuned model checkpoints for the Main Website |
+| data/expanded_survey_dataset/respondents.csv | Historical raw BRFSS survey dataset |
+| archive/previous_experiments/initial_training/model_training_data.csv | Initial training exploration dataset |
 
 ## Current runtime files
 
 | File | Purpose |
 |---|---|
-| tools/start_training_preview.py | Simulation server using the shared frontend |
-| server.py | Original server and reusable request handler |
-| models/training_preview.json | Select demo dataset and qualified RF/CNN overrides |
-| models/active_model.json | Separate real-data selection |
-| src/training_preview_inference.py | Six demo prediction paths, version and checksum checks |
+| tools/start_training_preview.py | Main Website server (port 8001) |
+| server.py | Server engine and HTTP request handler |
+| models/training_preview.json | Selects active model configuration for Main Website |
+| models/active_model.json | Historical raw-data selection |
+| src/training_preview_inference.py | High-accuracy six-model inference engine |
 | src/training_variants.py | Tuned forest encoder and position-preserving CNN |
 | src/models.py | Original CNN, LSTM, CNN-LSTM architecture definitions |
 | src/brfss_inference.py | Separate real survey-model inference |

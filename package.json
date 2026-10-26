@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "Multimodal Physiological Stress Level Detection System",
   "private": true,
-  "workspaces": [
-    "frontend/dashboard"
-  ],
   "scripts": {
-    "build": "npm --prefix frontend/dashboard ci && npm --prefix frontend/dashboard run build && node tools/build_vercel.cjs"
+    "build": "node tools/build_vercel.cjs"
   }
 }

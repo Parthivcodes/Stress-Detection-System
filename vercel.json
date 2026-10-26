@@ -10,10 +10,6 @@
   },
   "rewrites": [
     {
-      "source": "/dashboard",
-      "destination": "/dashboard/index.html"
-    },
-    {
       "source": "/api/benchmarks",
       "destination": "/api/benchmarks.js"
     },

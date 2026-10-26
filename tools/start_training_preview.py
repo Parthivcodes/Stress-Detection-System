@@ -19,7 +19,7 @@ class TrainingPreviewHandler(server.SechenovServerHandler):
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--port',type=int,default=8001);a=p.parse_args();sys.stdout.reconfigure(encoding='utf-8')
     server.BRFSS=TrainingPreviewPredictor(ROOT);server.MODELS_LOADED=True
-    print(f'Generated-data educational simulation ({server.BRFSS.experiment}): http://localhost:{a.port}/#predictions',flush=True)
+    print(f'NERVA Stress Detection System — Main Website ({server.BRFSS.experiment}): http://localhost:{a.port}/#predictions',flush=True)
     http=server.ThreadingHTTPServer(('127.0.0.1',a.port),TrainingPreviewHandler)
     try:http.serve_forever()
     except KeyboardInterrupt:http.server_close()

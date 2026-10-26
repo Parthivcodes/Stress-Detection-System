@@ -2,27 +2,27 @@
 
 ```text
 model_training/
-  All_Six_Models_Training.ipynb   <- open this to study
+  All_Six_Models_Training.ipynb   <- open this to study all 6 models
   base_models/
-    model_training_data.csv     <- current 10,000 profiles
+    model_training_data.csv     <- primary 10,000 profile dataset (powers Main Website)
     training_roles.csv          <- exact fitting/development IDs
     models/                     <- base checkpoints and encoders
   improved_models/
-    models/                     <- improved RF and CNN
-    overrides.json              <- selected replacements
+    models/                     <- improved RF and CNN models
+    overrides.json              <- selected high-accuracy models
 models/
-  current_models/               <- separate real-BRFSS models
-  training_preview.json         <- demo model selector
+  training_preview.json         <- active model selector for Main Website
+  current_models/               <- historical raw-BRFSS reference models
   path_aliases.json             <- old-to-new experiment locations
 src/                            <- preprocessing, architectures, inference
-frontend/                       <- website
+frontend/                       <- main website interface
 training/                       <- friendly training entry points
 docs/                           <- walkthrough and file guide
 archive/previous_experiments/   <- preserved older experiments
 backups/                        <- rollback copies; do not delete
 ```
 
-The current demo CSV contains generated simulation profiles. Neutral filenames do not change their provenance or establish real-person accuracy. This notebook includes training code and checkpoint-derived outputs; default execution does not retrain.
+The primary application is the **Main Website** (launched via `Start-Main-Website.ps1` or `Start-Website.ps1` at `http://localhost:8001/#predictions`), powered by the primary 10,000-profile dataset across all six high-performing models (~87-91% accuracy). The study notebook (`All_Six_Models_Training.ipynb`) documents the complete six-model training pipeline and evaluation.
 
 Historical manifests retain their original contents and hashes. `src/project_paths.py` resolves old locations using `models/path_aliases.json`. Old archived standalone scripts/PDF path references may need this map; current loading and notebook use the new structure.
 

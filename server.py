@@ -251,14 +251,6 @@ class SechenovServerHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=STATIC_DIR, **kwargs)
 
-    def translate_path(self, path):
-        translated = super().translate_path(path)
-        dashboard = os.path.join(STATIC_DIR, 'dashboard')
-        # Serve the relocated React build, not its TypeScript source index.
-        if os.path.commonpath([dashboard, translated]) == dashboard:
-            return os.path.join(dashboard, 'dist', os.path.relpath(translated, dashboard))
-        return translated
-
     def do_OPTIONS(self):
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
