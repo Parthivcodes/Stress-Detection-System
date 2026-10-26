@@ -1,0 +1,9 @@
+# Matches the existing, verified WSL inference stack.
+# CPU-only torch is installed separately in the Dockerfile.
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.6.1
+scipy==1.18.1
+joblib==1.6.0
+xgboost-cpu==3.4.1
+gunicorn==23.0.0

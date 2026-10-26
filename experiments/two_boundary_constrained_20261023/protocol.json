@@ -1,0 +1,62 @@
+{
+  "seed": 202610232,
+  "trials": 40,
+  "search": "Seeded ParameterSampler from existing sklearn; sequential four-thread XGBoost. No extra dependencies.",
+  "boundary": "High when P2>=h; otherwise sometimes when P1/(P0+P1)>=s, else rarely. High grid81 quantiles plus current ensemble cutoff; exact distinct lower cutoffs. Raw probabilities unchanged.",
+  "cv": "Two stratified group outer folds within original training. Each outer training part: grouped 20% threshold calibration; remaining grouped 12.5% early-stop and 87.5% fit. Four disjoint roles; preprocessing fit only on fit role. Original XGB baseline refitted per fold; NEVER use original full-training checkpoints to score training folds.",
+  "baseline": "Original XGB 350 fixed rounds, original features and training weights; original deployed multipliers. Threshold baseline is its own original decision within each fold.",
+  "objective": "Maximize mean outer-fold accuracy among candidates satisfying BOTH high and sometimes recalls, macro-F1 and QWK vs refitted baseline on EVERY scoring fold. High floor max(60%,baseline); sometimes floor baseline. Thresholds chosen on inner calibration with same constraints. No thresholds fitted on scoring fold.",
+  "selection": "First evaluate two-boundary-only policies on validation with saved models. Then final-fit single best feasible CV candidate. If none feasible, fit lowest summed violation for diagnostics only, ineligible for promotion. No alternate candidates selected from holdout.",
+  "final_fit": "Entire training:20% grouped threshold reserve not used for model fitting; remaining12.5% earlystop; remainingfit. Existing validation selects final thresholds. Both original and engineered encodings in search.",
+  "promotion": "Freeze one whole candidate configuration (boundaries-only or tuned XGB+boundaries) before holdout. Require both XGB and ensemble accuracy improvements with no loss of both recalls, macro-F1,QWK on validation. Rank by ensemble validation accuracy. If none, diagnostic choice by least violation, never eligible. Test once; require both improvements, no recall or macro-F1/QWK loss vs current, and paired accuracy95CI lower>0. Then full512MiB/API/rollback checks before any local activation. No deployment.",
+  "test": "Historically reused internal holdout, not untouched or independent. No retuning after evaluation.",
+  "baseline_accuracy": "Historical always-rarely65.78%, high/sometimes recall0%; report split-specific baseline.",
+  "search_space": {
+    "depth": [
+      2,
+      6
+    ],
+    "learning_rate": [
+      0.02,
+      0.12
+    ],
+    "min_child_weight": [
+      3,
+      60
+    ],
+    "subsample": [
+      0.7,
+      1.0
+    ],
+    "colsample": [
+      0.7,
+      1.0
+    ],
+    "reg_alpha": [
+      1e-05,
+      5.0
+    ],
+    "reg_lambda": [
+      0.5,
+      30.0
+    ],
+    "gamma": [
+      0,
+      1.5
+    ],
+    "weight_power": [
+      0.15,
+      0.65
+    ],
+    "middle_weight": [
+      0.8,
+      2.5
+    ],
+    "high_weight": [
+      0.8,
+      1.5
+    ],
+    "rounds": 550
+  },
+  "changes": "No real respondents added/removed/relabeled. No resampling. Training-only class weights documented. Source data, active checkpoints and prior experiments never overwritten."
+}

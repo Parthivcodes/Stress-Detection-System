@@ -1,0 +1,19 @@
+{
+  "seconds": 5.197392054000034,
+  "best_iteration": 698,
+  "fit_rows": 103874,
+  "dev_rows": 11542,
+  "calibration_rows": 12832,
+  "params": {
+    "n_estimators": 700,
+    "learning_rate": 0.06800981021604165,
+    "max_depth": 2,
+    "min_child_weight": 7.397930995578851,
+    "subsample": 0.7464666411823344,
+    "colsample_bytree": 0.8569248655919637,
+    "reg_alpha": 0.005029298116217086,
+    "reg_lambda": 3.4621066431849417,
+    "gamma": 0.2747336593377415,
+    "weight_power": 0.006129106017468772
+  }
+}

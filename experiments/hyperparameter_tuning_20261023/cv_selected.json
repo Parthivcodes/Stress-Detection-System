@@ -1,0 +1,173 @@
+{
+  "Logistic Regression": {
+    "config": {
+      "id": 1,
+      "params": {
+        "C": 0.01,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1200,
+        "multi_class": "deprecated",
+        "penalty": "l2",
+        "random_state": 20261018,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "weight_power": 0.5
+    },
+    "mean": {
+      "accuracy": 0.6742100813193352,
+      "macro_f1": 0.5127189024841049,
+      "qwk": 0.4871902457119174,
+      "high_recall": 0.625598168028669
+    },
+    "recall_violation": 0
+  },
+  "Random Forest": {
+    "config": {
+      "id": 1,
+      "params": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 12,
+        "max_features": 0.6,
+        "max_leaf_nodes": null,
+        "max_samples": 0.85,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 30,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 180,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 20261018,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "weight_power": 1.0
+    },
+    "mean": {
+      "accuracy": 0.6157458145899772,
+      "macro_f1": 0.536099366423572,
+      "qwk": 0.47751638386262585,
+      "high_recall": 0.5821419339253209
+    },
+    "recall_violation": 0.01786930834561784
+  },
+  "XGBoost": {
+    "config": {
+      "id": 1,
+      "params": {
+        "objective": "multi:softprob",
+        "base_score": null,
+        "booster": null,
+        "callbacks": null,
+        "colsample_bylevel": null,
+        "colsample_bynode": null,
+        "colsample_bytree": 0.85,
+        "device": null,
+        "early_stopping_rounds": null,
+        "enable_categorical": true,
+        "eval_metric": "mlogloss",
+        "feature_types": null,
+        "feature_weights": null,
+        "gamma": null,
+        "grow_policy": null,
+        "importance_type": null,
+        "interaction_constraints": null,
+        "learning_rate": 0.03,
+        "max_bin": null,
+        "max_cat_threshold": null,
+        "max_cat_to_onehot": null,
+        "max_delta_step": null,
+        "max_depth": 3,
+        "max_leaves": null,
+        "min_child_weight": 20,
+        "monotone_constraints": null,
+        "multi_strategy": null,
+        "n_estimators": 500,
+        "n_jobs": 4,
+        "num_parallel_tree": null,
+        "random_state": 20261018,
+        "reg_alpha": 0.5,
+        "reg_lambda": 10,
+        "sampling_method": null,
+        "scale_pos_weight": null,
+        "subsample": 0.85,
+        "tree_method": null,
+        "validate_parameters": null,
+        "verbosity": null
+      },
+      "weight_power": 0.5
+    },
+    "mean": {
+      "accuracy": 0.6700087920610164,
+      "macro_f1": 0.5197553188802,
+      "qwk": 0.4934591726825948,
+      "high_recall": 0.6410058993600564
+    },
+    "recall_violation": 0
+  },
+  "1D CNN": {
+    "config": {
+      "id": 1,
+      "lr": 0.001,
+      "weight_decay": 0.003,
+      "batch_size": 256,
+      "weight_power": 0.5,
+      "dropout": 0.35,
+      "scheduler": true
+    },
+    "mean": {
+      "accuracy": 0.6533097392322404,
+      "macro_f1": 0.46915638138662297,
+      "qwk": 0.4239573861226625,
+      "high_recall": 0.5840010632388626
+    },
+    "recall_violation": 0
+  },
+  "LSTM": {
+    "config": {
+      "id": 1,
+      "lr": 0.001,
+      "weight_decay": 0.003,
+      "batch_size": 256,
+      "weight_power": 0.5,
+      "dropout": 0.35,
+      "scheduler": true
+    },
+    "mean": {
+      "accuracy": 0.6733626685882486,
+      "macro_f1": 0.5164856820319299,
+      "qwk": 0.4975793415873933,
+      "high_recall": 0.6112050143021783
+    },
+    "recall_violation": 0
+  },
+  "CNN-LSTM": {
+    "config": {
+      "id": 1,
+      "lr": 0.001,
+      "weight_decay": 0.003,
+      "batch_size": 256,
+      "weight_power": 0.5,
+      "dropout": 0.35,
+      "scheduler": true
+    },
+    "mean": {
+      "accuracy": 0.6174397451313391,
+      "macro_f1": 0.3822646337059371,
+      "qwk": 0.3315592282813346,
+      "high_recall": 0.5954429982412706
+    },
+    "recall_violation": 0
+  }
+}

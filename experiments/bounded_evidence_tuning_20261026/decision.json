@@ -1,0 +1,7 @@
+{
+  "status": "rejected_in_training_cv",
+  "selected": {},
+  "production_changed": false,
+  "test_evaluated": false,
+  "validation_evaluated": false
+}

@@ -1,0 +1,8 @@
+{
+  "seed": 20261026,
+  "scope": "Diagnostics only; no data/model changes or adaptive candidate selection.",
+  "mi": "Mutual information on deterministic10000 originaltraining rows; categorical inputs discrete,numericcontinuous. Association not causation.",
+  "permutation": "Refit originalXGB in first outer training fold with innerdevelopment/calibration excluded exactly as boundedrun. First5000 deterministic outer-score sample,3permutations per rawcolumn. Logloss increase; no stress validation/test used.",
+  "shap": "Native XGBoost TreeSHAP rawmargin contributions on500 held-out training-fold respondents. Aggregate absolute encoded contributions by originalfeature. Correlatedfeatures complicate attribution; not causal.",
+  "errors": "Reproduced current6 validation probabilities only. Raw and currentdecision error overlap,age/sex/support subgroups. Historically reused validation,descriptive only. Do not claim person-specific causes or edit labels."
+}

@@ -10,6 +10,11 @@ Open **http://127.0.0.1:8004/#predictions** and keep the terminal running.
 This uses your existing WSL Python environment and the six expanded models.
 No reinstall is needed.
 
+The local server handles browser connections concurrently. Cloud deployment uses
+Vercel for the frontend and a separate authenticated Python inference service.
+See `deploy/README.md` for setup, safety checks and the remaining account/hosting
+requirements. Cloud deployment has not yet been completed.
+
 ## Project structure — line by line
 
 ```text

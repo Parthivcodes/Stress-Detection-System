@@ -1,0 +1,16 @@
+**
+!deploy/
+!deploy/backend.py
+!deploy/__init__.py
+!deploy/requirements.txt
+!src/
+!src/*.py
+!tools/
+!tools/export_compact_forest.py
+!models/
+!models/current_models/
+!models/current_models/**
+!reports/
+!reports/brfss2022_expanded/
+!reports/brfss2022_expanded/dataset_audit.json
+!reports/brfss2022_expanded/deployment_gate.json

@@ -1,0 +1,44 @@
+{
+  "data_origin": "SYNTHETIC SIMULATION - NOT REAL RESPONDENTS",
+  "rows": 10000,
+  "seed": 20261026,
+  "neural_seeds": [
+    20261026,
+    20261027
+  ],
+  "scenario": "simulation",
+  "label_noise_sd": 1.0,
+  "purpose": "Independent educational simulation with19compatible inputs. Synthetic test accuracy measures recovery of inventedlabelrules,not realstressprediction. Never replace real-model metrics or activate these artifacts.",
+  "source": "Fromscratch fixed distributions/sharedlatentvariables; no BRFSS respondent rows read during generation/training. Only feature coding,architectures and classical model hyperparameters reused.",
+  "label_equation": "0.85*(8-sleep)/2 +0.7*(general_health-3)/2 +0.65*(support-3)/2 +0.85*(3-isolation)/2 +0.5*(3-food_insecurity)/2 +0.25*physical_days/10 +0.5*(material_count-1) -0.15*(age-45)/25 +0.15*no_exercise +0.1*(BMI-26)/5 +0.1*(6-income)/3 + Normal(0,noiseSD); classes at fixed boundaries -0.65,+0.85. These coefficients are invented; not clinically validated.",
+  "split": "Seeded stratified70/15/15. Assert all19feature profiles unique and nonoverlapping across roles. Train90%fit/10%earlystopdev. Fitpreprocessingonfit only. No training on validation/test.",
+  "fitting": "Three classical configs cloned from protected currentmodels; neural originalarchitecture,AdamW .0007 decay.001,weightedCE sqrt inverse prevalence,40epochmax,patience6,120secsoftcap. Two fixedseeds averaged; neitherbestseedchosen.",
+  "decisions": "Rawargmax and optional two-boundary operatingrule selectedonvalidation. Require highrecall>=max(.60,rawvalidationhigh) and sometimes/F1/QWK at least rawvalidation. If infeasible keepraw and disclose. Freezeallcheckpoints/policies before one synthetictestpass. No results-driven regeneration/noise changes.",
+  "evaluation": "Synthetic test ONLY. No real holdout evaluation or promotion. No claim of improvement versus real-data69%. Majority baseline specific to synthetic classmix.",
+  "scenarios": {
+    "simulation": 1.0,
+    "toy_easy": 0.25,
+    "stress_test": 1.6
+  },
+  "features": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Logistic Regression": [
+    "validation accuracy did not beat the matched-recall original",
+    "validation macro_f1 decreased",
+    "validation qwk decreased",
+    "validation sometimes recall decreased",
+    "validation accuracy below the deployed model",
+    "paired test accuracy interval does not establish a positive improvement"
+  ],
+  "Random Forest": [
+    "validation accuracy did not beat the matched-recall original",
+    "validation macro_f1 decreased",
+    "validation qwk decreased",
+    "validation accuracy below the deployed model",
+    "paired test accuracy interval does not establish a positive improvement"
+  ],
+  "XGBoost": [
+    "validation accuracy did not beat the matched-recall original",
+    "validation macro_f1 decreased",
+    "validation qwk decreased",
+    "validation sometimes recall decreased",
+    "paired test accuracy interval does not establish a positive improvement",
+    "test high recall below the deployed-model/60% safety floor"
+  ],
+  "1D CNN": [
+    "validation macro_f1 decreased",
+    "validation qwk decreased",
+    "validation sometimes recall decreased",
+    "validation accuracy below the deployed model"
+  ],
+  "LSTM": [
+    "validation accuracy did not beat the matched-recall original",
+    "validation qwk decreased",
+    "validation accuracy below the deployed model",
+    "paired test accuracy interval does not establish a positive improvement"
+  ],
+  "CNN-LSTM": [
+    "validation macro_f1 decreased",
+    "validation qwk decreased",
+    "validation sometimes recall decreased"
+  ],
+  "Ensemble": [
+    "validation accuracy did not beat the matched-recall original",
+    "paired test accuracy interval does not establish a positive improvement"
+  ]
+}

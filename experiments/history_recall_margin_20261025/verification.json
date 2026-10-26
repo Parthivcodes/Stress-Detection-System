@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "originals_and_prior_experiment_unchanged": true,
+  "backups_verified": true,
+  "frozen_protocol_verified": true,
+  "no_group_overlap": true,
+  "training_only_cv": true,
+  "each_training_respondent_scored_once": true,
+  "margin_targets_verified": true,
+  "saved_metrics_reproduced": true,
+  "candidate_reload_validation_confusion_matrix_matches": true
+}

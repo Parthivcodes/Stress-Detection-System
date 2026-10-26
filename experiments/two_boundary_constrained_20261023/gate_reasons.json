@@ -1,0 +1,14 @@
+{
+  "xgb": [
+    "Frozen candidate did not qualify on validation; diagnostic only.",
+    "Accuracy did not improve.",
+    "qwk decreased.",
+    "Paired 95% interval does not establish a positive accuracy gain."
+  ],
+  "ensemble": [
+    "Frozen candidate did not qualify on validation; diagnostic only.",
+    "Sometimes recall decreased.",
+    "macro_f1 decreased.",
+    "Paired 95% interval does not establish a positive accuracy gain."
+  ]
+}

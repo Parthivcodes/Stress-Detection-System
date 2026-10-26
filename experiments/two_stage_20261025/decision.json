@@ -1,0 +1,6 @@
+{
+  "status": "rejected_in_training_cv",
+  "production_changed": false,
+  "test_evaluated": false,
+  "reason": "No candidate met the predeclared accuracy and recall/safeguard requirements. Validation and holdout not evaluated."
+}

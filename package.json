@@ -7,6 +7,6 @@
     "frontend/dashboard"
   ],
   "scripts": {
-    "build": "npm --prefix frontend/dashboard install && npm --prefix frontend/dashboard run build"
+    "build": "npm --prefix frontend/dashboard ci && npm --prefix frontend/dashboard run build && node tools/build_vercel.cjs"
   }
 }

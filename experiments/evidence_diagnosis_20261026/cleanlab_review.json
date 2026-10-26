@@ -1,0 +1,26 @@
+{
+  "raw_class_weighted": {
+    "flagged": 31359,
+    "fraction": 0.24451843303599277,
+    "class_counts": {
+      "0": 13198,
+      "1": 12020,
+      "2": 6141
+    }
+  },
+  "approximate_weight_reversal": {
+    "flagged": 24431,
+    "fraction": 0.19049809743621732,
+    "class_counts": {
+      "0": 5263,
+      "1": 11818,
+      "2": 7350
+    }
+  },
+  "overlap": 21886,
+  "rows": 128248,
+  "source_sha256": "097e6ec280e2418b2e31874e1cb14289a5d0401eb655ea1587535bf97200f6d9",
+  "labels_changed": 0,
+  "verified_label_error_rate": null,
+  "estimated_accuracy_ceiling": null
+}

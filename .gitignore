@@ -59,3 +59,6 @@ frontend/dashboard/*.tsbuildinfo
 
 # Recoverable local project cleanup (not application assets)
 .cleanup/
+public/
+.env.*
+.vercel/

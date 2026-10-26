@@ -1,0 +1,79 @@
+{
+  "numeric": {
+    "age": {
+      "min": 18.0,
+      "max": 80.0,
+      "iqr_lower": 1.5,
+      "iqr_upper": 109.5,
+      "percentile1": 19.0,
+      "percentile99": 80.0,
+      "train_iqr_flags": 0,
+      "validation_iqr_flags": 0,
+      "note": "Outlier flags do not establish data errors; survey codes and meaningful extremes remain intact."
+    },
+    "sleep_duration": {
+      "min": 1.0,
+      "max": 24.0,
+      "iqr_lower": 3.0,
+      "iqr_upper": 11.0,
+      "percentile1": 3.0,
+      "percentile99": 11.0,
+      "train_iqr_flags": 1735,
+      "validation_iqr_flags": 203,
+      "note": "Outlier flags do not establish data errors; survey codes and meaningful extremes remain intact."
+    },
+    "unhealthy_days": {
+      "min": 0.0,
+      "max": 30.0,
+      "iqr_lower": -4.5,
+      "iqr_upper": 7.5,
+      "percentile1": 0.0,
+      "percentile99": 30.0,
+      "train_iqr_flags": 21043,
+      "validation_iqr_flags": 2549,
+      "note": "Outlier flags do not establish data errors; survey codes and meaningful extremes remain intact."
+    },
+    "bmi": {
+      "min": 12.16,
+      "max": 97.65,
+      "iqr_lower": 12.929999999999996,
+      "iqr_upper": 43.33,
+      "percentile1": 18.08,
+      "percentile99": 49.6,
+      "train_iqr_flags": 4049,
+      "validation_iqr_flags": 462,
+      "note": "Outlier flags do not establish data errors; survey codes and meaningful extremes remain intact."
+    }
+  },
+  "missing_predictor_values_in_retained_table": 0,
+  "raw_source_records": 445132,
+  "retained_records": 183040,
+  "raw_invalid_or_missing_counts_overlapping": {
+    "bmi": 48806,
+    "income": 96047,
+    "stress_raw": 195599,
+    "support": 195186,
+    "isolation": 194007,
+    "job_loss": 193993,
+    "food_insecurity": 194025,
+    "bill_difficulty": 194110,
+    "utility_threat": 194049,
+    "transport_barrier": 194250,
+    "unhealthy_days": 10927,
+    "general_health": 1198,
+    "sleep_duration": 5453,
+    "employment": 11240,
+    "medical_cost": 1609,
+    "education": 2383,
+    "marital": 4802,
+    "exercise": 1093
+  },
+  "adversarial_auc": 0.5002783279129186,
+  "fold_auc": [
+    0.49707864292922793,
+    0.5016661458499012,
+    0.5035021685370529
+  ],
+  "domain_rows": 30394,
+  "note": "AUC near0.5 indicates no readily detected train/validation feature shift under this classifier, not absence of all drift. No test drift evaluated. No imputation or outlier edits performed."
+}

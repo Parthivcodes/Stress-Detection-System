@@ -1,0 +1,325 @@
+{
+  "ADDEPEV3": {
+    "decision": "test",
+    "reason": "Ever told depressive disorder; not calculated from SDHSTRE1. Available as self-report at assessment. Diagnosis timing versus current stress unknown; not valid evidence for future prediction.",
+    "codebook": {
+      "start": 126,
+      "length": 1,
+      "metadata": {
+        "Label": "(Ever told) you had a depressive disorder",
+        "Section Name": "Chronic Health Conditions",
+        "Core Section Number": "7",
+        "Question Number": "9",
+        "Column": "126",
+        "Type of Variable": "Num",
+        "SAS Variable Name": "ADDEPEV3",
+        "Question Prologue": "Question:  (Ever told) (you had) a depressive disorder (including depression, major depression, dysthymia, or minor depression)?"
+      },
+      "values": [
+        {
+          "code": "1",
+          "description": "Yes"
+        },
+        {
+          "code": "2",
+          "description": "No"
+        },
+        {
+          "code": "7",
+          "description": "Don\u2019t know/Not sure"
+        },
+        {
+          "code": "9",
+          "description": "Refused"
+        },
+        {
+          "code": "BLANK",
+          "description": "Not asked or Missing"
+        },
+        {
+          "code": "",
+          "description": ""
+        }
+      ]
+    },
+    "training_valid_rate": 0.9962572515750732
+  },
+  "MENTHLTH": {
+    "decision": "exclude",
+    "reason": "Explicitly includes stress in the same30-day question; strong conceptual overlap.",
+    "codebook": {
+      "start": 104,
+      "length": 2,
+      "metadata": {
+        "Label": "Number of Days Mental Health Not Good",
+        "Section Name": "Healthy Days",
+        "Core Section Number": "2",
+        "Question Number": "2",
+        "Column": "104-105",
+        "Type of Variable": "Num",
+        "SAS Variable Name": "MENTHLTH",
+        "Question Prologue": "Question:  Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good?"
+      },
+      "values": [
+        {
+          "code": "1 - 30",
+          "description": "Number of days\nNotes: _ _ Number of days"
+        },
+        {
+          "code": "88",
+          "description": "None"
+        },
+        {
+          "code": "77",
+          "description": "Don\u2019t know/Not sure"
+        },
+        {
+          "code": "99",
+          "description": "Refused"
+        },
+        {
+          "code": "BLANK",
+          "description": "Not asked or Missing"
+        },
+        {
+          "code": "",
+          "description": ""
+        }
+      ]
+    },
+    "training_valid_rate": 0.9904637889089888
+  },
+  "LSATISFY": {
+    "decision": "exclude",
+    "reason": "Current life satisfaction is not literal target leakage, but overlapping concurrent well-being; keep task conservative.",
+    "codebook": {
+      "start": 361,
+      "length": 1,
+      "metadata": {
+        "Label": "Satisfaction with life",
+        "Section Name": "Social Determinants and Health Equity",
+        "Module Number": "16",
+        "Question Number": "1",
+        "Column": "361",
+        "Type of Variable": "Num",
+        "SAS Variable Name": "LSATISFY",
+        "Question Prologue": "Question:  In general, how satisfied are you with your life?"
+      },
+      "values": [
+        {
+          "code": "1",
+          "description": "Very satisfied"
+        },
+        {
+          "code": "2",
+          "description": "Satisfied"
+        },
+        {
+          "code": "3",
+          "description": "Dissatisfied"
+        },
+        {
+          "code": "4",
+          "description": "Very dissatisfied"
+        },
+        {
+          "code": "7",
+          "description": "Don\u2019t know/Not sure"
+        },
+        {
+          "code": "9",
+          "description": "Refused"
+        },
+        {
+          "code": "BLANK",
+          "description": "Not asked or Missing"
+        },
+        {
+          "code": "",
+          "description": ""
+        }
+      ]
+    },
+    "training_valid_rate": 0.9948537209157258
+  },
+  "POORHLTH": {
+    "decision": "exclude",
+    "reason": "Concurrent mental/physical limitation; skip depends on mental-health days.",
+    "codebook": {
+      "start": 106,
+      "length": 2,
+      "metadata": {
+        "Label": "Poor Physical or Mental Health",
+        "Section Name": "Healthy Days",
+        "Core Section Number": "2",
+        "Question Number": "3",
+        "Column": "106-107",
+        "Type of Variable": "Num",
+        "SAS Variable Name": "POORHLTH",
+        "Question Prologue": "Question:  During the past 30 days, for about how many days did poor physical or mental health keep you from doing your usual activities, such as self-care, work, or recreation?"
+      },
+      "values": [
+        {
+          "code": "1 - 30",
+          "description": "Number of days\nNotes: _ _ Number of days"
+        },
+        {
+          "code": "88",
+          "description": "None"
+        },
+        {
+          "code": "77",
+          "description": "Don\u2019t know/Not sure"
+        },
+        {
+          "code": "99",
+          "description": "Refused"
+        },
+        {
+          "code": "BLANK",
+          "description": "Not asked or Missing\nNotes: Section 02.01, PHYSHLTH, is 88 and Section 2.02, MENTHLTH, is 88"
+        },
+        {
+          "code": "",
+          "description": ""
+        }
+      ]
+    },
+    "training_valid_rate": 0.5700673694716487
+  },
+  "DECIDE": {
+    "decision": "exclude",
+    "reason": "Concurrent mental/emotional concentration symptoms; attribution and timing ambiguous.",
+    "codebook": {
+      "start": 199,
+      "length": 1,
+      "metadata": {
+        "Label": "Difficulty Concentrating or Remembering",
+        "Section Name": "Disability",
+        "Core Section Number": "9",
+        "Question Number": "3",
+        "Column": "199",
+        "Type of Variable": "Num",
+        "SAS Variable Name": "DECIDE",
+        "Question Prologue": "Question:  Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?"
+      },
+      "values": [
+        {
+          "code": "1",
+          "description": "Yes"
+        },
+        {
+          "code": "2",
+          "description": "No"
+        },
+        {
+          "code": "7",
+          "description": "Don\u2019t know/Not Sure"
+        },
+        {
+          "code": "9",
+          "description": "Refused"
+        },
+        {
+          "code": "BLANK",
+          "description": "Not asked or Missing"
+        },
+        {
+          "code": "",
+          "description": ""
+        }
+      ]
+    },
+    "training_valid_rate": 0.9960155324059634
+  },
+  "DIFFALON": {
+    "decision": "exclude",
+    "reason": "Concurrent mental/emotional functional difficulty; attribution and timing ambiguous.",
+    "codebook": {
+      "start": 202,
+      "length": 1,
+      "metadata": {
+        "Label": "Difficulty Doing Errands Alone",
+        "Section Name": "Disability",
+        "Core Section Number": "9",
+        "Question Number": "6",
+        "Column": "202",
+        "Type of Variable": "Num",
+        "SAS Variable Name": "DIFFALON",
+        "Question Prologue": "Question:  Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor\u00b4s office or shopping?"
+      },
+      "values": [
+        {
+          "code": "1",
+          "description": "Yes"
+        },
+        {
+          "code": "2",
+          "description": "No"
+        },
+        {
+          "code": "7",
+          "description": "Don\u2019t know/Not Sure"
+        },
+        {
+          "code": "9",
+          "description": "Refused"
+        },
+        {
+          "code": "BLANK",
+          "description": "Not asked or Missing"
+        },
+        {
+          "code": "",
+          "description": ""
+        }
+      ]
+    },
+    "training_valid_rate": 0.9983781423491984
+  },
+  "ACEDEPRS": {
+    "decision": "exclude",
+    "reason": "Historical household exposure is not literal target leakage, but optional-module missingness and sensitive retrospective context make it unsuitable for this bounded experiment.",
+    "codebook": {
+      "start": 348,
+      "length": 1,
+      "metadata": {
+        "Label": "Live With Anyone Depressed, Mentally Ill, Or Suicidal?",
+        "Section Name": "Adverse Childhood Experiences",
+        "Module Number": "15",
+        "Question Number": "1",
+        "Column": "348",
+        "Type of Variable": "Num",
+        "SAS Variable Name": "ACEDEPRS",
+        "Question Prologue": "Question:  Did you live with anyone who was depressed, mentally ill, or suicidal?"
+      },
+      "values": [
+        {
+          "code": "1",
+          "description": "Yes"
+        },
+        {
+          "code": "2",
+          "description": "No"
+        },
+        {
+          "code": "7",
+          "description": "Don\u2019t know/Not Sure"
+        },
+        {
+          "code": "9",
+          "description": "Refused"
+        },
+        {
+          "code": "BLANK",
+          "description": "Not asked or Missing"
+        },
+        {
+          "code": "",
+          "description": ""
+        }
+      ]
+    },
+    "training_valid_rate": 0.0792994822531345
+  }
+}

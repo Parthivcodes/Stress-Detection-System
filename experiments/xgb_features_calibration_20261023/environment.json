@@ -1,0 +1,11 @@
+{
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.6.1",
+  "xgboost": "3.4.1",
+  "torch": "2.14.1+cpu",
+  "joblib": "1.6.0",
+  "python": "3.12.15",
+  "optuna": "5.0.0"
+}

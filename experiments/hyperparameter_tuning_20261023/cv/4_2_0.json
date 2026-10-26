@@ -1,0 +1,129 @@
+{
+  "model": "LSTM",
+  "fold": 0,
+  "config_id": 2,
+  "threshold": 0.22597138583660126,
+  "floor": 0.6,
+  "raw": {
+    "accuracy": 0.6713034882078802,
+    "balanced_accuracy": 0.3890142887812577,
+    "macro_f1": 0.3619982727121161,
+    "qwk": 0.1837084913696796,
+    "recall": [
+      0.9930945187742771,
+      0.011356660527931247,
+      0.1625916870415648
+    ],
+    "precision": [
+      0.6747305915988564,
+      0.3217391304347826,
+      0.6551724137931034
+    ],
+    "f1": [
+      0.8035269981230085,
+      0.021938926771420102,
+      0.2605288932419197
+    ],
+    "macro_auc": 0.7444735116811024,
+    "confusion_matrix": [
+      [
+        9204,
+        18,
+        46
+      ],
+      [
+        3127,
+        37,
+        94
+      ],
+      [
+        1310,
+        60,
+        266
+      ]
+    ],
+    "high_detected": 266,
+    "high_missed": 1370
+  },
+  "constrained": {
+    "accuracy": 0.6716565456856376,
+    "balanced_accuracy": 0.5025095332011471,
+    "macro_f1": 0.42657317204754025,
+    "qwk": 0.41916558494454703,
+    "recall": [
+      0.9231765213638325,
+      0.0,
+      0.5843520782396088
+    ],
+    "precision": [
+      0.7337907375643224,
+      0.0,
+      0.3820943245403677
+    ],
+    "f1": [
+      0.8176605504587156,
+      0.0,
+      0.46205896568390525
+    ],
+    "macro_auc": 0.7444735116811024,
+    "confusion_matrix": [
+      [
+        8556,
+        0,
+        712
+      ],
+      [
+        2424,
+        0,
+        834
+      ],
+      [
+        680,
+        0,
+        956
+      ]
+    ],
+    "high_detected": 956,
+    "high_missed": 680
+  },
+  "fit": {
+    "seconds": 4.912242675000002,
+    "history": [
+      {
+        "epoch": 1,
+        "train_weighted_loss": 1.0704850436561746,
+        "dev_unweighted_logloss": 1.0292736286223396
+      },
+      {
+        "epoch": 2,
+        "train_weighted_loss": 1.0296630258225146,
+        "dev_unweighted_logloss": 0.9523588490041429
+      },
+      {
+        "epoch": 3,
+        "train_weighted_loss": 0.9761221884934056,
+        "dev_unweighted_logloss": 0.8454833902455758
+      },
+      {
+        "epoch": 4,
+        "train_weighted_loss": 0.9265755732426293,
+        "dev_unweighted_logloss": 0.8024083913787605
+      }
+    ],
+    "train_rows": 11329,
+    "dev_rows": 1415,
+    "seed": 20261023,
+    "config": {
+      "id": 2,
+      "lr": 0.0004,
+      "weight_decay": 0.0003,
+      "batch_size": 512,
+      "weight_power": 0.35,
+      "dropout": 0.2,
+      "scheduler": true
+    },
+    "process_peak_rss_kib": 820964
+  },
+  "majority_accuracy": 0.6544273407710776,
+  "historical_rarely_baseline_accuracy": 0.6578
+}

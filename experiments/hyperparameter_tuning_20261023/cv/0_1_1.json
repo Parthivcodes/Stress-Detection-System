@@ -1,0 +1,119 @@
+{
+  "model": "Logistic Regression",
+  "fold": 1,
+  "config_id": 1,
+  "threshold": 0.2770959289330604,
+  "floor": 0.6447442383361439,
+  "raw": {
+    "accuracy": 0.6884134717220928,
+    "balanced_accuracy": 0.5361154845740813,
+    "macro_f1": 0.540944936901617,
+    "qwk": 0.4921240902760312,
+    "recall": [
+      0.8643108786164193,
+      0.2915497349547864,
+      0.4524858401510384
+    ],
+    "precision": [
+      0.7847242415430842,
+      0.40249677141627205,
+      0.47209455022980956
+    ],
+    "f1": [
+      0.8225970331233489,
+      0.33815551537070526,
+      0.4620822622107969
+    ],
+    "macro_auc": 0.7777835550866466,
+    "confusion_matrix": [
+      [
+        8096,
+        967,
+        304
+      ],
+      [
+        1772,
+        935,
+        500
+      ],
+      [
+        449,
+        421,
+        719
+      ]
+    ],
+    "high_detected": 719,
+    "high_missed": 870
+  },
+  "constrained": {
+    "accuracy": 0.6736567111487679,
+    "balanced_accuracy": 0.5466259766067237,
+    "macro_f1": 0.5069551286524588,
+    "qwk": 0.4822457624614105,
+    "recall": [
+      0.8569445927191203,
+      0.16682257561584035,
+      0.6161107614852108
+    ],
+    "precision": [
+      0.7880424111525623,
+      0.39338235294117646,
+      0.37409247229652276
+    ],
+    "f1": [
+      0.8210504781874904,
+      0.2342894679220495,
+      0.46552543984783645
+    ],
+    "macro_auc": 0.7777835550866466,
+    "confusion_matrix": [
+      [
+        8027,
+        636,
+        704
+      ],
+      [
+        1738,
+        535,
+        934
+      ],
+      [
+        421,
+        189,
+        979
+      ]
+    ],
+    "high_detected": 979,
+    "high_missed": 610
+  },
+  "fit": {
+    "seconds": 2.025591625000004,
+    "history": [],
+    "train_rows": 11331,
+    "dev_rows": 1415,
+    "seed": 20261024,
+    "config": {
+      "id": 1,
+      "params": {
+        "C": 0.01,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1200,
+        "multi_class": "deprecated",
+        "penalty": "l2",
+        "random_state": 20261018,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "weight_power": 0.5
+    },
+    "process_peak_rss_kib": 820964
+  },
+  "majority_accuracy": 0.6613711784226506,
+  "historical_rarely_baseline_accuracy": 0.6578
+}

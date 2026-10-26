@@ -1,0 +1,47 @@
+{
+  "rows": 183040,
+  "unique_respondents": 183040,
+  "split_counts": {
+    "train": 128248,
+    "test": 30718,
+    "validation": 15197,
+    "quarantine": 8877
+  },
+  "duplicate_full_feature_rows": 118,
+  "duplicate_feature_target_rows": 99,
+  "profile_groups_crossing_splits": 0,
+  "features": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ],
+  "target_mapping": {
+    "4/5": 0,
+    "3": 1,
+    "1/2": 2
+  },
+  "train_preprocessor_matches": true,
+  "raw_missing_policy": "Complete cases: reject invalid/refused/dont-know codes; physical unhealthy days 88->0; BMI /100.",
+  "limitations": [
+    "Complete-case US survey; not survey-weighted population estimates.",
+    "Predictors and stress are concurrent associations, not causal or future forecasts.",
+    "Support/isolation/general health can overlap conceptually with distress; not direct target-derived fields.",
+    "Test was previously reused and cannot establish independent generalization."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "model": "Random Forest",
+  "fold": 1,
+  "config_id": 1,
+  "threshold": 0.4099515445679337,
+  "floor": 0.6200112422709387,
+  "raw": {
+    "accuracy": 0.6113817693991386,
+    "balanced_accuracy": 0.5651901346914173,
+    "macro_f1": 0.5290208049898427,
+    "qwk": 0.4677543536420309,
+    "recall": [
+      0.677164513718373,
+      0.431244153414406,
+      0.5871617369414727
+    ],
+    "precision": [
+      0.8413582703276297,
+      0.33141624730409774,
+      0.3806609547123623
+    ],
+    "f1": [
+      0.7503844788832368,
+      0.37479674796747964,
+      0.4618811881188119
+    ],
+    "macro_auc": 0.7597457280746487,
+    "confusion_matrix": [
+      [
+        6343,
+        2342,
+        682
+      ],
+      [
+        988,
+        1383,
+        836
+      ],
+      [
+        208,
+        448,
+        933
+      ]
+    ],
+    "high_detected": 933,
+    "high_missed": 656
+  },
+  "constrained": {
+    "accuracy": 0.6155475534844312,
+    "balanced_accuracy": 0.5658984170380362,
+    "macro_f1": 0.5352079353798537,
+    "qwk": 0.47870581433357484,
+    "recall": [
+      0.6810077933169638,
+      0.4471468662301216,
+      0.5695405915670233
+    ],
+    "precision": [
+      0.8400052673163023,
+      0.3311013622719926,
+      0.40437890974084
+    ],
+    "f1": [
+      0.7521962148458228,
+      0.3804722738126824,
+      0.4729553174810556
+    ],
+    "macro_auc": 0.7597457280746487,
+    "confusion_matrix": [
+      [
+        6379,
+        2425,
+        563
+      ],
+      [
+        1003,
+        1434,
+        770
+      ],
+      [
+        212,
+        472,
+        905
+      ]
+    ],
+    "high_detected": 905,
+    "high_missed": 684
+  },
+  "fit": {
+    "seconds": 0.9607299680000096,
+    "history": [],
+    "train_rows": 11331,
+    "dev_rows": 1415,
+    "seed": 20261024,
+    "config": {
+      "id": 1,
+      "params": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 12,
+        "max_features": 0.6,
+        "max_leaf_nodes": null,
+        "max_samples": 0.85,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 30,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 180,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 20261018,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "weight_power": 1.0
+    },
+    "process_peak_rss_kib": 820964
+  },
+  "majority_accuracy": 0.6613711784226506,
+  "historical_rarely_baseline_accuracy": 0.6578
+}

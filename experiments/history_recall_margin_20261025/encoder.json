@@ -1,0 +1,213 @@
+{
+  "base": {
+    "schema": {
+      "numeric": [
+        "age",
+        "sleep_duration",
+        "unhealthy_days",
+        "bmi"
+      ],
+      "categorical": [
+        "sex",
+        "exercise",
+        "general_health",
+        "marital",
+        "education",
+        "employment",
+        "income",
+        "support",
+        "isolation",
+        "job_loss",
+        "food_insecurity",
+        "bill_difficulty",
+        "utility_threat",
+        "transport_barrier",
+        "medical_cost"
+      ],
+      "limits": {
+        "age": [
+          18,
+          80
+        ],
+        "sleep_duration": [
+          1,
+          24
+        ],
+        "unhealthy_days": [
+          0,
+          30
+        ],
+        "bmi": [
+          1,
+          99.98
+        ],
+        "sex": [
+          1,
+          2
+        ],
+        "exercise": [
+          1,
+          2
+        ],
+        "general_health": [
+          1,
+          5
+        ],
+        "marital": [
+          1,
+          6
+        ],
+        "education": [
+          1,
+          6
+        ],
+        "employment": [
+          1,
+          8
+        ],
+        "income": [
+          1,
+          11
+        ],
+        "support": [
+          1,
+          5
+        ],
+        "stress_raw": [
+          1,
+          5
+        ],
+        "isolation": [
+          1,
+          5
+        ],
+        "job_loss": [
+          1,
+          2
+        ],
+        "food_insecurity": [
+          1,
+          5
+        ],
+        "bill_difficulty": [
+          1,
+          2
+        ],
+        "utility_threat": [
+          1,
+          2
+        ],
+        "transport_barrier": [
+          1,
+          2
+        ],
+        "medical_cost": [
+          1,
+          2
+        ]
+      },
+      "labels": [
+        "Rarely / never",
+        "Sometimes",
+        "Usually / always"
+      ],
+      "input_dim": 69,
+      "dataset": "Expanded BRFSS 2022",
+      "feature_count": 19
+    },
+    "mode": "original",
+    "mean": [
+      55.16616243528164,
+      7.0281407897199175,
+      4.277930260121016,
+      28.760656696400726
+    ],
+    "scale": [
+      17.031671274046726,
+      1.4336027227424122,
+      8.546469028229092,
+      6.516505312476327
+    ],
+    "bmi_limits": [
+      18.08,
+      49.6
+    ],
+    "names": [
+      "age",
+      "sleep_duration",
+      "unhealthy_days",
+      "bmi",
+      "sex_1",
+      "sex_2",
+      "exercise_1",
+      "exercise_2",
+      "general_health_1",
+      "general_health_2",
+      "general_health_3",
+      "general_health_4",
+      "general_health_5",
+      "marital_1",
+      "marital_2",
+      "marital_3",
+      "marital_4",
+      "marital_5",
+      "marital_6",
+      "education_1",
+      "education_2",
+      "education_3",
+      "education_4",
+      "education_5",
+      "education_6",
+      "employment_1",
+      "employment_2",
+      "employment_3",
+      "employment_4",
+      "employment_5",
+      "employment_6",
+      "employment_7",
+      "employment_8",
+      "income_1",
+      "income_2",
+      "income_3",
+      "income_4",
+      "income_5",
+      "income_6",
+      "income_7",
+      "income_8",
+      "income_9",
+      "income_10",
+      "income_11",
+      "support_1",
+      "support_2",
+      "support_3",
+      "support_4",
+      "support_5",
+      "isolation_1",
+      "isolation_2",
+      "isolation_3",
+      "isolation_4",
+      "isolation_5",
+      "job_loss_1",
+      "job_loss_2",
+      "food_insecurity_1",
+      "food_insecurity_2",
+      "food_insecurity_3",
+      "food_insecurity_4",
+      "food_insecurity_5",
+      "bill_difficulty_1",
+      "bill_difficulty_2",
+      "utility_threat_1",
+      "utility_threat_2",
+      "transport_barrier_1",
+      "transport_barrier_2",
+      "medical_cost_1",
+      "medical_cost_2"
+    ]
+  },
+  "addition": "ADDEPEV3",
+  "categories": [
+    1,
+    2,
+    -1
+  ]
+}

@@ -1,0 +1,157 @@
+variable,label,group,split,n,valid,valid_rate,blank,invalid_nonblank,note
+CHILDREN,Number of Children in Household,context,train,128248,127861,0.9969824090824029,0,387,Household children; refused stays missing.
+CHILDREN,Number of Children in Household,context,validation,15197,15146,0.9966440744883859,0,51,Household children; refused stays missing.
+CHILDREN,Number of Children in Household,context,test,30718,30621,0.9968422423334853,0,97,Household children; refused stays missing.
+CHILDREN,Number of Children in Household,context,quarantine,8877,8850,0.9969584319026699,0,27,Household children; refused stays missing.
+RENTHOM1,Own or Rent Home,context,train,128248,127989,0.99798047532905,0,259,Housing tenure; other arrangement is valid.
+RENTHOM1,Own or Rent Home,context,validation,15197,15160,0.9975653089425545,0,37,Housing tenure; other arrangement is valid.
+RENTHOM1,Own or Rent Home,context,test,30718,30663,0.9982095188488834,0,55,Housing tenure; other arrangement is valid.
+RENTHOM1,Own or Rent Home,context,quarantine,8877,8848,0.9967331305621269,0,29,Housing tenure; other arrangement is valid.
+PERSDOC3,Have Personal Health Care Provider?,context,train,128248,127535,0.9944404591104734,0,713,Personal healthcare provider access.
+PERSDOC3,Have Personal Health Care Provider?,context,validation,15197,15115,0.9946041981970126,0,82,Personal healthcare provider access.
+PERSDOC3,Have Personal Health Care Provider?,context,test,30718,30543,0.9943030145191745,0,175,Personal healthcare provider access.
+PERSDOC3,Have Personal Health Care Provider?,context,quarantine,8877,8833,0.9950433705080545,0,44,Personal healthcare provider access.
+CHECKUP1,Length of time since last routine checkup,context,train,128248,127234,0.9920934439523423,0,1014,"8 means never, not missing."
+CHECKUP1,Length of time since last routine checkup,context,validation,15197,15087,0.9927617292886753,0,110,"8 means never, not missing."
+CHECKUP1,Length of time since last routine checkup,context,test,30718,30484,0.9923823165570675,0,234,"8 means never, not missing."
+CHECKUP1,Length of time since last routine checkup,context,quarantine,8877,8807,0.9921144530809959,0,70,"8 means never, not missing."
+FOODSTMP,During the past 12 months have you received food stamps,context,train,128248,128076,0.9986588484810679,0,172,US-specific SNAP receipt; sensitive financial context.
+FOODSTMP,During the past 12 months have you received food stamps,context,validation,15197,15173,0.998420740935711,0,24,US-specific SNAP receipt; sensitive financial context.
+FOODSTMP,During the past 12 months have you received food stamps,context,test,30718,30681,0.9987954944983397,0,37,US-specific SNAP receipt; sensitive financial context.
+FOODSTMP,During the past 12 months have you received food stamps,context,quarantine,8877,8869,0.9990987946378281,0,8,US-specific SNAP receipt; sensitive financial context.
+PRIMINSR,What is Primary Source of Health Insurance?,context,train,128248,125643,0.9796877924022207,1,2604,US insurance categories;88=no coverage;7 and9 are VALID here.
+PRIMINSR,What is Primary Source of Health Insurance?,context,validation,15197,14919,0.9817069158386523,0,278,US insurance categories;88=no coverage;7 and9 are VALID here.
+PRIMINSR,What is Primary Source of Health Insurance?,context,test,30718,30070,0.9789048766195716,0,648,US insurance categories;88=no coverage;7 and9 are VALID here.
+PRIMINSR,What is Primary Source of Health Insurance?,context,quarantine,8877,8687,0.9785963726484173,0,190,US insurance categories;88=no coverage;7 and9 are VALID here.
+CVDINFR4,Ever Diagnosed with Heart Attack,physical,train,128248,127756,0.9961636828644501,1,491,Prior heart attack diagnosis.
+CVDINFR4,Ever Diagnosed with Heart Attack,physical,validation,15197,15126,0.995328025268145,0,71,Prior heart attack diagnosis.
+CVDINFR4,Ever Diagnosed with Heart Attack,physical,test,30718,30576,0.9953773032098444,0,142,Prior heart attack diagnosis.
+CVDINFR4,Ever Diagnosed with Heart Attack,physical,quarantine,8877,8841,0.9959445758702264,0,36,Prior heart attack diagnosis.
+CVDCRHD4,Ever Diagnosed with Angina or Coronary Heart Disease,physical,train,128248,127362,0.9930915101989894,0,886,Coronary disease diagnosis.
+CVDCRHD4,Ever Diagnosed with Angina or Coronary Heart Disease,physical,validation,15197,15093,0.9931565440547476,0,104,Coronary disease diagnosis.
+CVDCRHD4,Ever Diagnosed with Angina or Coronary Heart Disease,physical,test,30718,30508,0.9931636174230093,0,210,Coronary disease diagnosis.
+CVDCRHD4,Ever Diagnosed with Angina or Coronary Heart Disease,physical,quarantine,8877,8814,0.9929030077728962,0,63,Coronary disease diagnosis.
+CVDSTRK3,Ever Diagnosed with a Stroke,physical,train,128248,127964,0.9977855405152517,0,284,Stroke history.
+CVDSTRK3,Ever Diagnosed with a Stroke,physical,validation,15197,15158,0.9974337040205303,0,39,Stroke history.
+CVDSTRK3,Ever Diagnosed with a Stroke,physical,test,30718,30656,0.9979816394296503,0,62,Stroke history.
+CVDSTRK3,Ever Diagnosed with a Stroke,physical,quarantine,8877,8853,0.9972963839134843,0,24,Stroke history.
+ASTHMA3,Ever Told Had Asthma,physical,train,128248,127911,0.9973722787099993,0,337,"Ever asthma, not current severity."
+ASTHMA3,Ever Told Had Asthma,physical,validation,15197,15152,0.9970388892544582,0,45,"Ever asthma, not current severity."
+ASTHMA3,Ever Told Had Asthma,physical,test,30718,30649,0.9977537600104174,0,69,"Ever asthma, not current severity."
+ASTHMA3,Ever Told Had Asthma,physical,quarantine,8877,8849,0.9968457812323983,0,28,"Ever asthma, not current severity."
+CHCCOPD3,Ever told you had C.O.P.D. emphysema or chronic bronchitis?,physical,train,128248,127906,0.9973332917472397,0,342,COPD diagnosis.
+CHCCOPD3,Ever told you had C.O.P.D. emphysema or chronic bronchitis?,physical,validation,15197,15154,0.9971704941764822,0,43,COPD diagnosis.
+CHCCOPD3,Ever told you had C.O.P.D. emphysema or chronic bronchitis?,physical,test,30718,30643,0.9975584347939319,0,75,COPD diagnosis.
+CHCCOPD3,Ever told you had C.O.P.D. emphysema or chronic bronchitis?,physical,quarantine,8877,8852,0.9971837332432127,0,25,COPD diagnosis.
+CHCKDNY2,Ever told you have kidney disease?,physical,train,128248,127894,0.9972397230366166,0,354,Kidney disease.
+CHCKDNY2,Ever told you have kidney disease?,physical,validation,15197,15168,0.9980917286306508,0,29,Kidney disease.
+CHCKDNY2,Ever told you have kidney disease?,physical,test,30718,30644,0.9975909889966794,0,74,Kidney disease.
+CHCKDNY2,Ever told you have kidney disease?,physical,quarantine,8877,8850,0.9969584319026699,0,27,Kidney disease.
+DIABETE4,(Ever told) you had diabetes,physical,train,128248,128108,0.9989083650427297,0,140,Preserve gestational and prediabetes distinctions.
+DIABETE4,(Ever told) you had diabetes,physical,validation,15197,15181,0.9989471606238073,0,16,Preserve gestational and prediabetes distinctions.
+DIABETE4,(Ever told) you had diabetes,physical,test,30718,30678,0.998697831890097,0,40,Preserve gestational and prediabetes distinctions.
+DIABETE4,(Ever told) you had diabetes,physical,quarantine,8877,8865,0.9986481919567421,0,12,Preserve gestational and prediabetes distinctions.
+HAVARTH4,Told Had Arthritis,physical,train,128248,127761,0.9962026698272097,0,487,"Arthritis-related diagnosis, not pain intensity."
+HAVARTH4,Told Had Arthritis,physical,validation,15197,15146,0.9966440744883859,0,51,"Arthritis-related diagnosis, not pain intensity."
+HAVARTH4,Told Had Arthritis,physical,test,30718,30605,0.996321375089524,0,113,"Arthritis-related diagnosis, not pain intensity."
+HAVARTH4,Told Had Arthritis,physical,quarantine,8877,8840,0.9958319251999549,0,37,"Arthritis-related diagnosis, not pain intensity."
+CHCSCNC1,(Ever told) (you had) skin cancer that is not melanoma?,physical,train,128248,127570,0.994713367849791,0,678,Non-melanoma skin cancer history.
+CHCSCNC1,(Ever told) (you had) skin cancer that is not melanoma?,physical,validation,15197,15116,0.9946700006580246,0,81,Non-melanoma skin cancer history.
+CHCSCNC1,(Ever told) (you had) skin cancer that is not melanoma?,physical,test,30718,30549,0.9944983397356598,0,169,Non-melanoma skin cancer history.
+CHCSCNC1,(Ever told) (you had) skin cancer that is not melanoma?,physical,quarantine,8877,8819,0.9934662611242537,0,58,Non-melanoma skin cancer history.
+CHCOCNC1,(Ever told) (you had)  melanoma or any other types of cancer?,physical,train,128248,127748,0.9961013037240347,0,500,Melanoma/other cancer history.
+CHCOCNC1,(Ever told) (you had)  melanoma or any other types of cancer?,physical,validation,15197,15148,0.9967756794104099,0,49,Melanoma/other cancer history.
+CHCOCNC1,(Ever told) (you had)  melanoma or any other types of cancer?,physical,test,30718,30582,0.9955726284263299,1,135,Melanoma/other cancer history.
+CHCOCNC1,(Ever told) (you had)  melanoma or any other types of cancer?,physical,quarantine,8877,8842,0.9960572265404979,0,35,Melanoma/other cancer history.
+DIFFWALK,Difficulty Walking or Climbing Stairs,physical,train,128248,127986,0.9979570831513942,0,262,Walking/stair difficulty.
+DIFFWALK,Difficulty Walking or Climbing Stairs,physical,validation,15197,15165,0.9978943212476147,0,32,Walking/stair difficulty.
+DIFFWALK,Difficulty Walking or Climbing Stairs,physical,test,30718,30667,0.9983397356598737,0,51,Walking/stair difficulty.
+DIFFWALK,Difficulty Walking or Climbing Stairs,physical,quarantine,8877,8857,0.9977469865945703,0,20,Walking/stair difficulty.
+DIFFDRES,Difficulty Dressing or Bathing,physical,train,128248,128147,0.999212463352255,0,101,Dressing/bathing difficulty.
+DIFFDRES,Difficulty Dressing or Bathing,physical,validation,15197,15188,0.9994077778508916,0,9,Dressing/bathing difficulty.
+DIFFDRES,Difficulty Dressing or Bathing,physical,test,30718,30687,0.9989908197148252,0,31,Dressing/bathing difficulty.
+DIFFDRES,Difficulty Dressing or Bathing,physical,quarantine,8877,8873,0.999549397318914,0,4,Dressing/bathing difficulty.
+DEAF,Are you deaf or do you have serious difficulty hearing?,physical,train,128248,127969,0.9978245274780113,0,279,Hearing difficulty; accessibility-sensitive.
+DEAF,Are you deaf or do you have serious difficulty hearing?,physical,validation,15197,15174,0.998486543396723,0,23,Hearing difficulty; accessibility-sensitive.
+DEAF,Are you deaf or do you have serious difficulty hearing?,physical,test,30718,30648,0.9977212058076698,0,70,Hearing difficulty; accessibility-sensitive.
+DEAF,Are you deaf or do you have serious difficulty hearing?,physical,quarantine,8877,8860,0.9980849386053847,0,17,Hearing difficulty; accessibility-sensitive.
+BLIND,Blind or Difficulty seeing,physical,train,128248,128040,0.9983781423491984,0,208,Vision difficulty; accessibility-sensitive.
+BLIND,Blind or Difficulty seeing,physical,validation,15197,15170,0.9982233335526749,0,27,Vision difficulty; accessibility-sensitive.
+BLIND,Blind or Difficulty seeing,physical,test,30718,30658,0.9980467478351455,0,60,Vision difficulty; accessibility-sensitive.
+BLIND,Blind or Difficulty seeing,physical,quarantine,8877,8867,0.9988734932972851,0,10,Vision difficulty; accessibility-sensitive.
+SMOKE100,Smoked at Least 100 Cigarettes,lifestyle,train,128248,127727,0.9959375584804442,0,521,"Lifetime100-cigarette threshold, not current smoking."
+SMOKE100,Smoked at Least 100 Cigarettes,lifestyle,validation,15197,15130,0.9955912351121932,0,67,"Lifetime100-cigarette threshold, not current smoking."
+SMOKE100,Smoked at Least 100 Cigarettes,lifestyle,test,30718,30595,0.9959958330620483,0,123,"Lifetime100-cigarette threshold, not current smoking."
+SMOKE100,Smoked at Least 100 Cigarettes,lifestyle,quarantine,8877,8842,0.9960572265404979,0,35,"Lifetime100-cigarette threshold, not current smoking."
+USENOW3,Use of Smokeless Tobacco Products,lifestyle,train,128248,128157,0.9992904372777743,0,91,Smokeless tobacco frequency.
+USENOW3,Use of Smokeless Tobacco Products,lifestyle,validation,15197,15186,0.9992761729288675,0,11,Smokeless tobacco frequency.
+USENOW3,Use of Smokeless Tobacco Products,lifestyle,test,30718,30699,0.9993814701477961,0,19,Smokeless tobacco frequency.
+USENOW3,Use of Smokeless Tobacco Products,lifestyle,quarantine,8877,8871,0.999324095978371,0,6,Smokeless tobacco frequency.
+ECIGNOW2,"Do you now use e-cigarettes, or vaping products every day, some days, or not at all?",lifestyle,train,128248,128048,0.9984405214896138,0,200,Never/former/current vaping status.
+ECIGNOW2,"Do you now use e-cigarettes, or vaping products every day, some days, or not at all?",lifestyle,validation,15197,15172,0.9983549384746989,0,25,Never/former/current vaping status.
+ECIGNOW2,"Do you now use e-cigarettes, or vaping products every day, some days, or not at all?",lifestyle,test,30718,30650,0.9977863142131649,0,68,Never/former/current vaping status.
+ECIGNOW2,"Do you now use e-cigarettes, or vaping products every day, some days, or not at all?",lifestyle,quarantine,8877,8861,0.9981975892756562,0,16,Never/former/current vaping status.
+VETERAN3,Are You A Veteran,audit_only,train,128248,128172,0.9994073981660533,0,76,"US military history, no pilot use."
+VETERAN3,Are You A Veteran,audit_only,validation,15197,15181,0.9989471606238073,0,16,"US military history, no pilot use."
+VETERAN3,Are You A Veteran,audit_only,test,30718,30697,0.999316361742301,0,21,"US military history, no pilot use."
+VETERAN3,Are You A Veteran,audit_only,quarantine,8877,8871,0.999324095978371,0,6,"US military history, no pilot use."
+ASTHNOW,Still Have Asthma,audit_only,train,128248,19051,0.14854812550683053,108677,520,Conditional follow-up; blank is not automatically no.
+ASTHNOW,Still Have Asthma,audit_only,validation,15197,2338,0.15384615384615385,12787,72,Conditional follow-up; blank is not automatically no.
+ASTHNOW,Still Have Asthma,audit_only,test,30718,4637,0.15095383814050395,25956,125,Conditional follow-up; blank is not automatically no.
+ASTHNOW,Still Have Asthma,audit_only,quarantine,8877,1326,0.14937478877999325,7518,33,Conditional follow-up; blank is not automatically no.
+SMOKDAY2,Frequency of Days Now Smoking,audit_only,train,128248,52067,0.40598683800137236,76133,48,Conditional follow-up; skipped is not observed non-smoker.
+SMOKDAY2,Frequency of Days Now Smoking,audit_only,validation,15197,6295,0.4142264920708034,8894,8,Conditional follow-up; skipped is not observed non-smoker.
+SMOKDAY2,Frequency of Days Now Smoking,audit_only,test,30718,12376,0.4028908132039846,18327,15,Conditional follow-up; skipped is not observed non-smoker.
+SMOKDAY2,Frequency of Days Now Smoking,audit_only,quarantine,8877,3615,0.40723217303142956,5258,4,Conditional follow-up; skipped is not observed non-smoker.
+ALCDAY4,Days in past 30 had alcoholic beverage,audit_only,train,128248,127378,0.9932162684798204,0,870,Weekly/monthly codes need unit harmonization and plausibility checks.
+ALCDAY4,Days in past 30 had alcoholic beverage,audit_only,validation,15197,15081,0.9923669145226032,0,116,Weekly/monthly codes need unit harmonization and plausibility checks.
+ALCDAY4,Days in past 30 had alcoholic beverage,audit_only,test,30718,30480,0.9922520997460772,0,238,Weekly/monthly codes need unit harmonization and plausibility checks.
+ALCDAY4,Days in past 30 had alcoholic beverage,audit_only,quarantine,8877,8817,0.9932409597837107,0,60,Weekly/monthly codes need unit harmonization and plausibility checks.
+AVEDRNK3,Avg alcoholic drinks per day in past 30,audit_only,train,128248,70318,0.5482970494666584,57364,566,Conditional alcohol follow-up; blank is not observed zero.
+AVEDRNK3,Avg alcoholic drinks per day in past 30,audit_only,validation,15197,8236,0.5419490688951767,6874,87,Conditional alcohol follow-up; blank is not observed zero.
+AVEDRNK3,Avg alcoholic drinks per day in past 30,audit_only,test,30718,16844,0.5483429910801485,13742,132,Conditional alcohol follow-up; blank is not observed zero.
+AVEDRNK3,Avg alcoholic drinks per day in past 30,audit_only,quarantine,8877,4926,0.5549172017573505,3910,41,Conditional alcohol follow-up; blank is not observed zero.
+DRNK3GE5,Binge Drinking,audit_only,train,128248,70148,0.5469714927328302,57365,735,Conditional sex-specific binge question.
+DRNK3GE5,Binge Drinking,audit_only,validation,15197,8237,0.5420148713561888,6874,86,Conditional sex-specific binge question.
+DRNK3GE5,Binge Drinking,audit_only,test,30718,16786,0.5464548473207891,13742,190,Conditional sex-specific binge question.
+DRNK3GE5,Binge Drinking,audit_only,quarantine,8877,4915,0.5536780443843641,3910,52,Conditional sex-specific binge question.
+MAXDRNKS,Most drinks on single occasion past 30 days,audit_only,train,128248,69298,0.5403437090636891,57364,1586,Conditional follow-up; blank is not observed zero.
+MAXDRNKS,Most drinks on single occasion past 30 days,audit_only,validation,15197,8148,0.536158452326117,6874,175,Conditional follow-up; blank is not observed zero.
+MAXDRNKS,Most drinks on single occasion past 30 days,audit_only,test,30718,16611,0.5407578618399635,13742,365,Conditional follow-up; blank is not observed zero.
+MAXDRNKS,Most drinks on single occasion past 30 days,audit_only,quarantine,8877,4846,0.5459051481356314,3910,121,Conditional follow-up; blank is not observed zero.
+CAREGIV1,Provided regular care for family or friend,audit_only,train,128248,31652,0.24680306905370844,96551,45,Optional module;8 means recipient died; coverage first.
+CAREGIV1,Provided regular care for family or friend,audit_only,validation,15197,3852,0.2534710798183852,11341,4,Optional module;8 means recipient died; coverage first.
+CAREGIV1,Provided regular care for family or friend,audit_only,test,30718,7648,0.2489745426134514,23056,14,Optional module;8 means recipient died; coverage first.
+CAREGIV1,Provided regular care for family or friend,audit_only,quarantine,8877,2125,0.23938267432691224,6749,3,Optional module;8 means recipient died; coverage first.
+CRGVHRS1,How Many Hours Do You Provide Care For Person?,audit_only,train,128248,5974,0.04658162310523361,121924,350,Eligible caregivers only; optional module.
+CRGVHRS1,How Many Hours Do You Provide Care For Person?,audit_only,validation,15197,712,0.046851352240573796,14442,43,Eligible caregivers only; optional module.
+CRGVHRS1,How Many Hours Do You Provide Care For Person?,audit_only,test,30718,1408,0.04583631746858519,29214,96,Eligible caregivers only; optional module.
+CRGVHRS1,How Many Hours Do You Provide Care For Person?,audit_only,quarantine,8877,386,0.04348315872479441,8471,20,Eligible caregivers only; optional module.
+MENTHLTH,Number of Days Mental Health Not Good,excluded_overlap,train,128248,127025,0.9904637889089888,0,1223,Explicitly asks stress in same30-day period; previously excluded.
+MENTHLTH,Number of Days Mental Health Not Good,excluded_overlap,validation,15197,15053,0.990524445614266,0,144,Explicitly asks stress in same30-day period; previously excluded.
+MENTHLTH,Number of Days Mental Health Not Good,excluded_overlap,test,30718,30449,0.9912429194609024,1,268,Explicitly asks stress in same30-day period; previously excluded.
+MENTHLTH,Number of Days Mental Health Not Good,excluded_overlap,quarantine,8877,8792,0.9904246930269235,0,85,Explicitly asks stress in same30-day period; previously excluded.
+LSATISFY,Satisfaction with life,excluded_overlap,train,128248,127588,0.9948537209157258,0,660,Life satisfaction not target-derived but overlapping; previously excluded.
+LSATISFY,Satisfaction with life,excluded_overlap,validation,15197,15111,0.9943409883529644,0,86,Life satisfaction not target-derived but overlapping; previously excluded.
+LSATISFY,Satisfaction with life,excluded_overlap,test,30718,30586,0.9957028452373201,0,132,Life satisfaction not target-derived but overlapping; previously excluded.
+LSATISFY,Satisfaction with life,excluded_overlap,quarantine,8877,8827,0.9943674664864256,0,50,Life satisfaction not target-derived but overlapping; previously excluded.
+ADDEPEV3,(Ever told) you had a depressive disorder,excluded_overlap,train,128248,127768,0.9962572515750733,2,478,"Depression history not target itself, sensitive and previously excluded."
+ADDEPEV3,(Ever told) you had a depressive disorder,excluded_overlap,validation,15197,15136,0.9959860498782654,0,61,"Depression history not target itself, sensitive and previously excluded."
+ADDEPEV3,(Ever told) you had a depressive disorder,excluded_overlap,test,30718,30608,0.9964190376977667,0,110,"Depression history not target itself, sensitive and previously excluded."
+ADDEPEV3,(Ever told) you had a depressive disorder,excluded_overlap,quarantine,8877,8832,0.994930719837783,0,45,"Depression history not target itself, sensitive and previously excluded."
+POORHLTH,Poor Physical or Mental Health,excluded_overlap,train,128248,73110,0.5700673694716487,54421,717,Physical/mental limitation; skip depends on mental-health days.
+POORHLTH,Poor Physical or Mental Health,excluded_overlap,validation,15197,8716,0.5735342501809567,6414,67,Physical/mental limitation; skip depends on mental-health days.
+POORHLTH,Poor Physical or Mental Health,excluded_overlap,test,30718,17517,0.5702519695292663,13034,167,Physical/mental limitation; skip depends on mental-health days.
+POORHLTH,Poor Physical or Mental Health,excluded_overlap,quarantine,8877,5134,0.57834854117382,3688,55,Physical/mental limitation; skip depends on mental-health days.
+DECIDE,Difficulty Concentrating or Remembering,excluded_overlap,train,128248,127737,0.9960155324059634,0,511,Mental/emotional concentration problems; concurrent symptom overlap.
+DECIDE,Difficulty Concentrating or Remembering,excluded_overlap,validation,15197,15134,0.9958544449562413,0,63,Mental/emotional concentration problems; concurrent symptom overlap.
+DECIDE,Difficulty Concentrating or Remembering,excluded_overlap,test,30718,30610,0.996484146103262,0,108,Mental/emotional concentration problems; concurrent symptom overlap.
+DECIDE,Difficulty Concentrating or Remembering,excluded_overlap,quarantine,8877,8847,0.9966204798918553,0,30,Mental/emotional concentration problems; concurrent symptom overlap.
+DIFFALON,Difficulty Doing Errands Alone,excluded_overlap,train,128248,128040,0.9983781423491984,0,208,Errand difficulty partly attributed to mental/emotional conditions.
+DIFFALON,Difficulty Doing Errands Alone,excluded_overlap,validation,15197,15174,0.998486543396723,0,23,Errand difficulty partly attributed to mental/emotional conditions.
+DIFFALON,Difficulty Doing Errands Alone,excluded_overlap,test,30718,30676,0.9986327234846019,0,42,Errand difficulty partly attributed to mental/emotional conditions.
+DIFFALON,Difficulty Doing Errands Alone,excluded_overlap,quarantine,8877,8862,0.9983102399459277,0,15,Errand difficulty partly attributed to mental/emotional conditions.
+ACEDEPRS,"Live With Anyone Depressed, Mentally Ill, Or Suicidal?",excluded_overlap,train,128248,10170,0.07929948225313455,117974,104,Sensitive childhood household mental-health exposure; optional module.
+ACEDEPRS,"Live With Anyone Depressed, Mentally Ill, Or Suicidal?",excluded_overlap,validation,15197,1185,0.07797591629926959,14002,10,Sensitive childhood household mental-health exposure; optional module.
+ACEDEPRS,"Live With Anyone Depressed, Mentally Ill, Or Suicidal?",excluded_overlap,test,30718,2441,0.07946480890682987,28255,22,Sensitive childhood household mental-health exposure; optional module.
+ACEDEPRS,"Live With Anyone Depressed, Mentally Ill, Or Suicidal?",excluded_overlap,quarantine,8877,662,0.07457474371972513,8207,8,Sensitive childhood household mental-health exposure; optional module.

@@ -1,0 +1,4 @@
+{
+  "version": "brfss2022_expanded",
+  "note": "Default expanded 19-input models. Older checkpoints and the previous default configuration are preserved under backups/models/. Historical comparison metrics are unchanged."
+}

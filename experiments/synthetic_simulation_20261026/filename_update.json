@@ -1,0 +1,18 @@
+{
+  "original_hashes": {
+    "tools\\synthetic_stress_experiment.py": "252d58a74e58956ffde5c38f792967183b25af4f7b23e5ef02980ff49ff55ec0",
+    "experiments\\synthetic_simulation_20261026\\data_manifest.json": "6efa1313a83d70e3aadc1d8b5349e1f4ef5db7e2542eda3b8e3bd4a30f27fc1d",
+    "experiments\\synthetic_simulation_20261026\\synthetic_stress_experiment.py": "252d58a74e58956ffde5c38f792967183b25af4f7b23e5ef02980ff49ff55ec0",
+    "experiments\\synthetic_simulation_20261026\\SYNTHETIC_stress_10000.csv": "eae884b43a8e63507ba00429c7bf99f3fbf5276b5fe1ae7e9b0b6521b888db70",
+    "experiments\\synthetic_simulation_20261026\\README.md": "840c6ca0f4b1c8dd81790c6980b980566e9c3f2836d9cb11ec8d040418893cc3",
+    "experiments\\synthetic_simulation_20261026\\frozen_hashes.json": "32c2427289cb0e66b7c4c9e069bf72289ce8665dbe94e161bf2a3c74d0339149"
+  },
+  "old_filename": "SYNTHETIC_stress_10000.csv",
+  "change": "Filename and references only; no training or data edits",
+  "current_generator_sha256": "0a618afbb0a5077ad192e6238b3716974729f223cd815edd0b26ab7d5afb5aa3",
+  "new_filename": "model_training_data.csv",
+  "csv_sha256": "eae884b43a8e63507ba00429c7bf99f3fbf5276b5fe1ae7e9b0b6521b888db70",
+  "provenance_preserved": true,
+  "all_other_experiment_artifacts_unchanged": true,
+  "backup_directory": "C:\\Users\\parth\\OneDrive\\Desktop\\stressleveldetection\\backups\\model_training_csv_rename"
+}

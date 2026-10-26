@@ -1,0 +1,124 @@
+{
+  "model": "Random Forest",
+  "fold": 0,
+  "config_id": 0,
+  "threshold": 0.4075563052566316,
+  "floor": 0.6200112422709387,
+  "raw": {
+    "accuracy": 0.6272419149837594,
+    "balanced_accuracy": 0.5638696850529447,
+    "macro_f1": 0.535421034914425,
+    "qwk": 0.47264099336558885,
+    "recall": [
+      0.7177384548985758,
+      0.39318600368324125,
+      0.5806845965770171
+    ],
+    "precision": [
+      0.8217418159357628,
+      0.35038293216630195,
+      0.39402737453338865
+    ],
+    "f1": [
+      0.7662270344986465,
+      0.37055250216951113,
+      0.4694835680751174
+    ],
+    "macro_auc": 0.7609124867124267,
+    "confusion_matrix": [
+      [
+        6652,
+        1942,
+        674
+      ],
+      [
+        1190,
+        1281,
+        787
+      ],
+      [
+        253,
+        433,
+        950
+      ]
+    ],
+    "high_detected": 950,
+    "high_missed": 686
+  },
+  "constrained": {
+    "accuracy": 0.6300663748058184,
+    "balanced_accuracy": 0.5648483154545937,
+    "macro_f1": 0.5406670708484342,
+    "qwk": 0.4807918249598918,
+    "recall": [
+      0.7203280103582218,
+      0.4027010435850215,
+      0.5715158924205379
+    ],
+    "precision": [
+      0.8190406085142927,
+      0.34828776214494295,
+      0.4166666666666667
+    ],
+    "f1": [
+      0.7665193179861071,
+      0.3735231316725979,
+      0.4819587628865979
+    ],
+    "macro_auc": 0.7609124867124267,
+    "confusion_matrix": [
+      [
+        6676,
+        2015,
+        577
+      ],
+      [
+        1214,
+        1312,
+        732
+      ],
+      [
+        261,
+        440,
+        935
+      ]
+    ],
+    "high_detected": 935,
+    "high_missed": 701
+  },
+  "fit": {
+    "seconds": 1.8802842500000025,
+    "history": [],
+    "train_rows": 11329,
+    "dev_rows": 1415,
+    "seed": 20261023,
+    "config": {
+      "id": 0,
+      "params": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 20,
+        "max_features": 0.8,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 12,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 250,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 20261018,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "weight_power": 1.0
+    },
+    "process_peak_rss_kib": 820716
+  },
+  "majority_accuracy": 0.6544273407710776,
+  "historical_rarely_baseline_accuracy": 0.6578
+}

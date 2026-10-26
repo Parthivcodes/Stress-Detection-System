@@ -1,0 +1,45 @@
+{
+  "rows": 183040,
+  "train_rows": 128248,
+  "candidate_count": 39,
+  "sets": {
+    "context": [
+      "CHILDREN",
+      "RENTHOM1",
+      "PERSDOC3",
+      "CHECKUP1",
+      "FOODSTMP",
+      "PRIMINSR"
+    ],
+    "all_safe": [
+      "CHILDREN",
+      "RENTHOM1",
+      "PERSDOC3",
+      "CHECKUP1",
+      "FOODSTMP",
+      "PRIMINSR",
+      "CVDINFR4",
+      "CVDCRHD4",
+      "CVDSTRK3",
+      "ASTHMA3",
+      "CHCCOPD3",
+      "CHCKDNY2",
+      "DIABETE4",
+      "HAVARTH4",
+      "CHCSCNC1",
+      "CHCOCNC1",
+      "DIFFWALK",
+      "DIFFDRES",
+      "DEAF",
+      "BLIND",
+      "SMOKE100",
+      "USENOW3",
+      "ECIGNOW2"
+    ]
+  },
+  "complete_case_retention": {
+    "context": 0.9616914103923648,
+    "all_safe": 0.9233672259996257
+  },
+  "note": "Retention is diagnostic only. Pilot retains everyone using explicit missing handling. Test coverage uses no outcome associations."
+}

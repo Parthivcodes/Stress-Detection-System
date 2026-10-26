@@ -1,0 +1,7 @@
+{
+  "reviewed_unique_flagged_records": 35,
+  "all_recorded_answers_and_mapping_match_source": true,
+  "verified_label_errors": 0,
+  "interpretation": "No transcription/target-mapping error found in this sample. This cannot verify subjective truth of survey answers. Several highly flagged older respondents report high stress despite otherwise favorable measured predictors. Such combinations are possible and do not justify changing their labels.",
+  "action": "Retain all rows and labels. No source evidence supports automated relabeling or removal."
+}

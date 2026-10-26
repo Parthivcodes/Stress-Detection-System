@@ -1,0 +1,12 @@
+{
+ "purpose":"Predictor availability/leakage audit and diagnostic error analysis, not production retraining/promotion.",
+ "seed":20261025,
+ "preservation":"Read-only raw ZIP, cleaned CSV, six checkpoints and inference. Hash before/after. Isolated audit artifacts. No source edits, dataset shrinkage or deployment.",
+ "join":"2022+state+sequence ID, verify source row and stress target. Never join different respondents.",
+ "candidate_rules":"39 fields predeclared in candidate_spec.json. Official codebook codes; separate missing/blank from valid7,9,88. Previously excluded mental-health/life-satisfaction/depression and concurrent symptom fields audited but not modeled.",
+ "errors":"All-six original validation probabilities from prior experiment after source-integrity check. Existing per-model multipliers and raw-weight ensemble. Descriptive reused-validation analysis, not independent evaluation. Additional training-only out-of-fold XGB diagnostics. No test/quarantine outcome analysis.",
+ "pilot":"Fixed-setting diagnostic ablation:3 stratified group folds on original training.19 inputs;19+6context;19+23context/physical/lifestyle. Same rows/folds. XGB350trees,depth5,lr.04,child12,lambda5,subsample.85,colsample.85,weight_power.5. No tuning/earlystop. Fit preprocessing insidefold. Missing category explicit; numericchildren fit-median plus missing indicator. No complete-case filtering on extras.",
+ "decision":"Reserve grouped20% inner calibration within outer training. Choose multipliers[1,middle,high] there only. Maximize accuracy preserving both recalls,macroF1,QWK vs original fixed-policy baseline; high floor max(.60,baseline). Middle .5to2 step.05;high .75to2.5 step.05;include original multipliers. Outer score never chooses cutoff. Infeasible fallback diagnostic only.",
+ "interpretation":"Per-fold/pooledOOF metrics and case counts. Useful lead needs pooledaccuracyimprovement and bothrecalls preserved without per-fold recall loss. Exploratory, not deployment proof. Univariate training associations are not incremental or causal effects. No final holdout evaluation.",
+ "scope":"Report candidates, coverage, inputburden and next validation plan. No website/model changes. No confirmed improvement claim on new people."
+}

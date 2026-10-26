@@ -1,0 +1,14 @@
+{
+  "decision": "retain_current_models_and_ensemble",
+  "reason": "None of the six candidates or predeclared ensemble alternatives passed all validation safeguards; final evaluation did not authorize any replacement.",
+  "cv_fits": 36,
+  "final_fits": 9,
+  "test_evaluation_passes": 1,
+  "notebook_executed_code_cells": 10,
+  "runtime_validation_requests": 512,
+  "runtime_individual_predictions": 3072,
+  "active_model_artifacts_changed": false,
+  "datasets_changed": false,
+  "cloud_deployment_performed": false,
+  "independent_external_validation": false
+}

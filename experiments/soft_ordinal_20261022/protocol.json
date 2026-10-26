@@ -1,0 +1,21 @@
+{
+  "seed": 20261018,
+  "selection_split": "validation",
+  "target_high_recall": 0.6,
+  "probabilities": "Raw unadjusted model probabilities; one high cutoff after averaging.",
+  "threshold": "Largest validation cutoff achieving >=0.60 high recall; ties included.",
+  "weights": "Positive weights in 0.1 steps summing to 1; 9 two-model and 36 three-model combinations per XGB type.",
+  "rank": [
+    "macro_f1",
+    "qwk",
+    "sometimes_recall",
+    "macro_auc_ovr",
+    "accuracy"
+  ],
+  "ordinal_gate": "Higher validation macro-F1 and nonlower QWK than raw normal XGB, both at matched recall.",
+  "ordinal_training": "Same selected XGB settings; 350 max rounds, depth 5, lr .04, early stopping 25 on validation logloss; original three-class sqrt inverse-frequency training sample weights for both binaries.",
+  "ordinal_projection": "B=min(B,A); probabilities=[1-A,A-B,B].",
+  "test_policy": "Freeze thresholds and selected candidate before one test pass. No test-based retuning.",
+  "activation_gate": "Frozen candidate test recall >=0.60 and macro-F1/QWK >= existing vote; otherwise retain original default, no alternative selected using test.",
+  "caveat": "Reused internal holdout: prior test results informed the proposal, so not an untouched external evaluation."
+}

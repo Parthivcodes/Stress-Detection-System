@@ -1,0 +1,90 @@
+{
+  "seconds": 78.66693938599997,
+  "history": [
+    {
+      "epoch": 1,
+      "train_weighted_loss": 0.8958878343874598,
+      "dev_unweighted_logloss": 0.7692874636662812
+    },
+    {
+      "epoch": 2,
+      "train_weighted_loss": 0.8579726688153044,
+      "dev_unweighted_logloss": 0.7592012040401931
+    },
+    {
+      "epoch": 3,
+      "train_weighted_loss": 0.8543225616246609,
+      "dev_unweighted_logloss": 0.7885158704932959
+    },
+    {
+      "epoch": 4,
+      "train_weighted_loss": 0.8517047244425842,
+      "dev_unweighted_logloss": 0.7661769313741751
+    },
+    {
+      "epoch": 5,
+      "train_weighted_loss": 0.8492251877482007,
+      "dev_unweighted_logloss": 0.8286558034444622
+    },
+    {
+      "epoch": 6,
+      "train_weighted_loss": 0.8452339526289742,
+      "dev_unweighted_logloss": 0.7545753755014947
+    },
+    {
+      "epoch": 7,
+      "train_weighted_loss": 0.8445725819588401,
+      "dev_unweighted_logloss": 0.7526573293936858
+    },
+    {
+      "epoch": 8,
+      "train_weighted_loss": 0.8433060730268286,
+      "dev_unweighted_logloss": 0.7405412012427792
+    },
+    {
+      "epoch": 9,
+      "train_weighted_loss": 0.8437073740430561,
+      "dev_unweighted_logloss": 0.7438204004720126
+    },
+    {
+      "epoch": 10,
+      "train_weighted_loss": 0.8436321887953612,
+      "dev_unweighted_logloss": 0.7342437390545411
+    },
+    {
+      "epoch": 11,
+      "train_weighted_loss": 0.8426596796156922,
+      "dev_unweighted_logloss": 0.751348216531806
+    },
+    {
+      "epoch": 12,
+      "train_weighted_loss": 0.8425413646725923,
+      "dev_unweighted_logloss": 0.738344408112996
+    },
+    {
+      "epoch": 13,
+      "train_weighted_loss": 0.8427229177395362,
+      "dev_unweighted_logloss": 0.7595038316955144
+    },
+    {
+      "epoch": 14,
+      "train_weighted_loss": 0.8412096231466322,
+      "dev_unweighted_logloss": 0.758132072989696
+    }
+  ],
+  "train_rows": 115428,
+  "dev_rows": 12820,
+  "seed": 20261023,
+  "config": {
+    "id": 1,
+    "lr": 0.001,
+    "weight_decay": 0.003,
+    "batch_size": 256,
+    "weight_power": 0.5,
+    "dropout": 0.35,
+    "scheduler": true
+  },
+  "process_peak_rss_kib": 820724,
+  "validation_inference_seconds": 0.10589177800000016,
+  "checkpoint_bytes": 99717
+}

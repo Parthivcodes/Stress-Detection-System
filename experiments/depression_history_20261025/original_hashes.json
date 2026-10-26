@@ -1,0 +1,20 @@
+{
+  "models/current_models/cnn_lstm_net.pt": "faeaad7c5af07e8c600d53177b32a27dd92442ff5bf8c810baf0cb655a01670a",
+  "models/current_models/conv1d_net.pt": "b609b805369e4d67783610c3863ebeb8c8a6aae6653c3455316778bae47145e9",
+  "models/current_models/logistic_regression.joblib": "0a7b7f35c779fd0dbc859ccee4ea68b5e005ae621397861aead7863357d92977",
+  "models/current_models/lstm_net.pt": "30458a29a67ba26cac888246c8ecff72556ec2e0ebba35d6673e6b20a246edda",
+  "models/current_models/metrics.json": "2b0e678404e3265f8983468419d9573898c7af65defbc7205a531bf7acebd7e6",
+  "models/current_models/preprocessor.joblib": "b4cce3086cd3499cf29f0aa5b99336a4ddf0c9cd76fc9db0159a270fef08cc97",
+  "models/current_models/random_forest.joblib": "7f719a1a0ebfd87d476e82a0cf45a5e4324e04483f312a3afdd9fccec464f6a6",
+  "models/current_models/READY.json": "24259dc6126931a7f69fa4b7fab2a3e79fbf38490bbc381705cad68094684a67",
+  "models/current_models/schema.json": "009170c197656bc754b6ffbe0babfcc1f5256deb7a45b5243fc765325b063cef",
+  "models/current_models/selection.json": "a089ded428672dc1974f0bdf92045556a61e25fa3ace870af4f1c476fdc05f2d",
+  "models/current_models/xgboost.joblib": "104c2b08aea58de52d33869d1411a0305df89710b27af7eb793f3240f233e521",
+  "models/current_models/ensemble/policy.json": "836321ad607cd9bb959f758da6a6c42299433bdb526c28f5b6af20dbb96eb00e",
+  "models/active_model.json": "0830885a8bac583e344ccc1dea77377fe3728f83c773a8b1371e2baeb395a9d5",
+  "data/expanded_survey_dataset/respondents.csv": "77a74029db2ef51193b8e58a4c3ff56fb87b99c576d4f75a2db827e325dcadbe",
+  "src/brfss_inference.py": "f5e93061ab305b88cd30dca31923e67bbf3eceb3b78ba5244daccef1ea498aed",
+  "src/ensemble_policy.py": "7bfb6c5bdf7b5e4f094b645a3b0c0d08577bbf3695bfd2925a66174df59dc91e",
+  "experiments/predictor_audit_20261025/same_respondent_raw_candidates.csv": "3a20fd718d0bc82fb8bf72ed0193bf61afd485befb96f144f2d09439a79775c6",
+  "experiments/predictor_audit_20261025/codebook_catalog.json": "feedf593b4e36bffbc990c2bfedb8e877e87f9da8be729eb481037537c617493"
+}

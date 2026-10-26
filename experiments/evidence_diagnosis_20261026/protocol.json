@@ -1,0 +1,52 @@
+{
+  "phase": 1,
+  "seeds": [
+    20261026,
+    20261027
+  ],
+  "features": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ],
+  "target": {
+    "0": "rarely/never",
+    "1": "sometimes",
+    "2": "usually/always"
+  },
+  "scope": "Diagnosis first. Preserve algorithms and production. No test evaluation, threshold optimization, label changes, row deletion or promotion in phase1.",
+  "baseline": "Reload six active artifacts; raw and current-decision metrics on full existing validation. Compare saved probabilities. Deterministic5000-row training diagnostic sample for gap. Historical validation reused, not external.",
+  "curves": "Original training divided into grouped90%fit/10%early-stop dev once. Nested group-hash cutoffs0.087/0.35/1.0 of fit(~10k/40k/115k). Actual sizes and class counts recorded. Same sets for every model/seed. Fit-only preprocessing. Classical active hyperparameters, seed20261026; neural current architecture2seeds,14epochmax,patience4,120secsoftcapcheckedbetweenepochs. Unweighted devlogloss selects checkpoint. No validation-based epoch/model selection.",
+  "curve_metrics": "Training sample up to5000 per fit vs full validation. Rawargmax and frozen active multipliers, accuracy/F1/AUC/recall/confusion matrices; no threshold tuning. Neural mean/std over2seeds, classical one seed. Short/time-limited runs cannot prove a learning ceiling.",
+  "ambiguity": "Count exact-ID duplicates, identical19feature profiles and conflicting labels. Near-duplicate proxy: samecategories, age5yearbins,BMI1unitbins,sleep1hour,physicaldays5daybins; not proof of sameperson or erroneouslabels. Use previously saved training-only group-OOF XGB predictions for confidence disagreement review, not a cleanlab-estimated label-error rate. No relabel/delete without source evidence.",
+  "drift": "Optional train-vs-validation domain classifier uses no target label and grouped roles. Test excluded.",
+  "ceiling": "Cannot identify Bayes/noise ceiling from these diagnostics. Empirical conflicting-profile errors constrain exact matching on observed records only, not future attainable accuracy. Majority baseline65.78% historicalholdout and per-partition baselines.",
+  "next": "Use diagnosis to prioritize Phases2-6; missing-value methods inapplicable to complete-case table. Broader sweeps/5x2CV not yet performed; do not claim them. No untouched test exists in this project.",
+  "compute": {
+    "cpu_threads": 4,
+    "logical_cpus": 16,
+    "cuda": false,
+    "memory": [
+      "MemTotal:        7942048 kB",
+      "MemFree:         6247312 kB",
+      "MemAvailable:    7160816 kB"
+    ],
+    "budget": "9classicalfits+18neuralfits; bounded pilot, no paidcompute/new dependencies."
+  }
+}

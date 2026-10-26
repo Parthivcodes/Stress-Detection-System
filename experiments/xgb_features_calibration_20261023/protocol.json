@@ -1,0 +1,61 @@
+{
+  "seed": 202610231,
+  "feature_sets": [
+    "original",
+    "ordered",
+    "engineered"
+  ],
+  "feature_selection": "Compare identical baseline XGBoost settings on two grouped training CV folds; choose lowest mean unweighted log-loss. Original control retained; no forced engineered-feature promotion.",
+  "features": "Numeric originals retained. Six true ordered scales as numeric, other categories one-hot with binary reference dropped. Engineered: seven-factor social risk count, unhealthy days >=14 and log1p, three sleep bands, BMI 1st/99th percentile clipped copy. All fit-dependent values learn within fold.",
+  "risk_rule": "job_loss/bill_difficulty/utility_threat/transport_barrier ==1; food_insecurity/isolation <=3; support>=4. Count is an engineered predictor, not a validated clinical score.",
+  "source_codebook": "data/baseline_survey_dataset/raw/codebook/USCODE22_LLCP_102523.HTML",
+  "trials": 50,
+  "search": "Optuna TPESampler seeded; sequential, no pruning, two grouped training folds; inner 10% early-stop split per fold; full training search partition, not a small sample.",
+  "search_ranges": {
+    "learning_rate": [
+      0.015,
+      0.15
+    ],
+    "max_depth": [
+      2,
+      7
+    ],
+    "min_child_weight": [
+      2,
+      80
+    ],
+    "subsample": [
+      0.65,
+      1
+    ],
+    "colsample_bytree": [
+      0.6,
+      1
+    ],
+    "reg_alpha": [
+      1e-05,
+      10
+    ],
+    "reg_lambda": [
+      0.1,
+      50
+    ],
+    "gamma": [
+      0,
+      2
+    ],
+    "weight_power": [
+      0,
+      1
+    ],
+    "n_estimators": 700
+  },
+  "calibration": "Reserve grouped 10% of original training before all feature selection/tuning. Final model fit excludes calibration data. Split calibration reserve into fit/check halves; fit positive scalar temperature on first half, enable only if independent calibration-check logloss improves and Brier does not worsen. Fixed accepted temperature; no refit on check.",
+  "final_fit": "90% of search partition fit, 10% internal early-stop. Calibration reserve never used in fitting or hyperparameter search.",
+  "operating_point": "On existing validation choose highest accuracy with high recall >=max(.60,current original XGB validation recall); no decreases in macro-F1, QWK or middle recall vs original matched-cutoff baseline and deployed baseline. Threshold chosen separately from calibration and tuning. Ensemble existing weights with candidate XGB and one separately selected cutoff, same safeguards vs current ensemble.",
+  "promotion": "Atomic XGB+ensemble update only if both validation eligible, both final test meet non-degradation safeguards vs current and matched originals, each high recall >=max(.60,current respective test recall), paired accuracy delta CI lower>0, plus runtime512MiB/API checks. Otherwise retain current versions. No alternative chosen using test.",
+  "evaluation": "Existing internal test is historically reused, NOT independent validation. Freeze configuration, model/encoder/calibration hashes and cutoffs before one final evaluation. No test tuning.",
+  "baseline": "Always rarely: historical holdout65.78% accuracy and 0% high recall; report actual partition baseline too.",
+  "cpu_threads": 4,
+  "paid_services": false
+}

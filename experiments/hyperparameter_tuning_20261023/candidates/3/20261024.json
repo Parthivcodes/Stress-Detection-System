@@ -1,0 +1,90 @@
+{
+  "seconds": 79.670658463,
+  "history": [
+    {
+      "epoch": 1,
+      "train_weighted_loss": 0.8981504316149347,
+      "dev_unweighted_logloss": 0.7399869236242252
+    },
+    {
+      "epoch": 2,
+      "train_weighted_loss": 0.8616288255355493,
+      "dev_unweighted_logloss": 0.7476402193709138
+    },
+    {
+      "epoch": 3,
+      "train_weighted_loss": 0.8540185231587766,
+      "dev_unweighted_logloss": 0.7782099908211224
+    },
+    {
+      "epoch": 4,
+      "train_weighted_loss": 0.8506414296618204,
+      "dev_unweighted_logloss": 0.7395880091933563
+    },
+    {
+      "epoch": 5,
+      "train_weighted_loss": 0.8478498749480647,
+      "dev_unweighted_logloss": 0.7400152210559108
+    },
+    {
+      "epoch": 6,
+      "train_weighted_loss": 0.8468162222468242,
+      "dev_unweighted_logloss": 0.731634757508852
+    },
+    {
+      "epoch": 7,
+      "train_weighted_loss": 0.8458200686396905,
+      "dev_unweighted_logloss": 0.7644672511259978
+    },
+    {
+      "epoch": 8,
+      "train_weighted_loss": 0.845483836506543,
+      "dev_unweighted_logloss": 0.7245037809742229
+    },
+    {
+      "epoch": 9,
+      "train_weighted_loss": 0.8452657432166513,
+      "dev_unweighted_logloss": 0.7199663978662302
+    },
+    {
+      "epoch": 10,
+      "train_weighted_loss": 0.8446812122677073,
+      "dev_unweighted_logloss": 0.7134944246788695
+    },
+    {
+      "epoch": 11,
+      "train_weighted_loss": 0.844492820719818,
+      "dev_unweighted_logloss": 0.7204899567212402
+    },
+    {
+      "epoch": 12,
+      "train_weighted_loss": 0.8432204937924135,
+      "dev_unweighted_logloss": 0.7419050439245741
+    },
+    {
+      "epoch": 13,
+      "train_weighted_loss": 0.8433295686296107,
+      "dev_unweighted_logloss": 0.7354502386365871
+    },
+    {
+      "epoch": 14,
+      "train_weighted_loss": 0.839695345596567,
+      "dev_unweighted_logloss": 0.7454062694327572
+    }
+  ],
+  "train_rows": 115428,
+  "dev_rows": 12820,
+  "seed": 20261024,
+  "config": {
+    "id": 1,
+    "lr": 0.001,
+    "weight_decay": 0.003,
+    "batch_size": 256,
+    "weight_power": 0.5,
+    "dropout": 0.35,
+    "scheduler": true
+  },
+  "process_peak_rss_kib": 890832,
+  "validation_inference_seconds": 0.1310248089999959,
+  "checkpoint_bytes": 99717
+}

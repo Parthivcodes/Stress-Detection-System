@@ -10,7 +10,8 @@ import json
 import joblib
 import torch
 import numpy as np
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+import threading
 import urllib.parse
 import math
 
@@ -53,6 +54,7 @@ STATIC_DIR = os.path.join(BASE_DIR, "frontend")
 MODELS_LOADED = False
 ARTIFACTS = {}
 BRFSS = None
+PREDICTION_LOCK = threading.Lock()
 
 def init_models():
     global MODELS_LOADED, ARTIFACTS, BRFSS
@@ -244,6 +246,8 @@ def compute_prediction(data: dict) -> dict:
     }
 
 class SechenovServerHandler(SimpleHTTPRequestHandler):
+    # Idle speculative browser sockets must not block other browsers.
+    timeout = 15
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=STATIC_DIR, **kwargs)
 
@@ -271,7 +275,8 @@ class SechenovServerHandler(SimpleHTTPRequestHandler):
             result = {'model_version': BRFSS.version, 'input_count': len(BRFSS.schema['numeric'])+len(BRFSS.schema['categorical']),
                       'respondents': audit['eligible_records'] if expanded else audit['sample_records'],
                       'test_respondents': audit['split_counts']['test'] if expanded else audit['splits']['test'],
-                      'training_respondents': audit['split_counts']['train'] if expanded else audit['splits']['train']}
+                      'training_respondents': audit['split_counts']['train'] if expanded else audit['splits']['train'],
+                      'ensemble': BRFSS.ensemble_info()}
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
@@ -302,7 +307,9 @@ class SechenovServerHandler(SimpleHTTPRequestHandler):
                 post_body = self.rfile.read(content_length)
                 req_data = json.loads(post_body.decode('utf-8'))
                 
-                result = compute_prediction(req_data)
+                # Serialize model execution, not static files or health checks.
+                with PREDICTION_LOCK:
+                    result = compute_prediction(req_data)
                 
                 self.send_response(200)
                 self.send_header('Content-Type', 'application/json')
@@ -334,7 +341,7 @@ if __name__ == '__main__':
     print(f" URL: http://localhost:{PORT}")
     print(f" Static Assets: {STATIC_DIR}")
     print("=======================================================\n")
-    server = HTTPServer(('127.0.0.1', PORT), SechenovServerHandler)
+    server = ThreadingHTTPServer(('127.0.0.1', PORT), SechenovServerHandler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

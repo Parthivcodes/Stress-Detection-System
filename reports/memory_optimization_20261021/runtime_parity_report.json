@@ -1,0 +1,15 @@
+{
+  "respondents": 512,
+  "model_predictions": 3072,
+  "class_changes": 0,
+  "maximum_probability_error": {
+    "Logistic Regression": 0,
+    "Random Forest": 2.220446049250313e-16,
+    "XGBoost": 0,
+    "1D CNN": 0,
+    "LSTM": 0,
+    "CNN-LSTM": 0
+  },
+  "baseline_peak_mib": 727.875,
+  "optimized_peak_mib": 414.08203125
+}

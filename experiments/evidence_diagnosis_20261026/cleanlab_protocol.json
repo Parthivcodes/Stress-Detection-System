@@ -1,0 +1,7 @@
+{
+  "version": "2.9.0",
+  "source": "Previously saved3-fold group-OOF baseline XGBoost probabilities from original training only.",
+  "method": "find_label_issues default prune_by_noise_rate,frac_noise1,n_jobs1,rankbyself_confidence. Run raw scores and a fixed training-class-weight reversal sensitivity check. No label/row changes.",
+  "limitation": "Class-weighted model scores are not calibrated true probabilities. Reversing fit-fold class weights is only an approximate sensitivity analysis, not calibration. Flag fractions are model-dependent review candidates, NOT verified mislabeled fractions or an accuracy ceiling.",
+  "docs": "https://docs.cleanlab.ai/stable/cleanlab/filter.html"
+}

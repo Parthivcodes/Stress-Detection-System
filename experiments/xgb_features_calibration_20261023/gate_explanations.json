@@ -1,0 +1,21 @@
+{
+  "xgb": [
+    "No validation threshold passed all declared accuracy, recall, macro-F1, QWK and middle-recall gates; candidate threshold is a reporting-only fallback.",
+    "Final high-stress recall below the current-model/60% floor.",
+    "macro_f1 below current decision.",
+    "qwk below current decision.",
+    "Sometimes recall below current decision.",
+    "macro_f1 below matched decision.",
+    "qwk below matched decision.",
+    "Sometimes recall below matched decision."
+  ],
+  "ensemble": [
+    "No validation threshold passed all declared accuracy, recall, macro-F1, QWK and middle-recall gates; candidate threshold is a reporting-only fallback.",
+    "macro_f1 below current decision.",
+    "qwk below current decision.",
+    "Sometimes recall below current decision.",
+    "macro_f1 below matched decision.",
+    "qwk below matched decision.",
+    "Sometimes recall below matched decision."
+  ]
+}

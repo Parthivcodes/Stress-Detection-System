@@ -2,19 +2,14 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "buildCommand": "npm run build",
-  "outputDirectory": ".",
+  "outputDirectory": "public",
+  "functions": { "api/*.js": { "maxDuration": 30 } },
   "rewrites": [
-    { "source": "/dashboard/(.*)", "destination": "/frontend/dashboard/dist/$1" },
-    { "source": "/dashboard", "destination": "/frontend/dashboard/dist/index.html" },
+    { "source": "/dashboard", "destination": "/dashboard/index.html" },
     { "source": "/api/benchmarks", "destination": "/api/benchmarks.js" },
     { "source": "/api/health", "destination": "/api/health.js" },
     { "source": "/api/predict", "destination": "/api/predict.js" },
-    { "source": "/fonts/(.*)", "destination": "/frontend/fonts/$1" },
-    { "source": "/landing.(.*)", "destination": "/frontend/landing.$1" },
-    { "source": "/prediction.(.*)", "destination": "/frontend/prediction.$1" },
-    { "source": "/three.min.js", "destination": "/frontend/three.min.js" },
-    { "source": "/(.*\\.(?:js|css|ttf|woff2|png|jpg|svg|json))", "destination": "/frontend/$1" },
-    { "source": "/", "destination": "/frontend/index.html" },
-    { "source": "/(.*)", "destination": "/frontend/index.html" }
+    { "source": "/api/schema", "destination": "/api/schema.js" },
+    { "source": "/", "destination": "/index.html" }
   ]
 }

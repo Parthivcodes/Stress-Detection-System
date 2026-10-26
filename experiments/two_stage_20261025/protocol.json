@@ -1,0 +1,53 @@
+{
+  "seed": 20261026,
+  "features": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ],
+  "target": {
+    "0": "rarely",
+    "1": "sometimes",
+    "2": "high"
+  },
+  "scope": "Two predeclared candidates: binary class-weight exponents 0 and 0.5. Original19 inputs only, same respondents. No architecture/hyperparameter search after scoring.",
+  "probability": "A=P(Y>0); B=P(Y=2 | Y>0); probabilities=[1-A,A*(1-B),A*B]. Stage2 trains only on actual Y>0. All respondents receive both predictions; no hard routing gate.",
+  "cv": "Three stratified profile-group folds of original train only. Within each outer train reserve grouped20% calibration. Preprocessing fit on fit subset. Identical fit/calibration/score rows for baseline and both candidates.",
+  "baseline": "Fresh multiclass XGB on fit rows with weight exponent0.5 and active XGB multipliers. Never score training folds using production checkpoints trained on them.",
+  "decision": "Inner calibration only: high P2 threshold (81 quantiles), then conditional middle threshold. Max accuracy preserving reference sometimes/high recall, macroF1,QWK; high floor max(0.60,reference). Imported frozen two-boundary implementation.",
+  "eligibility": "Pooled OOF accuracy strictly higher and both recalls,macroF1,QWK no lower than fold-refit baseline; all fold calibration feasible and each score fold preserves both recalls and safeguards. No candidate switching after final evaluation.",
+  "selection": "If any CV eligible choose pooledaccuracy then macroF1, then lower exponent. Refit once on original training. Existing validation selects one threshold against componentwise strictest current XGB and ensemble recalls/F1/QWK, and greater of their accuracies. Validation is historically reused, not untouched.",
+  "final": "Only if validation qualifies: freeze checkpoints/preprocessing/thresholds, perform one final reused internal-holdout evaluation. Require accuracy higher and both recalls,F1,QWK no lower than both active XGB and ensemble. No retuning or alternate candidate selection after holdout.",
+  "promotion": "No deployment. Keep current production unless final performance,512MB runtime,API parity and rollback checks pass. Candidate can be rejected earlier without opening holdout.",
+  "parameters": {
+    "n_estimators": 350,
+    "max_depth": 5,
+    "learning_rate": 0.04,
+    "min_child_weight": 12,
+    "reg_lambda": 5,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "n_jobs": 4,
+    "random_state": 20261026,
+    "eval_metric": "logloss",
+    "tree_method": "hist"
+  },
+  "trial_budget": "2 binary pairs x3 folds plus3 multiclass baselines; conditional final refit of one pair. Sequential 4 threads, no new dependencies.",
+  "limitations": "Cross-sectional survey, not temporal prediction. Class weights used only in fit subsets. Confidence in small gains limited by reused data and correlated folds. Majority baseline shown for each split; historical holdout majority65.78%."
+}

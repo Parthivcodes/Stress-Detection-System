@@ -1,0 +1,7 @@
+{
+  "status": "rejected_on_validation",
+  "production_changed": false,
+  "validation_evaluated": true,
+  "test_evaluated": false,
+  "reason": "Frozen winner only; no alternate candidate or threshold search on comparison/test results."
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "model": "Logistic Regression",
+    "size": "small",
+    "rows": 10115,
+    "runs": 1,
+    "train_accuracy_mean": 0.693,
+    "validation_accuracy_mean": 0.683950779759163,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "Logistic Regression",
+    "size": "medium",
+    "rows": 40494,
+    "runs": 1,
+    "train_accuracy_mean": 0.6872,
+    "validation_accuracy_mean": 0.6880963348029216,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "Logistic Regression",
+    "size": "full",
+    "rows": 115423,
+    "runs": 1,
+    "train_accuracy_mean": 0.6926,
+    "validation_accuracy_mean": 0.6890175692570902,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "Random Forest",
+    "size": "small",
+    "rows": 10115,
+    "runs": 1,
+    "train_accuracy_mean": 0.7532,
+    "validation_accuracy_mean": 0.6332828847798908,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "Random Forest",
+    "size": "medium",
+    "rows": 40494,
+    "runs": 1,
+    "train_accuracy_mean": 0.7462,
+    "validation_accuracy_mean": 0.6313088109495295,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "Random Forest",
+    "size": "full",
+    "rows": 115423,
+    "runs": 1,
+    "train_accuracy_mean": 0.7556,
+    "validation_accuracy_mean": 0.6338093044679871,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "XGBoost",
+    "size": "small",
+    "rows": 10115,
+    "runs": 1,
+    "train_accuracy_mean": 0.7646,
+    "validation_accuracy_mean": 0.6810554714746332,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "XGBoost",
+    "size": "medium",
+    "rows": 40494,
+    "runs": 1,
+    "train_accuracy_mean": 0.7188,
+    "validation_accuracy_mean": 0.6828979403829704,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "XGBoost",
+    "size": "full",
+    "rows": 115423,
+    "runs": 1,
+    "train_accuracy_mean": 0.7076,
+    "validation_accuracy_mean": 0.6867144831216687,
+    "validation_accuracy_std": null,
+    "time_caps": 0,
+    "best_epochs": [
+      null
+    ]
+  },
+  {
+    "model": "1D CNN",
+    "size": "small",
+    "rows": 10115,
+    "runs": 2,
+    "train_accuracy_mean": 0.6805,
+    "validation_accuracy_mean": 0.6803974468645128,
+    "validation_accuracy_std": 0.0009305873280075851,
+    "time_caps": 0,
+    "best_epochs": [
+      9,
+      13
+    ]
+  },
+  {
+    "model": "1D CNN",
+    "size": "medium",
+    "rows": 40494,
+    "runs": 2,
+    "train_accuracy_mean": 0.6856,
+    "validation_accuracy_mean": 0.6894781864841746,
+    "validation_accuracy_std": 0.004094584243233265,
+    "time_caps": 0,
+    "best_epochs": [
+      10,
+      8
+    ]
+  },
+  {
+    "model": "1D CNN",
+    "size": "full",
+    "rows": 115423,
+    "runs": 2,
+    "train_accuracy_mean": 0.6990000000000001,
+    "validation_accuracy_mean": 0.687043495426729,
+    "validation_accuracy_std": 0.0015819984576128788,
+    "time_caps": 0,
+    "best_epochs": [
+      6,
+      5
+    ]
+  },
+  {
+    "model": "LSTM",
+    "size": "small",
+    "rows": 10115,
+    "runs": 2,
+    "train_accuracy_mean": 0.6859,
+    "validation_accuracy_mean": 0.6812857800881753,
+    "validation_accuracy_std": 0.0033035850144268646,
+    "time_caps": 0,
+    "best_epochs": [
+      6,
+      7
+    ]
+  },
+  {
+    "model": "LSTM",
+    "size": "medium",
+    "rows": 40494,
+    "runs": 2,
+    "train_accuracy_mean": 0.687,
+    "validation_accuracy_mean": 0.6837204711456208,
+    "validation_accuracy_std": 0.004420289808035951,
+    "time_caps": 0,
+    "best_epochs": [
+      4,
+      10
+    ]
+  },
+  {
+    "model": "LSTM",
+    "size": "full",
+    "rows": 115423,
+    "runs": 2,
+    "train_accuracy_mean": 0.6931,
+    "validation_accuracy_mean": 0.6851352240573798,
+    "validation_accuracy_std": 0.0010236460608082966,
+    "time_caps": 0,
+    "best_epochs": [
+      2,
+      2
+    ]
+  },
+  {
+    "model": "CNN-LSTM",
+    "size": "small",
+    "rows": 10115,
+    "runs": 2,
+    "train_accuracy_mean": 0.6628000000000001,
+    "validation_accuracy_mean": 0.6626636836217674,
+    "validation_accuracy_std": 0.0038619374112313686,
+    "time_caps": 0,
+    "best_epochs": [
+      14,
+      13
+    ]
+  },
+  {
+    "model": "CNN-LSTM",
+    "size": "medium",
+    "rows": 40494,
+    "runs": 2,
+    "train_accuracy_mean": 0.6815,
+    "validation_accuracy_mean": 0.685530038823452,
+    "validation_accuracy_std": 0.0042807017088347665,
+    "time_caps": 0,
+    "best_epochs": [
+      4,
+      5
+    ]
+  },
+  {
+    "model": "CNN-LSTM",
+    "size": "full",
+    "rows": 115423,
+    "runs": 2,
+    "train_accuracy_mean": 0.6982999999999999,
+    "validation_accuracy_mean": 0.6922089886161742,
+    "validation_accuracy_std": 0.005071700937641245,
+    "time_caps": 0,
+    "best_epochs": [
+      2,
+      4
+    ]
+  }
+]

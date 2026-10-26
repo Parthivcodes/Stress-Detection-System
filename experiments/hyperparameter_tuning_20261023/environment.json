@@ -1,0 +1,18 @@
+{
+  "python": "3.12.15",
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.6.1",
+  "joblib": "1.6.0",
+  "torch": "2.14.1+cpu",
+  "xgboost": "3.4.1",
+  "device": "CPU, four PyTorch threads; no CUDA available",
+  "host": "WSL Ubuntu, Intel Core i7-13620H, approximately 7.6 GiB Linux RAM",
+  "notes": [
+    "Existing environment reused; no dependencies installed.",
+    "XGBoost version read from the imported module; distribution metadata is absent.",
+    "SciPy reports an ignored legacy iprint optimizer option from scikit-learn.",
+    "PyTorch warns that pandas label arrays are read-only; training only reads these arrays and does not mutate them."
+  ]
+}

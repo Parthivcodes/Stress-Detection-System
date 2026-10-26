@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "original_hashes_unchanged": true,
+  "backups_verified": true,
+  "frozen_protocol_verified": true,
+  "fit_only_preprocessing": true,
+  "roles_disjoint": true,
+  "all_six_saved_models_reload_and_predict": true,
+  "saved_prediction_parity_atol": 1e-06,
+  "confusion_matrices_reproduced": true,
+  "production_changed": false
+}

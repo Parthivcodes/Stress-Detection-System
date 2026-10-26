@@ -1,0 +1,7 @@
+{
+  "status": "rejected_on_final_evaluation",
+  "production_changed": false,
+  "validation_evaluated": true,
+  "test_evaluated": true,
+  "reason": "Frozen candidate failed final accuracy/recall/safeguard/uncertainty requirements; retain current production."
+}

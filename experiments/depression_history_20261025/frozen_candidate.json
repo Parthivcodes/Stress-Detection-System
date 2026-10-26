@@ -1,0 +1,11 @@
+{
+  "thresholds": {
+    "high": 0.3071906298398973,
+    "middle": 0.5043977499008179
+  },
+  "hashes": {
+    "candidate_xgb.json": "d133e728af5d83578cbf9cb0237eb3e9b336a465e6193d8a1fb6317f7a698f00",
+    "encoder.json": "d14aa90c938c43187e4945f0adfb9cba70471ad67848fd37c02888ecbd116af2"
+  },
+  "eligible": true
+}

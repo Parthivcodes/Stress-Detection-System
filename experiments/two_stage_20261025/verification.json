@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "protected_files_unchanged": 17,
+  "backup_hashes_verified": true,
+  "frozen_protocol_source_verified": true,
+  "probability_composition_verified": true,
+  "training_only_roles_verified": true,
+  "no_group_leakage": true,
+  "saved_metrics_reproduced": true
+}

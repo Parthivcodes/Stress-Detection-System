@@ -1,0 +1,7 @@
+{
+  "seed": 20261026,
+  "source": "Originaltrain and validation only; no stress outcome used for domain classifier.",
+  "domain": "Balanced sample15197 train vs all15197 validation,3stratifiedgroup folds,150tree depth3 XGB,2threads. Preprocessing fit within domain-training folds. Distinct from stress model training; no stress labels/features derived from target.",
+  "outliers": "Training-only numeric IQR*1.5 and1st/99th percentile thresholds. Counts only; no rows removed or values changed.",
+  "missing": "Report original complete-case selection exclusions. Missingness mechanism cannot be proved random from retained records."
+}

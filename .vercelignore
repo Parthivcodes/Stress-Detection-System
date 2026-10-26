@@ -19,6 +19,11 @@ backups/
 *.ps1
 training/
 tests/
-tools/
 legacy/
+reports/
+models/
+output/
+figures/
+docs/
+deploy/
 server.py

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "protected_files": 19,
+  "unique_respondents": 183040,
+  "training_oof_rows": 128248,
+  "candidate_extract_hash_verified": true,
+  "originals_unchanged": true,
+  "checks": [
+    "Variable-specific valid/missing codes",
+    "Same-person raw extract integrity",
+    "Fit-only numeric imputation",
+    "69 original encoded features",
+    "Training-only pilot roles",
+    "Each respondent scored exactly once",
+    "No group overlaps across fit/calibration/score within a fold",
+    "Saved probabilities finite and normalized",
+    "Saved confusion matrices and accuracy reproduced"
+  ],
+  "limitations": "No production changes or deployment; no new test evaluation. Training-only diagnostic is not proof of generalization."
+}

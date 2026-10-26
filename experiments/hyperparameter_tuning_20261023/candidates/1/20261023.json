@@ -1,0 +1,35 @@
+{
+  "seconds": 12.821235364000017,
+  "history": [],
+  "train_rows": 115428,
+  "dev_rows": 12820,
+  "seed": 20261023,
+  "config": {
+    "id": 1,
+    "params": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": "balanced",
+      "criterion": "gini",
+      "max_depth": 12,
+      "max_features": 0.6,
+      "max_leaf_nodes": null,
+      "max_samples": 0.85,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 30,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 180,
+      "n_jobs": 4,
+      "oob_score": false,
+      "random_state": 20261018,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "weight_power": 1.0
+  },
+  "process_peak_rss_kib": 774876,
+  "validation_inference_seconds": 0.10381398999999192,
+  "checkpoint_bytes": 25527713
+}

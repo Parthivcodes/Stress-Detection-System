@@ -1,0 +1,30 @@
+{
+  "seconds": 5.172447532000007,
+  "history": [],
+  "train_rows": 115428,
+  "dev_rows": 12820,
+  "seed": 20261023,
+  "config": {
+    "id": 1,
+    "params": {
+      "C": 0.01,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 1200,
+      "multi_class": "deprecated",
+      "penalty": "l2",
+      "random_state": 20261018,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "weight_power": 0.5
+  },
+  "process_peak_rss_kib": 716104,
+  "validation_inference_seconds": 0.02920636000001764,
+  "checkpoint_bytes": 2671
+}

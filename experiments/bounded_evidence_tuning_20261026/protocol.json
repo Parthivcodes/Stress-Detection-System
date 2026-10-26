@@ -1,0 +1,65 @@
+{
+  "seeds": [
+    20261026,
+    20261027
+  ],
+  "scope": "User approved bounded strongest-findings run. Same six families; no deployment; no source rows or labels edited. Existing Phase1 backup retained.",
+  "diagnosis_sha256": "9ccee6ec12cce1e09f9941b4fc96d4f73b01692485125209ed88d388a815bd5a",
+  "data_sha256": "77a74029db2ef51193b8e58a4c3ff56fb87b99c576d4f75a2db827e325dcadbe",
+  "cv": "Two stratified profile-group outer folds of ALL original training respondents. Outer fit pool split 20% calibration; remaining split 12.5% early-stop development. Independent fit/dev/calibration/score roles. Fit-only encoders. Original validation/test not used in CV.",
+  "features": "19 core inputs preserved. Derived variant appends 15 explicit features (see source/EXTRA_NAMES); no learned label encoding. BMI quantiles and scaling fit only on fit. Original BMI retained. Neither bad-label flags nor outliers remove rows.",
+  "derived": [
+    "short_sleep",
+    "long_sleep",
+    "sleep_distance8",
+    "physical_days_log",
+    "physical_days14",
+    "bmi_low",
+    "bmi_high",
+    "bmi_clipped",
+    "age_squared",
+    "low_support",
+    "frequent_isolation",
+    "social_pair",
+    "material_risks",
+    "social_material_product",
+    "physical_sleep_product"
+  ],
+  "configurations": {
+    "Logistic Regression": [
+      "baseline",
+      "derived",
+      "focus"
+    ],
+    "Random Forest": [
+      "baseline",
+      "derived",
+      "focus"
+    ],
+    "XGBoost": [
+      "baseline",
+      "derived",
+      "focus"
+    ],
+    "1D CNN": [
+      "baseline",
+      "focus"
+    ],
+    "LSTM": [
+      "baseline",
+      "focus"
+    ],
+    "CNN-LSTM": [
+      "baseline",
+      "focus"
+    ]
+  },
+  "classical": "Baseline clone of active config; derived adds features only. Focus LR C=.1,max_iter=2000,tol=1e-5; RF240 trees,depth10,minleaf50,maxfeatures.8,maxsamples.8,classweights sqrt inverse prevalence; XGB600 rounds,lr.025,depth3,minchild30,lambda15,alpha1,gamma.2,earlystop25 on dev. Others unchanged.",
+  "neural": "Two same predetermined seeds per config, probabilities averaged for both baseline and candidate; per-seed raw metrics saved. Original architecture/fixed feature ordering. Baseline standard scaling/AdamW .0007,decay.001,original dropout. Focus robust scaling,AdamW .001,decay.003,dropout.35,ReduceLROnPlateau factor.5 patience2. Both weighted CE sqrt inverse prevalence,batch512,gradientclip1,patience4,max12epochs,60second soft cap checked each epoch. Dev unweighted logloss picks checkpoint. No temporal-history claim.",
+  "decision": "Fresh baseline frozen individual multipliers define calibration reference. Optimize two-boundary baseline policy on calibration under its own recall/F1/QWK constraints; use feasible policy else original multipliers. Candidate policy optimized on same calibration under BOTH original and matched-baseline componentwise strict safeguards. Never optimize thresholds on outer score. Outer score requires accuracy strictly higher and both recalls/F1/QWK nonlower versus both baseline rules, high recall>=.60. Require this on EACH fold and pooled OOF. No slack or rounded eligibility.",
+  "selection": "Among eligible per-family configurations highest pooled accuracy then F1. No alternative if later validation fails. Final refit uses grouped90%train/10%dev; validation selects thresholds versus actual original and recall-matched original. Freeze before single reused-holdout evaluation. Require paired accuracyCI lower>0 and recalls/F1/QWK nonlower for promotion, then512MB/API/rollback verification. No candidate eligible => no holdout access.",
+  "budget": "18 classical +24 neural fits; sequential4threads. Twofold bounded search, NOT5x2CV or exhaustiveOptuna. No unrequested paidcompute. Two seeds measure limited stability, not reliable uncertainty.",
+  "baseline": "Always rarely reported per comparison; historical reused holdout65.78%,0%minorityrecalls. Existing holdout NOT untouched.",
+  "calibration": "Decision threshold selection only; no probability-calibration claim.",
+  "ranking": "Feature group permutation logloss on first outer score with baselineXGB,3repeats,diagnostic only/no adaptive feature selection. Training-only MI optional; no SHAP package required."
+}

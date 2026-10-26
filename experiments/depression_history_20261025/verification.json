@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "originals_and_backups_unchanged": true,
+  "frozen_protocol_verified": true,
+  "respondent_ids_verified": true,
+  "cv_training_only": true,
+  "no_group_overlap": true,
+  "each_training_respondent_scored_once": true,
+  "confusion_matrices_reproduced": true,
+  "frozen_final_checkpoint_parity_verified": true,
+  "depression_training_raw_counts": {
+    "2": 99754,
+    "1": 28014,
+    "7": 437,
+    "9": 41,
+    "": 2
+  }
+}

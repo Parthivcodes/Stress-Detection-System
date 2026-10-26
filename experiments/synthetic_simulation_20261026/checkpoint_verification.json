@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "all_six_loaded": true,
+  "stored_prediction_parity": {
+    "Logistic Regression": {
+      "max_probability_error": 0.0,
+      "load_and_batch_seconds": 0.023353627999995297
+    },
+    "Random Forest": {
+      "max_probability_error": 5.551115123125783e-17,
+      "load_and_batch_seconds": 0.57260824399998
+    },
+    "XGBoost": {
+      "max_probability_error": 0.0,
+      "load_and_batch_seconds": 0.0511359629999788
+    },
+    "1D CNN": {
+      "max_probability_error": 8.940696716308594e-08,
+      "load_and_batch_seconds": 0.1059622100000297
+    },
+    "LSTM": {
+      "max_probability_error": 5.960464477539063e-08,
+      "load_and_batch_seconds": 0.07008297699997001
+    },
+    "CNN-LSTM": {
+      "max_probability_error": 5.960464477539063e-08,
+      "load_and_batch_seconds": 0.05853187299999263
+    }
+  },
+  "real_artifacts_unchanged": true,
+  "production_changed": false,
+  "architecture_sha256": "c9ae9bd5cc1efc43dc93ad0fd88167dc0fb211d43e8401f0fd9dd05e81087e1a"
+}

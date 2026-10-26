@@ -1,0 +1,49 @@
+{
+  "policies": {
+    "Logistic Regression": {
+      "high": 0.4433432170432031,
+      "middle": 0.4940489923298101
+    },
+    "Random Forest": {
+      "high": 0.3887253958207068,
+      "middle": 0.4821024282534319
+    },
+    "XGBoost": {
+      "high": 0.41588390059769154,
+      "middle": 0.46894240379333496
+    },
+    "1D CNN": {
+      "high": 0.4246547035872936,
+      "middle": 0.43290960788726807
+    },
+    "LSTM": {
+      "high": 0.42360778748989175,
+      "middle": 0.4685784876346588
+    },
+    "CNN-LSTM": {
+      "high": 0.44685933664441113,
+      "middle": 0.48742160201072693
+    }
+  },
+  "model_hashes": {
+    "models/0_20261026.joblib": "e99dbe28f01b29b3acb5fb2393785900f28cfadc6abe0aae970b87f4aa9dadbc",
+    "models/0_20261026.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/1_20261026.joblib": "c2caa0f24c00f39256463b0671033338ea9ec51063cc2b7ce749f19727fdc1f7",
+    "models/1_20261026.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/2_20261026.joblib": "4e6d402b525614c7e0abee7fa5e024b994be117f7d76d1ea3de02cd704642be4",
+    "models/2_20261026.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/3_20261026.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/3_20261026.pt": "e9d425e8c44ab91d8560ca1b633570668d38a474eb8269336e34020f1870858d",
+    "models/3_20261027.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/3_20261027.pt": "69a391254baf7b99e5f31bab851ea58c93d7b004588d39f92928c0ee848e4f99",
+    "models/4_20261026.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/4_20261026.pt": "dc325c6b521a61d66a066d9083f2a1950b0734499898611acaf4f2f5a67a13a1",
+    "models/4_20261027.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/4_20261027.pt": "28c974de37a809084da8b1ff4b791e778aabf9deabffd5639f357fc170431366",
+    "models/5_20261026.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/5_20261026.pt": "bb1e4682161bf6b0439f8165a29ac817d47378146e39a793d5dec9631e950c7c",
+    "models/5_20261027.preprocessor.joblib": "bbd87e5f84dead4e8ed5c60b43f7a00177563a4b62bbb3e90b1338219376654a",
+    "models/5_20261027.pt": "2000ce5bf8ac1a4bcdf553b0e8c86ddf7c56c1f523d3f622373bc67c2b28035c"
+  },
+  "test_unseen_so_far": true
+}

@@ -4,15 +4,17 @@
   const form = byId('prediction-form');
   let schema = null;
   try {
-    const healthResponse=await fetch('/api/health',{signal:AbortSignal.timeout(5000)});
+    byId('prediction-message').textContent='Connecting to the prediction service…';
+    const healthResponse=await fetch('/api/health',{signal:AbortSignal.timeout(30000)});
     const health=healthResponse.ok?await healthResponse.json():null;
+    if(!health?.models_loaded || health.dataset!=='brfss2022')throw new Error('Models unavailable');
     if(health?.model_version==='brfss2022_expanded'){
-      const response=await fetch('/api/schema',{signal:AbortSignal.timeout(5000)});
+      const response=await fetch('/api/schema',{signal:AbortSignal.timeout(30000)});
       if(!response.ok)throw new Error('Expanded input schema unavailable');
       schema=await response.json();
     }
   }catch(error){
-    byId('prediction-message').textContent='Could not load model configuration. Refresh after checking the local server.';
+    byId('prediction-message').textContent='The prediction service is unavailable or starting up. Wait a moment, then refresh to reconnect.';
     byId('run-prediction').disabled=true;
     return;
   }
@@ -42,6 +44,17 @@
     document.querySelector('.evidence-heading .subtle-count').textContent=`NEW HOLDOUT · ${schema.test_respondents.toLocaleString()} RESPONDENTS`;
     document.querySelector('.prediction-evidence>p').textContent='Previously unused respondents and input profiles. Settings were selected on validation data with a high-stress recall constraint. Every promoted model exceeded both prior versions in observed high-stress recall and accuracy on this same holdout. Middle-category recall declined. This is not a guarantee for future people or external clinical validation.';
     const about=document.querySelector('#about-dialog p');about.textContent=about.textContent.replace('twelve profile inputs','nineteen profile inputs');
+    const baseline=document.createElement('p');
+    baseline.textContent='Always predicting rarely / never: 65.78% accuracy on this holdout; 0% high-stress recall.';
+    document.querySelector('.prediction-evidence').insertBefore(baseline,document.querySelector('.evidence-table'));
+    if(schema.ensemble?.method==='weighted_raw_probabilities_with_high_cutoff'){
+      method[1].textContent='Six individual model results remain available. The consensus uses a validation-selected weighted blend of raw probabilities and one high-stress cutoff, not majority voting.';
+      const m=schema.ensemble.test_metrics;
+      const evidence=document.createElement('p');
+      evidence.textContent=`Frozen soft ensemble: accuracy ${(100*m.accuracy).toFixed(2)}%; macro-F1 ${m.macro_f1.toFixed(4)}; QWK ${m.qwk.toFixed(4)}; sometimes recall ${(100*m.recall[1]).toFixed(2)}%; high recall ${(100*m.recall[2]).toFixed(2)}%; macro AUC ${m.macro_auc_ovr.toFixed(4)}. Reused internal holdout, not external validation.`;
+      document.querySelector('.prediction-evidence').insertBefore(evidence,document.querySelector('.evidence-table'));
+      document.querySelector('.agreement-caption').textContent='Individual matches, not vote-based selection';
+    }
   }
   const cards=new Map();let latest=null,revision=0,request=null;
   fields.forEach(([key,label,min,max,step,value,unit])=>{
@@ -90,13 +103,26 @@
       latest={created_at:new Date().toISOString(),profile:submitted,...data};
       byId('consensus-title').textContent=data.consensus.label;byId('model-agreement').textContent=`${data.consensus.agreement_rate}%`;byId('agreement-fill').style.width=`${data.consensus.agreement_rate}%`;
       byId('prediction-message').textContent='Majority vote across six models. Compare each prediction and its class probabilities below.';
+      if(data.consensus.method==='weighted_raw_probabilities_with_high_cutoff'){
+        const mix=Object.entries(data.consensus.weights).map(([name,w])=>`${name} ${(100*w).toFixed(0)}%`).join(' + ');
+        const probabilities=data.consensus.probabilities.map((p,i)=>`${['Rarely/never','Sometimes','Usually/always'][i]} ${(100*p).toFixed(2)}%`).join(' | ');
+        byId('prediction-message').textContent=`Soft ensemble: ${mix}. ${probabilities}. Decision: usually/always when its probability is at least ${(100*data.consensus.high_threshold).toFixed(4)}%; otherwise choose the larger rarely/sometimes probability. The six cards retain their individual class adjustments.`;
+      }
       models.forEach(([name])=>{const result=data.models[name],card=cards.get(name);card.dataset.level=String(result.predicted_class);card.querySelector('.model-label').textContent=result.label;card.querySelector('.model-score').textContent=`${(result.confidence*100).toFixed(1)}%`;
         card.querySelectorAll('.class-probability').forEach((row,i)=>{row.querySelector('i').style.width=`${result.probabilities[i]*100}%`;row.querySelector('output').textContent=`${(result.probabilities[i]*100).toFixed(1)}%`;});});
       byId('download-prediction').disabled=false;connection(true);
     }catch(error){if(submittedRevision!==revision)return;byId('consensus-title').textContent='Let’s try that again.';byId('prediction-message').textContent=error.name==='AbortError'?'The analysis timed out. Please try again.':error instanceof TypeError?'Cannot reach the local prediction server. Check that it is running, then try again.':error.message;}
     finally{clearTimeout(timeout);request=null;byId('run-prediction').disabled=false;byId('run-prediction').innerHTML='Analyze all six models <span aria-hidden="true">↗</span>';byId('prediction-output').setAttribute('aria-busy','false');}
   });
-  byId('download-prediction').addEventListener('click',()=>{if(!latest)return;const url=URL.createObjectURL(new Blob([JSON.stringify(latest,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='nerva-six-model-analysis.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+  byId('download-prediction').innerHTML='Download analysis PDF <span aria-hidden="true">↓</span>';
+  byId('download-prediction').addEventListener('click',()=>{
+    if(!latest)return;
+    try{
+      if(!window.NervaAnalysisPDF)throw new Error('The PDF exporter could not load. Refresh this page and try again.');
+      const pdf=window.NervaAnalysisPDF.create(latest,{fields,labels,categories,modelOrder:models.map(([name])=>name)});
+      const url=URL.createObjectURL(new Blob([pdf],{type:'application/pdf'}));const a=document.createElement('a');a.href=url;a.download=`nerva-analysis-${latest.created_at.slice(0,10)}.pdf`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
+    }catch(error){byId('prediction-message').textContent=error.message||'The PDF could not be created. Please try again.';}
+  });
   function connection(ready){byId('connection').textContent=ready?'All six models connected':'Local server unavailable';byId('connection').dataset.state=ready?'ready':'error';}
   fetch('/api/health',{signal:AbortSignal.timeout(5000)}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>connection(data.models_loaded&&data.dataset==='brfss2022')).catch(()=>connection(false));
   fetch('/api/benchmarks').then(r=>{if(!r.ok)throw Error();return r.json();}).then(rows=>rows.forEach(row=>{const tr=document.createElement('tr');[row.Model,`${(Number(row.Accuracy)*100).toFixed(2)}%`,Number(row['F1-Score (Macro)']).toFixed(4),Number(row['ROC-AUC (Macro)']).toFixed(4),`${(100*(row['Recall by class']?.[2]??(row.confusion_matrix?.[2]?.[2]/row.confusion_matrix?.[2]?.reduce((a,b)=>a+b,0)))).toFixed(2)}%`].forEach(value=>{const td=document.createElement('td');td.textContent=value;tr.append(td);});byId('prediction-benchmarks').append(tr);})).catch(()=>{const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=5;td.textContent='Benchmark data is currently unavailable.';tr.append(td);byId('prediction-benchmarks').append(tr);});

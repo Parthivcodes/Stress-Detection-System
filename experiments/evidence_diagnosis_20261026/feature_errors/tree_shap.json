@@ -1,0 +1,25 @@
+{
+  "rows": 500,
+  "raw_margin_mean_absolute_group_contribution": {
+    "age": 0.22100859880447388,
+    "sleep_duration": 0.18997681140899658,
+    "unhealthy_days": 0.09765046834945679,
+    "bmi": 0.032150670886039734,
+    "sex": 0.11746867746114731,
+    "exercise": 0.014802024699747562,
+    "general_health": 0.12319477647542953,
+    "marital": 0.04516148939728737,
+    "education": 0.026502171531319618,
+    "employment": 0.0671703889966011,
+    "income": 0.0348069965839386,
+    "support": 0.21878233551979065,
+    "isolation": 0.35545581579208374,
+    "job_loss": 0.01427445188164711,
+    "food_insecurity": 0.10027597844600677,
+    "bill_difficulty": 0.029483836144208908,
+    "utility_threat": 0.018003450706601143,
+    "transport_barrier": 0.027214476838707924,
+    "medical_cost": 0.02008553221821785
+  },
+  "aggregation": "Sumabsolute dummy-contributions then meanoverpeople/classes; redundantfeatures share attribution."
+}

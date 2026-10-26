@@ -1,0 +1,10 @@
+{
+  "reason": "Verification detected shared profile groups between calibration and comparison. Removed comparison rows in any calibration group; preserved initial results. No label/performance-based removal, refit, threshold change or alternate seed.",
+  "excluded_rows": 4,
+  "excluded_groups": 4,
+  "initial_rows": 14325,
+  "corrected_rows": 14321,
+  "thresholds_unchanged": true,
+  "models_unchanged": true,
+  "initial_summary_sha256": "d5a58171af305867a8f907da801be796603c29e2a7ebca204c55adc68240c369"
+}

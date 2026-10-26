@@ -8,7 +8,9 @@ import urllib.error
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
-from http.server import HTTPServer
+from http.server import ThreadingHTTPServer
+import socket
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -31,7 +33,7 @@ class Assets(HTMLParser):
 
 
 server.init_models()
-httpd = HTTPServer(("127.0.0.1", 0), server.SechenovServerHandler)
+httpd = ThreadingHTTPServer(("127.0.0.1", 0), server.SechenovServerHandler)
 worker = threading.Thread(target=httpd.serve_forever, daemon=True)
 worker.start()
 base = f"http://127.0.0.1:{httpd.server_port}"
@@ -42,6 +44,12 @@ def get(path):
         return response.read()
 
 try:
+    # Reproduce an external browser preopening connections without sending requests.
+    idle = [socket.create_connection(("127.0.0.1", httpd.server_port)) for _ in range(6)]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        assert all(pool.map(lambda _: json.loads(get("/api/health"))["models_loaded"], range(16)))
+    for connection in idle:
+        connection.close()
     health = json.loads(get("/api/health"))
     assert health["models_loaded"] and health["model_version"] == "brfss2022_expanded"
     assert json.loads(get("/api/schema"))["input_count"] == 19
@@ -66,7 +74,11 @@ try:
         result = json.load(response)
     assert len(result["models"]) == 6
     assert result["model_version"] == "brfss2022_expanded"
-    assert result == server.BRFSS.predict(payload)
+    direct = server.BRFSS.predict(payload)
+    for name, prediction in result["models"].items():
+        assert prediction["predicted_class"] == direct["models"][name]["predicted_class"]
+        # Threaded CPU kernels may differ by floating-point rounding.
+        assert all(abs(a-b) < 1e-5 for a,b in zip(prediction["probabilities"], direct["models"][name]["probabilities"]))
     invalid = urllib.request.Request(base + "/api/predict", data=b"{}",
                                     headers={"Content-Type": "application/json"})
     try:

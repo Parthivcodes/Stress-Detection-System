@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "production_unchanged": true,
+  "frozen_protocol_unchanged": true,
+  "learning_curve_fits": 27,
+  "grouped_development_separate": true,
+  "nested_training_sizes_verified": true,
+  "baseline_saved_prediction_parity": true,
+  "labels_changed": 0,
+  "test_evaluated": false
+}

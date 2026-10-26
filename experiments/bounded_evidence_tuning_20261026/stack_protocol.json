@@ -1,0 +1,7 @@
+{
+  "source_sha256": "92d39cf0760da8181b93610dcffc566ea5b2f190a1605da7c683e065dac5e86b",
+  "method": "LR meta-learner C=.1,maxiter2000,sqrt inverse class weights,18rawprobabilities. Neural2seedmean for baseline and stack.",
+  "splits": "Within each outer fold base models use fit/dev. Split calibration groups50/50 into meta-fit and threshold-calibration. Outer score never fits meta learner or thresholds.",
+  "reference": "Refitted current LR.4/XGB.5/LSTM.1 blend with currentcutoff and calibration-matched policy. Protectbothrecalls,F1,QWK and improveaccuracy on eachscorefold and pooled.",
+  "scope": "Diagnostic only,no test. Positive result requires fulltraining/validation/runtime confirmation."
+}

@@ -1,0 +1,115 @@
+{
+  "numeric": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi"
+  ],
+  "categorical": [
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ],
+  "limits": {
+    "age": [
+      18,
+      80
+    ],
+    "sleep_duration": [
+      1,
+      24
+    ],
+    "unhealthy_days": [
+      0,
+      30
+    ],
+    "bmi": [
+      1,
+      99.98
+    ],
+    "sex": [
+      1,
+      2
+    ],
+    "exercise": [
+      1,
+      2
+    ],
+    "general_health": [
+      1,
+      5
+    ],
+    "marital": [
+      1,
+      6
+    ],
+    "education": [
+      1,
+      6
+    ],
+    "employment": [
+      1,
+      8
+    ],
+    "income": [
+      1,
+      11
+    ],
+    "support": [
+      1,
+      5
+    ],
+    "stress_raw": [
+      1,
+      5
+    ],
+    "isolation": [
+      1,
+      5
+    ],
+    "job_loss": [
+      1,
+      2
+    ],
+    "food_insecurity": [
+      1,
+      5
+    ],
+    "bill_difficulty": [
+      1,
+      2
+    ],
+    "utility_threat": [
+      1,
+      2
+    ],
+    "transport_barrier": [
+      1,
+      2
+    ],
+    "medical_cost": [
+      1,
+      2
+    ]
+  },
+  "labels": [
+    "Rarely / never",
+    "Sometimes",
+    "Usually / always"
+  ],
+  "input_dim": 69,
+  "dataset": "Expanded BRFSS 2022",
+  "feature_count": 19
+}

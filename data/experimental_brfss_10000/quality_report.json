@@ -1,0 +1,153 @@
+{
+  "rows": 10000,
+  "unique_respondents": 10000,
+  "features": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ],
+  "columns_preserved": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "stress_raw",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost",
+    "respondent_id",
+    "source_row",
+    "target",
+    "raw_age",
+    "raw_sleep_duration",
+    "raw_unhealthy_days",
+    "raw_bmi",
+    "raw_sex",
+    "raw_exercise",
+    "raw_general_health",
+    "raw_marital",
+    "raw_education",
+    "raw_employment",
+    "raw_income",
+    "raw_support",
+    "raw_stress_raw",
+    "raw_isolation",
+    "raw_job_loss",
+    "raw_food_insecurity",
+    "raw_bill_difficulty",
+    "raw_utility_threat",
+    "raw_transport_barrier",
+    "raw_medical_cost",
+    "split",
+    "profile_group"
+  ],
+  "source_sha256": "77a74029db2ef51193b8e58a4c3ff56fb87b99c576d4f75a2db827e325dcadbe",
+  "subset_sha256": "beed43ec00c489dd291f7d14d678dae475949c9bd762fbf727261b4beccdd13c",
+  "distribution": [
+    {
+      "split": "test",
+      "target": 0,
+      "eligible": 20207,
+      "subset": 1160
+    },
+    {
+      "split": "test",
+      "target": 1,
+      "eligible": 6891,
+      "subset": 396
+    },
+    {
+      "split": "test",
+      "target": 2,
+      "eligible": 3620,
+      "subset": 208
+    },
+    {
+      "split": "train",
+      "target": 0,
+      "eligible": 84466,
+      "subset": 4850
+    },
+    {
+      "split": "train",
+      "target": 1,
+      "eligible": 28672,
+      "subset": 1646
+    },
+    {
+      "split": "train",
+      "target": 2,
+      "eligible": 15110,
+      "subset": 868
+    },
+    {
+      "split": "validation",
+      "target": 0,
+      "eligible": 9981,
+      "subset": 573
+    },
+    {
+      "split": "validation",
+      "target": 1,
+      "eligible": 3437,
+      "subset": 197
+    },
+    {
+      "split": "validation",
+      "target": 2,
+      "eligible": 1779,
+      "subset": 102
+    }
+  ],
+  "split_counts": {
+    "train": 7364,
+    "test": 1764,
+    "validation": 872
+  },
+  "class_counts": {
+    "0": 6583,
+    "2": 1178,
+    "1": 2239
+  },
+  "identical_feature_groups": 0,
+  "extra_rows_with_identical_features": 0,
+  "identical_feature_groups_with_different_labels": 0,
+  "checks": {
+    "originals_unchanged": true,
+    "all_field_values_identical_to_source": true,
+    "no_missing_predictors": true,
+    "predictors_within_existing_schema": true,
+    "target_mapping_valid": true,
+    "no_profile_group_overlap_between_splits": true
+  },
+  "accuracy": null,
+  "models_retrained": false
+}

@@ -1,0 +1,31 @@
+{
+  "rows": 183040,
+  "unique_ids": 183040,
+  "split_counts": {
+    "train": 128248,
+    "test": 30718,
+    "validation": 15197,
+    "quarantine": 8877
+  },
+  "training_class_counts": {
+    "0": 84466,
+    "1": 28672,
+    "2": 15110
+  },
+  "validation_class_counts": {
+    "0": 9981,
+    "1": 3437,
+    "2": 1779
+  },
+  "missing_predictors": 0,
+  "groups_crossing_splits": 0,
+  "training_exact_duplicate_feature_extra_rows": 86,
+  "training_conflicting_feature_groups": 17,
+  "training_rows_in_conflicting_groups": 34,
+  "observed_exact_profile_min_errors": 17,
+  "observed_profile_lookup_max_accuracy": 0.9998674443266172,
+  "near_bin_groups_with_multiple_rows": 2875,
+  "near_bin_conflicting_groups": 753,
+  "near_definition": "Same19categories/numericbins; age5,BMI1,physicaldays5; NOT respondent deduplication rule.",
+  "note": "Observed lookup maximum is an in-sample combinatorial fact, NOT a generalization or noise ceiling. All original rows retained."
+}

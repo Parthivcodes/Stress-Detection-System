@@ -1,0 +1,17 @@
+{
+  "method": "Predeclared high-confidence group-OOF disagreement; NOT cleanlab/confident-learning noise estimation.",
+  "rows": 128248,
+  "flags": 893,
+  "flag_fraction": 0.006963071548874057,
+  "thresholds": {
+    "max_predicted": 0.8,
+    "max_observed_label": 0.1
+  },
+  "class_flag_counts": {
+    "0": 80,
+    "1": 582,
+    "2": 231
+  },
+  "source_probability_sha256": "097e6ec280e2418b2e31874e1cb14289a5d0401eb655ea1587535bf97200f6d9",
+  "interpretation": "Can reflect missing predictors, model bias, noisy answers or legitimate differences. Ground-truth errors not established. No labels changed."
+}

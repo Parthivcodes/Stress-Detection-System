@@ -1,0 +1,174 @@
+{
+  "schema": {
+    "numeric": [
+      "age",
+      "sleep_duration",
+      "unhealthy_days",
+      "bmi"
+    ],
+    "categorical": [
+      "sex",
+      "exercise",
+      "general_health",
+      "marital",
+      "education",
+      "employment",
+      "income",
+      "support",
+      "isolation",
+      "job_loss",
+      "food_insecurity",
+      "bill_difficulty",
+      "utility_threat",
+      "transport_barrier",
+      "medical_cost"
+    ],
+    "limits": {
+      "age": [
+        18,
+        80
+      ],
+      "sleep_duration": [
+        1,
+        24
+      ],
+      "unhealthy_days": [
+        0,
+        30
+      ],
+      "bmi": [
+        1,
+        99.98
+      ],
+      "sex": [
+        1,
+        2
+      ],
+      "exercise": [
+        1,
+        2
+      ],
+      "general_health": [
+        1,
+        5
+      ],
+      "marital": [
+        1,
+        6
+      ],
+      "education": [
+        1,
+        6
+      ],
+      "employment": [
+        1,
+        8
+      ],
+      "income": [
+        1,
+        11
+      ],
+      "support": [
+        1,
+        5
+      ],
+      "stress_raw": [
+        1,
+        5
+      ],
+      "isolation": [
+        1,
+        5
+      ],
+      "job_loss": [
+        1,
+        2
+      ],
+      "food_insecurity": [
+        1,
+        5
+      ],
+      "bill_difficulty": [
+        1,
+        2
+      ],
+      "utility_threat": [
+        1,
+        2
+      ],
+      "transport_barrier": [
+        1,
+        2
+      ],
+      "medical_cost": [
+        1,
+        2
+      ]
+    },
+    "labels": [
+      "Rarely / never",
+      "Sometimes",
+      "Usually / always"
+    ],
+    "input_dim": 69,
+    "dataset": "Expanded BRFSS 2022",
+    "feature_count": 19
+  },
+  "mode": "engineered",
+  "mean": [
+    55.166769355180314,
+    7.0260219111616,
+    4.26271251708801,
+    28.754660068929667
+  ],
+  "scale": [
+    17.039310504110105,
+    1.4314423878595863,
+    8.528416475319338,
+    6.52017735811856
+  ],
+  "bmi_limits": [
+    18.02,
+    49.60270000000004
+  ],
+  "names": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex_2",
+    "exercise_2",
+    "general_health",
+    "marital_1",
+    "marital_2",
+    "marital_3",
+    "marital_4",
+    "marital_5",
+    "marital_6",
+    "education",
+    "employment_1",
+    "employment_2",
+    "employment_3",
+    "employment_4",
+    "employment_5",
+    "employment_6",
+    "employment_7",
+    "employment_8",
+    "income",
+    "support",
+    "isolation",
+    "job_loss_2",
+    "food_insecurity",
+    "bill_difficulty_2",
+    "utility_threat_2",
+    "transport_barrier_2",
+    "medical_cost_2",
+    "social_risk_count",
+    "unhealthy_14plus",
+    "unhealthy_log1p",
+    "sleep_under7",
+    "sleep_7to9",
+    "sleep_over9",
+    "bmi_clipped"
+  ]
+}

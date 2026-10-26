@@ -1,0 +1,290 @@
+{
+  "format": 1,
+  "selection_split": "validation",
+  "weights": {
+    "Logistic Regression": 0.4,
+    "XGBoost": 0.5,
+    "LSTM": 0.1
+  },
+  "high_threshold": 0.33022436197988114,
+  "validation_metrics": {
+    "accuracy": 0.6843455945252352,
+    "macro_f1": 0.5433334864501002,
+    "qwk": 0.5143019825146541,
+    "recall": [
+      0.8528203586814949,
+      0.23858015711376201,
+      0.6003372681281619
+    ],
+    "macro_auc_ovr": 0.7842122549778209,
+    "confusion_matrix": [
+      [
+        8512,
+        921,
+        548
+      ],
+      [
+        1811,
+        820,
+        806
+      ],
+      [
+        434,
+        277,
+        1068
+      ]
+    ]
+  },
+  "ordinal_eligible": false,
+  "matched_recall_baselines": {
+    "Logistic Regression": {
+      "weights": {
+        "Logistic Regression": 1.0
+      },
+      "high_threshold": 0.3212154253999504,
+      "metrics": {
+        "accuracy": 0.6802658419424886,
+        "macro_f1": 0.5308923813284468,
+        "qwk": 0.501917717589922,
+        "recall": [
+          0.8554253080853622,
+          0.21297643293569973,
+          0.6003372681281619
+        ],
+        "macro_auc_ovr": 0.7790018551714786,
+        "confusion_matrix": [
+          [
+            8538,
+            823,
+            620
+          ],
+          [
+            1844,
+            732,
+            861
+          ],
+          [
+            450,
+            261,
+            1068
+          ]
+        ]
+      }
+    },
+    "Random Forest": {
+      "weights": {
+        "Random Forest": 1.0
+      },
+      "high_threshold": 0.3964899267959484,
+      "metrics": {
+        "accuracy": 0.6317036257156018,
+        "macro_f1": 0.541188964343437,
+        "qwk": 0.49080904554586036,
+        "recall": [
+          0.7209698427011322,
+          0.38871108524876347,
+          0.6003372681281619
+        ],
+        "macro_auc_ovr": 0.766480482167546,
+        "confusion_matrix": [
+          [
+            7196,
+            2117,
+            668
+          ],
+          [
+            1253,
+            1336,
+            848
+          ],
+          [
+            257,
+            454,
+            1068
+          ]
+        ]
+      }
+    },
+    "XGBoost": {
+      "weights": {
+        "XGBoost": 1.0
+      },
+      "high_threshold": 0.3348627984523773,
+      "metrics": {
+        "accuracy": 0.6809238665526091,
+        "macro_f1": 0.544520139101875,
+        "qwk": 0.5199552473378513,
+        "recall": [
+          0.8432020839595231,
+          0.2513820192027931,
+          0.6003372681281619
+        ],
+        "macro_auc_ovr": 0.7838630695775658,
+        "confusion_matrix": [
+          [
+            8416,
+            1028,
+            537
+          ],
+          [
+            1753,
+            864,
+            820
+          ],
+          [
+            401,
+            310,
+            1068
+          ]
+        ]
+      }
+    },
+    "1D CNN": {
+      "weights": {
+        "1D CNN": 1.0
+      },
+      "high_threshold": 0.3093317449092865,
+      "metrics": {
+        "accuracy": 0.6618411528591169,
+        "macro_f1": 0.5297280699585042,
+        "qwk": 0.49077294221542245,
+        "recall": [
+          0.813445546538423,
+          0.25341867908059357,
+          0.6003372681281619
+        ],
+        "macro_auc_ovr": 0.769283734754126,
+        "confusion_matrix": [
+          [
+            8119,
+            1183,
+            679
+          ],
+          [
+            1683,
+            871,
+            883
+          ],
+          [
+            395,
+            316,
+            1068
+          ]
+        ]
+      }
+    },
+    "LSTM": {
+      "weights": {
+        "LSTM": 1.0
+      },
+      "high_threshold": 0.3067450271061812,
+      "metrics": {
+        "accuracy": 0.6878331249588735,
+        "macro_f1": 0.5287778199681257,
+        "qwk": 0.5067208432605161,
+        "recall": [
+          0.8761647129546137,
+          0.18620890311318009,
+          0.6003372681281619
+        ],
+        "macro_auc_ovr": 0.7835063487956605,
+        "confusion_matrix": [
+          [
+            8745,
+            671,
+            565
+          ],
+          [
+            1962,
+            640,
+            835
+          ],
+          [
+            485,
+            226,
+            1068
+          ]
+        ]
+      }
+    },
+    "CNN-LSTM": {
+      "weights": {
+        "CNN-LSTM": 1.0
+      },
+      "high_threshold": 0.3314487636089325,
+      "metrics": {
+        "accuracy": 0.6794762124103442,
+        "macro_f1": 0.5237650335187332,
+        "qwk": 0.5026249923011837,
+        "recall": [
+          0.8622382526800921,
+          0.1897003200465522,
+          0.6003372681281619
+        ],
+        "macro_auc_ovr": 0.7721910393206898,
+        "confusion_matrix": [
+          [
+            8606,
+            779,
+            596
+          ],
+          [
+            1918,
+            652,
+            867
+          ],
+          [
+            458,
+            253,
+            1068
+          ]
+        ]
+      }
+    },
+    "Ordinal XGBoost": {
+      "weights": {
+        "Ordinal XGBoost": 1.0
+      },
+      "high_threshold": 0.33147844672203064,
+      "metrics": {
+        "accuracy": 0.6795420148713562,
+        "macro_f1": 0.545376944673668,
+        "qwk": 0.519280283609046,
+        "recall": [
+          0.8377918044284139,
+          0.26098341576956646,
+          0.6003372681281619
+        ],
+        "macro_auc_ovr": 0.782820816265934,
+        "confusion_matrix": [
+          [
+            8362,
+            1053,
+            566
+          ],
+          [
+            1716,
+            897,
+            824
+          ],
+          [
+            381,
+            330,
+            1068
+          ]
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "preprocessor.joblib": "b4cce3086cd3499cf29f0aa5b99336a4ddf0c9cd76fc9db0159a270fef08cc97",
+    "schema.json": "009170c197656bc754b6ffbe0babfcc1f5256deb7a45b5243fc765325b063cef",
+    "logistic_regression.joblib": "0a7b7f35c779fd0dbc859ccee4ea68b5e005ae621397861aead7863357d92977",
+    "xgboost.joblib": "104c2b08aea58de52d33869d1411a0305df89710b27af7eb793f3240f233e521",
+    "lstm_net.pt": "30458a29a67ba26cac888246c8ecff72556ec2e0ebba35d6673e6b20a246edda"
+  },
+  "ordinal_sha256": {
+    "ordinal_at_least_sometimes.joblib": "1e325957a54a4d8455dc1fe459e77714ac8b759861961d5d458bb22b1e4191d2",
+    "ordinal_high.joblib": "60c82f528234f8abf5de5fea9a8cee5727ce8f3339b93f5d5c7f9d4e63e4a626"
+  }
+}
