@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "all_protected_files_unchanged": true,
+  "models_retrained": false,
+  "datasets_changed": false,
+  "test_evaluated": false
+}

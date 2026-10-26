@@ -1,0 +1,7 @@
+{
+  "scope": "Read-only analytic diagnosis; no fitting, target edits, threshold search, deployment or new test evaluation.",
+  "source": "Extract exact material-count and signal expressions from frozen generator AST. Conditional Gaussian class probabilities computed analytically using its recordednoiseSD and fixedboundaries.",
+  "estimate": "Mean of maxclass conditionalprobability over7000training featureprofiles. This is a MonteCarlo estimate of expected unconstrained Bayesaccuracy under the intended simulationdistribution, not a hard upperbound on one realizedfinite testscore.",
+  "observed": "Evaluate fixed known-rule argmax on existingvalidation only as a diagnostic reference. It is not an additional trained model or eligible productioncandidate. No testlabels used.",
+  "interpretation": "Unconstrained optimal expectedaccuracy is already an upperbound on expectedaccuracy under additional recallconstraints. Does not establish any ceiling for real BRFSS data. Pseudorandom seed/ID reconstruction is not a predictive feature."
+}

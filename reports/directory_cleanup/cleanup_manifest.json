@@ -1,0 +1,415 @@
+{
+  "removed_caches": [
+    {
+      "path": "__pycache__",
+      "bytes": 20453.0,
+      "reason": "Disposable compiled Python cache; source files preserved.",
+      "files": 1
+    },
+    {
+      "path": "src\\__pycache__",
+      "bytes": 45329.0,
+      "reason": "Disposable compiled Python cache; source files preserved.",
+      "files": 6
+    },
+    {
+      "path": "tests\\__pycache__",
+      "bytes": 3510.0,
+      "reason": "Disposable compiled Python cache; source files preserved.",
+      "files": 1
+    }
+  ],
+  "backup": "backups/directory_cleanup_20261026",
+  "protected_file_count": 944,
+  "all_protected_hashes_unchanged": true,
+  "moves": [
+    {
+      "sha256": "5a418ba9118df05d3d3c824d5b3ccdd41ea0100fc7f7147d3168b15dfbe07d58",
+      "source": "tools/analyze_predictor_audit.py",
+      "destination": "archive/research_scripts/analyze_predictor_audit.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "917258b91169e5515bac62c6ae057d2e6acd8d63ca3a9d94252a4579016483dc",
+      "source": "tools/audit_brfss_predictors.py",
+      "destination": "archive/research_scripts/audit_brfss_predictors.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "8aebd7984715df69f68f70bf0250024965809b6e77d7d564358c2e4795489a0a",
+      "source": "tools/audit_simulation_accuracy_limit.py",
+      "destination": "archive/research_scripts/audit_simulation_accuracy_limit.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "ee36793d202893442c3f611ca82930b7909cb8da29106ee8973c1676be41189d",
+      "source": "tools/bounded_evidence_tuning.py",
+      "destination": "archive/research_scripts/bounded_evidence_tuning.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "92d39cf0760da8181b93610dcffc566ea5b2f190a1605da7c683e065dac5e86b",
+      "source": "tools/bounded_stack.py",
+      "destination": "archive/research_scripts/bounded_stack.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "1889da9de170d7c7fd845e0585e4aed68051a5bf799111d7db6214db7d0ed772",
+      "source": "tools/check_flagged_source_labels.py",
+      "destination": "archive/research_scripts/check_flagged_source_labels.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "b810c0a784aad746b6a08343980eb0508492694dc78dcac30c8b1fc5b0904639",
+      "source": "tools/Cleanup-ObsoleteFiles.ps1",
+      "destination": "archive/maintenance_scripts/Cleanup-ObsoleteFiles.ps1",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "247feda58cba68619e252e144e78d9fe8e7d1e2c9757222267444abffb67b48d",
+      "source": "tools/correct_subset_comparison.py",
+      "destination": "archive/research_scripts/correct_subset_comparison.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "482fc6f18d93e15eadda41e6fdcc2e58d49ffb7dad590ebacacdf5d844cb7eb1",
+      "source": "tools/diagnose_feature_shift.py",
+      "destination": "archive/research_scripts/diagnose_feature_shift.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "0fa0d217b1545933db030be79fe389feae2b2b1afea88cf136df89d4cc94ecb8",
+      "source": "tools/diagnose_six_models.py",
+      "destination": "archive/research_scripts/diagnose_six_models.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "de7797ce310afedbef7a1af7278465460199c00575ee5ff667cf0b6159052721",
+      "source": "tools/diagnosis_cleanlab.py",
+      "destination": "archive/research_scripts/diagnosis_cleanlab.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "9ddc09fee09acdaa8c04bf16a8a60397c6a03dfd177760220199b5131f30c719",
+      "source": "tools/evidence_feature_errors.py",
+      "destination": "archive/research_scripts/evidence_feature_errors.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "4d1026f8f7d11c45df7b29b8153fd74ecaa397fa7e9f1f76e8646380b70eb588",
+      "source": "tools/experiment_two_stage.py",
+      "destination": "archive/research_scripts/experiment_two_stage.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "24a70abf4c415f95d0cd0a1184325756b5356ee4c555c4b15c0957f46c628133",
+      "source": "tools/final_bounded_evidence.py",
+      "destination": "archive/research_scripts/final_bounded_evidence.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "f7b811219c4b65b675547331183d54016f4b30d9ee82424b202d42b11db8ff47",
+      "source": "tools/final_depression_history.py",
+      "destination": "archive/research_scripts/final_depression_history.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "24f31abe46b80a4345d18cf6637ec99530ce15a111e18be0ac6283ae1274beb2",
+      "source": "tools/Install-WSL.ps1",
+      "destination": "archive/maintenance_scripts/Install-WSL.ps1",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "ee4a1ef3cdd7e585d777c931dd2472d7353951384896253c31f3ac72a99e26bc",
+      "source": "tools/plot_model_diagnosis.py",
+      "destination": "archive/research_scripts/plot_model_diagnosis.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "a06065f9efc190fe1cb5f29255a79ae23623d4c5e6dbb61e9c1bdf7fa258d2d9",
+      "source": "tools/Reorganize-Project.ps1",
+      "destination": "archive/maintenance_scripts/Reorganize-Project.ps1",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "6c509fff7d27b36477ab2d389a5d89574526544e4cbeda9209f6de3a640be1b0",
+      "source": "tools/report_depression_history.py",
+      "destination": "archive/research_scripts/report_depression_history.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "131aba8f64f85f0d681507588e735e93d5ba92e0123a532b8ebb160da565f045",
+      "source": "tools/report_evidence_diagnosis.py",
+      "destination": "archive/research_scripts/report_evidence_diagnosis.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "3e3f765e82b53f749d0baaee4cabe8b886a08931a68b58052cb30565cca41a3a",
+      "source": "tools/report_history_margin.py",
+      "destination": "archive/research_scripts/report_history_margin.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "c76e6a6a4052c74f0997a84457ad4cfa460b85b841a3c7c90b02fc7360fa5a97",
+      "source": "tools/report_predictor_audit.py",
+      "destination": "archive/research_scripts/report_predictor_audit.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "c694a527d34cd73613b2165a189357afb73f391c7ac39d76d57cfc2b9d8591fa",
+      "source": "tools/report_subset_six.py",
+      "destination": "archive/research_scripts/report_subset_six.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "0f6ca84bb6b13ea6ec780017a2d482ac1d8b938a3575f0796aa60214823c82f0",
+      "source": "tools/report_synthetic_and_pdf.py",
+      "destination": "archive/research_scripts/report_synthetic_and_pdf.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "ced06806fc35136f5829ab5b1018d69f4804d46e4f6cfc05e76868de90e4cd72",
+      "source": "tools/report_two_boundaries.py",
+      "destination": "archive/research_scripts/report_two_boundaries.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "99f6d51cda148cfb3107763ebc1bd2f8d832b4fe9b03c23a5662bec560523076",
+      "source": "tools/report_two_stage.py",
+      "destination": "archive/research_scripts/report_two_stage.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "7e84c46eb05dfea8aec72b870c260be9b0066a009815a5352d5955b3eacfd111",
+      "source": "tools/report_xgb_features.py",
+      "destination": "archive/research_scripts/report_xgb_features.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "23381b51a44a60110199ddb12e48521b131bdd1754f170d67c1263b137a304b8",
+      "source": "tools/run_soft_ordinal_experiment.py",
+      "destination": "archive/research_scripts/run_soft_ordinal_experiment.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "f235536b3bf392f99389134ecee5ec49dc6fbe55eeb44df0a6a59b87d6988353",
+      "source": "tools/run_windows_fallback.py",
+      "destination": "archive/maintenance_scripts/run_windows_fallback.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "8b2bde55e021fdf545be5726b78bba1fba4602ec54f34dbb84c8e56772276ba8",
+      "source": "tools/Start-Alternate-Port.ps1",
+      "destination": "archive/maintenance_scripts/Start-Alternate-Port.ps1",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "4c44b879c304eb5b303a44b8278990f4c6d83ca7489113fc5b85aa047738955a",
+      "source": "tools/Start-AutoDetect.ps1",
+      "destination": "archive/maintenance_scripts/Start-AutoDetect.ps1",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "c967df669866bc8766cc47b48681cd399fe523c10178be488103de56c866b387",
+      "source": "tools/Start-WSL.ps1",
+      "destination": "archive/maintenance_scripts/Start-WSL.ps1",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "5981c7f92225f5cadee84673057ac79ca70eaa06ef168df76ee9d29ca0c90a65",
+      "source": "tools/summarize_tuning.py",
+      "destination": "archive/research_scripts/summarize_tuning.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "5db07d9501c861560f9f53e1641607aa430db22b1bb0d53023bcd3f034db5c64",
+      "source": "tools/test_depression_history.py",
+      "destination": "archive/research_scripts/test_depression_history.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "3596fa37fc3d736918e72fbec66fc2a5ed11e59a104ad4bff78f7e44d4fe92da",
+      "source": "tools/train_history_margin.py",
+      "destination": "archive/research_scripts/train_history_margin.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "fee91c5e4c76a819367917f57a92049d925284c5f03adaa0d9a4d3fc2fbe6ba0",
+      "source": "tools/train_subset_six.py",
+      "destination": "archive/research_scripts/train_subset_six.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "sha256": "d0cb57478a1c14e697a7dfe00456682ee394a8bea2fa5296ccce4aace6b73ca6",
+      "source": "tools/verify_predictor_audit.py",
+      "destination": "archive/research_scripts/verify_predictor_audit.py",
+      "reason": "Historical exploration/setup; not imported by the active runtime or current training recipes. Original bytes preserved."
+    },
+    {
+      "files": [
+        {
+          "sha256": "65e0ec4bb2d4dee99aa85f3d94eab347335dd2e3845cefb8da2956ffa50a8102",
+          "bytes": 9832,
+          "relative_path": "index.html"
+        },
+        {
+          "sha256": "f9ee3998df12adbe6197f94bfe9402b9af728ed64b8827d1b36a52d352c23445",
+          "bytes": 9457,
+          "relative_path": "landing.css"
+        },
+        {
+          "sha256": "cb897cff71cd6af08f3d1eed134a760d5fb9d6c0fcd359a4de7c074a85a8519c",
+          "bytes": 12969,
+          "relative_path": "landing.js"
+        },
+        {
+          "sha256": "4a13c2281250a481d8fbddd3488a9f3a1d3e2ea10eea727b43fb5387664dd487",
+          "bytes": 12048,
+          "relative_path": "prediction.css"
+        },
+        {
+          "sha256": "e6b0850c347d8555d1fba8ed2cd9481329f6283f20c5c79f5ef0e5e07f3f016b",
+          "bytes": 14305,
+          "relative_path": "prediction.js"
+        },
+        {
+          "sha256": "7ae04663bb431808bc025280122162029ea3a354efc5fcca8bd8f95d1a1933e9",
+          "bytes": 603451,
+          "relative_path": "three.min.js"
+        },
+        {
+          "sha256": "fa9f98ebfbf1a39ffaefcd18fd3aa2ed35a244eb74bbbfdcd274091d68fbe25c",
+          "bytes": 489,
+          "relative_path": "workspace.html"
+        },
+        {
+          "sha256": "46c8655059d52c84347b33a35412eaa7c8f761d7d9db605aeffb9101483cf150",
+          "bytes": 527,
+          "relative_path": "dashboard\\index.html"
+        },
+        {
+          "sha256": "99b414ce2646b961c862d0ee37c9400069320120e479b02d94754863e9576068",
+          "bytes": 902425,
+          "relative_path": "dashboard\\assets\\BodyViewer3D-D4uIVo9C.js"
+        },
+        {
+          "sha256": "11a8ee5a7a47919ac1fd0724a5f3f33a168ca7cf6ca6b485368175a2e77db0de",
+          "bytes": 398197,
+          "relative_path": "dashboard\\assets\\index-DtGDj18Y.js"
+        },
+        {
+          "sha256": "dc40b7ecd40b1e5d5b607d014dea9abc035d474832a9f415f8228f67a86be104",
+          "bytes": 32991,
+          "relative_path": "dashboard\\assets\\index-gldJgElS.css"
+        },
+        {
+          "sha256": "bcc41559359a3cb79105f71979b7e70f9bba8ee39460db790057d3f3c0cc77eb",
+          "bytes": 18196,
+          "relative_path": "dashboard\\assets\\outfit-latin-300-normal-AWLfuCom.woff"
+        },
+        {
+          "sha256": "ef88e74f63ce75b54cce4d5a4087c6f180750b9ebae6ab6e5bf2a9939bf6958f",
+          "bytes": 13956,
+          "relative_path": "dashboard\\assets\\outfit-latin-300-normal-CRYTwY6m.woff2"
+        },
+        {
+          "sha256": "71f028fd2349990b3f8aa643abe767e82e0f596be407ae66f0004ff164121bdb",
+          "bytes": 14032,
+          "relative_path": "dashboard\\assets\\outfit-latin-400-normal-BGsTXAXT.woff2"
+        },
+        {
+          "sha256": "f329dc36d2d9285431fb8322f5e951def9cac4a42c1cada679747f7c64b04916",
+          "bytes": 18232,
+          "relative_path": "dashboard\\assets\\outfit-latin-400-normal-DMwTpYkH.woff"
+        },
+        {
+          "sha256": "40083be5d9c1935c562bfe9be662d5a2798910deee9e8049509142549a995626",
+          "bytes": 17688,
+          "relative_path": "dashboard\\assets\\outfit-latin-500-normal-ClnHRwRh.woff"
+        },
+        {
+          "sha256": "fc9bff941def6d924a71632bd8a93190528872eae6414844f3c367ff948d92fd",
+          "bytes": 13528,
+          "relative_path": "dashboard\\assets\\outfit-latin-500-normal-DKnIMDSk.woff2"
+        },
+        {
+          "sha256": "463eec2e5944ce6534089376531a533eae99b6dfae1af87924756fa5af6ba1c0",
+          "bytes": 6384,
+          "relative_path": "dashboard\\assets\\outfit-latin-ext-300-normal-BYS6Dpvq.woff2"
+        },
+        {
+          "sha256": "5c78f172cf303e7df8fba666f3cc1d7003de656e6822b0f99bfc733e4a9aff38",
+          "bytes": 8548,
+          "relative_path": "dashboard\\assets\\outfit-latin-ext-300-normal-CMIMshEd.woff"
+        },
+        {
+          "sha256": "e279fd5005b5936e4f4d20fd21e1fdd6a35d724ff576623d31e7c425c356b7ac",
+          "bytes": 6380,
+          "relative_path": "dashboard\\assets\\outfit-latin-ext-400-normal-5tcqmc2S.woff2"
+        },
+        {
+          "sha256": "a6697dab76ab8386fc4244f9f6d3ed8639fce59e3be228c146d6c4586c835022",
+          "bytes": 8640,
+          "relative_path": "dashboard\\assets\\outfit-latin-ext-400-normal-DHm7mdGe.woff"
+        },
+        {
+          "sha256": "0bee549f28f292ac938f04ff97b235dc9fa0b42fbbd8b53a279355da59443cd2",
+          "bytes": 8492,
+          "relative_path": "dashboard\\assets\\outfit-latin-ext-500-normal-DrCvqoFD.woff"
+        },
+        {
+          "sha256": "89894a600bea0ec4724988d191ea32a0353bb1c9c130cbdf346654d356b1ba84",
+          "bytes": 6244,
+          "relative_path": "dashboard\\assets\\outfit-latin-ext-500-normal-zeox_O30.woff2"
+        },
+        {
+          "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+          "bytes": 4405,
+          "relative_path": "fonts\\instrument-serif-OFL.txt"
+        },
+        {
+          "sha256": "08939b8bdf534afec24ae0ef5e03f948940cd9a8fe08e7fecbad040e62327385",
+          "bytes": 71592,
+          "relative_path": "fonts\\InstrumentSerif-Italic.ttf"
+        },
+        {
+          "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88",
+          "bytes": 70012,
+          "relative_path": "fonts\\InstrumentSerif-Regular.ttf"
+        },
+        {
+          "sha256": "71f028fd2349990b3f8aa643abe767e82e0f596be407ae66f0004ff164121bdb",
+          "bytes": 14032,
+          "relative_path": "fonts\\outfit-latin-400-normal.woff2"
+        },
+        {
+          "sha256": "0e5fcef5d93bfcae273c11c00f0bb453d3b5491860e1ac8b658767b7577c938f",
+          "bytes": 4387,
+          "relative_path": "fonts\\outfit-LICENSE.txt"
+        }
+      ],
+      "source": "public",
+      "destination": "archive/generated_website",
+      "reason": "Rebuildable previous static output; local server serves frontend/. Future Vercel packaging recreates public/."
+    }
+  ],
+  "tools_kept": [
+    "Start-TrainingPreview.ps1",
+    "build_vercel.cjs",
+    "execute_study_notebook.py",
+    "export_compact_forest.py",
+    "feature_pipeline.py",
+    "prepare_rf_cnn_promotion.py",
+    "report_lower_noise_simulation.py",
+    "start_training_preview.py",
+    "synthetic_stress_experiment.py",
+    "train_lower_noise_simulation.py",
+    "tune_lower_noise_rf_cnn.py",
+    "tune_six_models.py",
+    "tune_two_boundaries.py",
+    "tune_xgb_features.py",
+    "verify_rf_cnn_runtime.py",
+    "verify_synthetic_models.py"
+  ],
+  "notes": "Data/model/experiment filenames and scientific evidence preserved. Historical script paths are recorded as relocations, not rewritten inside frozen experiment artifacts."
+}

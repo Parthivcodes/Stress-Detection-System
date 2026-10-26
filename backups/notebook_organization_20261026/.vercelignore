@@ -1,0 +1,33 @@
+# Exclude Python dependency files from Vercel so it does not trigger @vercel/python
+requirements.txt
+requirements-inference.txt
+.venv/
+.runtime/
+.cleanup/
+__pycache__/
+*.py
+*.pyc
+
+# Heavy training datasets and local python model checkpoints
+data/
+backups/
+*.joblib
+*.pkl
+*.pt
+
+# Local setup and shell scripts
+*.ps1
+training/
+tests/
+legacy/
+reports/
+models/
+output/
+figures/
+docs/
+deploy/
+server.py
+
+# Local history and scientific experiments are not frontend deployment inputs
+archive/
+experiments/

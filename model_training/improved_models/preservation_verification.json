@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "datasets_and_prior_checkpoints_unchanged": true,
+  "backup_checksums_verified": true,
+  "allowed_configuration_changes": [
+    "models/training_preview.json",
+    "src/training_preview_inference.py"
+  ]
+}

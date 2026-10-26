@@ -1,99 +1,45 @@
-# Stress Prediction Project
+<!-- current-training-map -->
+Study notebook: [All six models](model_training/All_Six_Models_Training.ipynb). Simple directory guide: [Project map](docs/03_Simple_Project_Map.md). Current training is in `model_training/`; earlier experiments are in `archive/previous_experiments/`.
 
-## Start the website
+# NERVA Stress-Frequency Project
 
-```powershell
-.\Start-Website.ps1
-```
-
-Open **http://127.0.0.1:8004/#predictions** and keep the terminal running.
-This uses your existing WSL Python environment and the six expanded models.
-No reinstall is needed.
-
-The local server handles browser connections concurrently. Cloud deployment uses
-Vercel for the frontend and a separate authenticated Python inference service.
-See `deploy/README.md` for setup, safety checks and the remaining account/hosting
-requirements. Cloud deployment has not yet been completed.
-
-## Project structure — line by line
-
-```text
-stressleveldetection/
-├── Start-Website.ps1                 Main launcher, port 8004
-├── server.py                        Website and prediction API
-├── README.md                        Start here
-├── data/
-│   ├── original_sleep_dataset/      Original 374-row sleep/lifestyle data
-│   ├── baseline_survey_dataset/     First 30,000-person survey and raw CDC source
-│   └── expanded_survey_dataset/     Current 183,040-person dataset with splits
-├── models/
-│   ├── active_model.json            Default model selection
-│   └── current_models/              Six expanded models and preprocessing files
-├── backups/
-│   ├── original_models/             Original sleep/lifestyle models
-│   ├── baseline_models/             First BRFSS model set
-│   ├── tuned_models/                Tuned BRFSS model set
-│   └── previous_active_model.json   Previous default selection
-├── frontend/
-│   ├── index.html                   Main page
-│   ├── landing.js / landing.css     Main-page animation and appearance
-│   ├── prediction.js / prediction.css  Form and prediction results
-│   ├── fonts/                       Local fonts and licenses
-│   └── dashboard/                   Additional React dashboard
-├── src/
-│   ├── model_paths.py               Central model locations and historical aliases
-│   ├── brfss_inference.py           Load survey models and predict
-│   ├── models.py                    Classifier/neural-network definitions
-│   └── preprocessing.py             Original-data preprocessing
-├── training/
-│   ├── train_expanded_models.py     Current training workflow
-│   ├── train_baseline_models.py     First BRFSS training workflow
-│   ├── tune_baseline_models.py      Baseline tuning
-│   ├── train_original_models.py     Original sleep/lifestyle training
-│   └── download_original_dataset.py Original download helper
-├── tests/                           Model, data, website and integrity checks
-├── reports/                         Evaluation results and historical audits
-├── docs/                            Earlier project report and README
-├── tools/                           Setup, alternate launchers and migration helpers
-├── legacy/                          Original Streamlit application
-├── api/                             Older Vercel adapters, not local Python inference
-├── figures/                         Research plots
-└── output/                          Reference images and prior verification outputs
-```
-
-Hidden `.venv` and `.runtime` are retained environments. `.cleanup` contains
-recoverable earlier cleanup files. These are not training datasets.
-
-## The six current model files
-
-| File in `models/current_models/` | Algorithm |
-| --- | --- |
-| `logistic_regression.joblib` | Logistic Regression |
-| `random_forest.joblib` | Random Forest |
-| `xgboost.joblib` | XGBoost |
-| `conv1d_net.pt` | 1D CNN |
-| `lstm_net.pt` | LSTM |
-| `cnn_lstm_net.pt` | CNN-LSTM |
-
-`preprocessor.joblib` transforms inputs; `schema.json` defines the 19 inputs;
-`selection.json` stores prediction adjustments; `metrics.json` and `READY.json`
-record evaluation and completion. Never mix these files between model versions.
-
-## Verification and training
+## Start the current demo
 
 ```powershell
-wsl.exe -d Ubuntu -u nobody --cd $PWD.Path --exec /opt/stress-venv/bin/python -B tests/model_layout_validation.py --inference
+.\Start-Demo-Website.ps1
 ```
 
-Run training from the root using module names, for example
-`python -m training.train_expanded_models`. Completed model sets are protected
-against accidental retraining. Do not remove those guards to chase test scores.
+Open http://localhost:8001/#predictions and keep the terminal running. If the server is already running, open its URL rather than start a second process on the same port. This is the generated-data educational simulation; its current mean individual-model accuracy is88.76% on a reused internal generated holdout, not real-person validation.
 
-Internal version IDs and historical report folders keep their BRFSS names so
-existing evidence remains traceable. Friendly model folders are mapped in
-`src/model_paths.py`. Old-to-new paths and original checksums are recorded in
-`reports/project_cleanup/reorganization.json`.
+## Start the separate real-data reference
 
-This is a research demonstration, not a clinical diagnosis. Legacy documentation
-in `docs/` contains older accuracy figures, not current expanded-model results.
-Use the local Python website for actual predictions, not the older Vercel API.
+```powershell
+.\Start-RealData-Website.ps1
+```
+
+Open http://localhost:8000/#predictions. Start-Website.ps1 is the older compatible real-data launcher on port8004. The two selections are separate: models/training_preview.json for the demo, models/active_model.json for real survey models.
+
+## Understand the project
+
+1. docs/01_Model_Training_Walkthrough.pdf - complete printable explanation of the78.07% to90.53% CNN improvement and the RF improvement.
+2. docs/01_Model_Training_Walkthrough.md - editable version with source references.
+3. docs/02_Project_File_Guide.md - line-by-line directory and file guide.
+4. models/ACTIVE_MODELS.md - exact checkpoint/encoder mapping for all six demo algorithms.
+5. model_training/improved_models/README.md - measured before/after recall results and limitations.
+
+## Current workflow
+
+- training/create_and_train_demo.py creates a fresh lower-noise experiment and trains six families.
+- training/improve_forest_and_cnn.py runs the fixed-data, recall-protected RF/CNN tuning workflow against its documented base models.
+- training/create_demo_training_report.py reports a completed lower-noise training experiment.
+- Choose a new output directory. Existing data and model artifacts must never be overwritten to chase a score.
+
+The human-friendly entry points delegate to the verified implementations retained in tools/. The directory guide explains those dependencies. Historical exploratory/setup scripts are archived under archive/. Saved datasets and experiment identifiers are retained so checksums, reproducibility and rollback remain traceable.
+
+## Important runtime folders
+
+frontend/ contains the actual website and browser PDF exporter. src/ contains neural architectures, feature encoders and prediction loaders. models/ contains selection files and the separate real-data model bundle. experiments/ contains generated datasets, saved demo checkpoints and immutable evidence. backups/ preserves known-working prior versions. tests/ contains verification. deploy/,api/ and serverless/ retain the real-data deployment configuration.
+
+The old public/ build is archived and can be regenerated by the existing build pipeline. frontend/dashboard/dist remains in place because the local dashboard uses it. Python environments and dependencies are preserved. No cloud deployment was made during the current model-improvement or cleanup tasks.
+
+For data provenance, safeguards, model limitations and rollback, read the walkthrough and file guide before presenting results.

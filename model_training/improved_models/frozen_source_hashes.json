@@ -1,0 +1,6 @@
+{
+  "protocol.json": "f575db3a6c0a1283337664a56f6ee0daf0da884bb7fb1cc94f2edc9e4b287453",
+  "source/training_variants.py": "e6d3143cc515cbba3c5e85b38952c14b7de406d68d400b767ae3cb26b5bc6982",
+  "source/tune_lower_noise_rf_cnn.py": "0d01901f9792e0456bf13925bd333ad3c26d779ed3575d5374c7bfe79e882889",
+  "source/tune_six_models.py": "8918f19108ddd0454a9ff98d80403c791c21036fa60a486e8fa8bb2fd6bd57f0"
+}

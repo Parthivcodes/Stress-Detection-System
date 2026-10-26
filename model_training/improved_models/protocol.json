@@ -1,0 +1,103 @@
+{
+  "seeds": [
+    20261026,
+    20261027
+  ],
+  "configs": {
+    "Random Forest": [
+      {
+        "id": "baseline",
+        "encoder": "original",
+        "params": {}
+      },
+      {
+        "id": "risk_leaf2",
+        "encoder": "engineered",
+        "params": {
+          "n_estimators": 350,
+          "max_depth": 18,
+          "min_samples_leaf": 2,
+          "max_features": 1.0,
+          "max_samples": 0.9,
+          "bootstrap": true,
+          "class_weight": null
+        }
+      },
+      {
+        "id": "risk_deep",
+        "encoder": "engineered",
+        "params": {
+          "n_estimators": 450,
+          "max_depth": null,
+          "min_samples_leaf": 2,
+          "max_features": 0.85,
+          "max_samples": 0.9,
+          "bootstrap": true,
+          "class_weight": "balanced"
+        }
+      },
+      {
+        "id": "risk_leaf4",
+        "encoder": "engineered",
+        "params": {
+          "n_estimators": 400,
+          "max_depth": 20,
+          "min_samples_leaf": 4,
+          "max_features": 1.0,
+          "max_samples": 0.9,
+          "bootstrap": true,
+          "class_weight": "balanced"
+        }
+      }
+    ],
+    "1D CNN": [
+      {
+        "id": "baseline",
+        "encoder": "original",
+        "architecture": "original_cnn",
+        "dropout": 0.3,
+        "lr": 0.0007,
+        "decay": 0.001,
+        "epochs": 40,
+        "patience": 6,
+        "scheduler": false
+      },
+      {
+        "id": "original_longer",
+        "encoder": "original",
+        "architecture": "original_cnn",
+        "dropout": 0.15,
+        "lr": 0.001,
+        "decay": 0.0003,
+        "epochs": 90,
+        "patience": 10,
+        "scheduler": true
+      },
+      {
+        "id": "position_skip",
+        "encoder": "original",
+        "architecture": "position_cnn",
+        "dropout": 0.15,
+        "lr": 0.001,
+        "decay": 0.0003,
+        "epochs": 80,
+        "patience": 10,
+        "scheduler": true,
+        "channels": 16,
+        "hidden": 64
+      }
+    ]
+  },
+  "dataset_sha256": "e26075ea7b48e3413bced84d97a8d85c8e7aff76e81d0803f1a560e0448b7837",
+  "scope": "Fixed existing lower-noise10000-row CSV; no generation,noisechanges,rowselection,targetchanges or model-family replacement. OnlyRF/CNN tune; other4families unchanged. No paidcompute/deployment.",
+  "validation": "Current validation/test historically used; test is a reused internalholdout,not untouched. Choices use trainingCV then existingvalidation only; one finaltestpass of frozen qualifyingwinners; no alternate candidate after finalfailure.",
+  "cv": "Two stratified outerfolds across7000training profiles. Within eachouterfit,10%stratifieddevelopment choosesCNNepochs. Same fit/dev/score IDs for allconfigs. Full19feature profiles unique. Fit encoders only on fit. Score rawargmax only; no thresholdsearch.",
+  "features": "RFengineered mode uses19codedrawinputs plus14predeclared contextualaggregates from thoseinputs; target,IDs,randomseed and exactgeneratorscore are excluded. Motivated by featuremeaning and knowledge this is a simulation; unvalidatedindices,not clinicalknowledge. Datasetbytes unchanged.",
+  "neural": "Baseline currentConv1DNet; longer originalarchitecture variant; or versioned1DCNN preserving featurepositions with linearinputskip.2fixedseeds averaged for EVERYbaseline/candidate. WeightedCE sqrtinverseprevalence,AdamW,batch256,clip1. Devunweightedlogloss pickscheckpoint. Baseline120secsoftcap,candidates180sec; checked betweenepochs. Cross-sectionaltabular positions,not timehistory.",
+  "selection": "Candidate must have rawaccuracy>80% and greaterthan freshbaseline, highrecall>=max(.60,baselinehigh),sometimesrecall>=baseline,F1/QWK>=baseline in EACHCVfold and pooledOOF. Select eligible highestpooledaccuracy,thenmacroF1. Only1winnerperfamily. No winner => keepcurrent.",
+  "finalfit": "Same6300fit/700development sampleIDs androworder as currentmodels. Same twoCNNseeds. Fit-only encoders. Validate winner against actual current rawvalidation metrics; demand accuracy>80% and higherthan current, high/sometimesrecalls>=current+1percentagepoint margin,macroF1/QWK nonlower. Margin not a futureguarantee.",
+  "finaltest": "Freeze allcheckpoints,encoders,architecturemetadata andeligibility beforetest. Require rawaccuracy>80% and current, high/sometimesrecalls/F1/QWK nonlower than current, pairedstratifiedbootstrap95%accuracydelta lower>0.1000draws. No retuningaftertest. Existingtest alreadyseen so estimatesnotindependentconfirmation.",
+  "promotion": "Performancepass alone does not activate. Need checkpointparity,all6prediction paths,PDF/benchmarks,rollback andmemory checks. Artifactfamilylimit64MiB; keepoldifanygatefails. Neveroverwriteoriginalcheckpoints.",
+  "budget": "8RF+12CNN CVfits,up to1RF+2CNN finalfits,4CPUthreads sequential. Boundedfixedsearch,notOptuna/exhaustiveCV. No installs.",
+  "baseline": "CurrentRF76.7333% andCNN78.0667% onreportedlower-noisetest. Eachfoldmajoritybaseline plus fullgeneratedtestmajority39.3333%; majorityclass sometimes. Existing empiricalBRFSS baseline65.78% is separate and not compared as thisbenchmark."
+}

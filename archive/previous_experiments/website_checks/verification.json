@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "all_six_probability_parity": {
+    "Logistic Regression": 2.220446049250313e-16,
+    "Random Forest": 1.1102230246251565e-16,
+    "XGBoost": 0.0,
+    "1D CNN": 1.043081283569336e-07,
+    "LSTM": 1.341104507446289e-07,
+    "CNN-LSTM": 2.980232238769531e-07
+  },
+  "majority_baseline_correct": true,
+  "benchmark_accuracy_correct": true,
+  "prior_bundle_still_loads": true,
+  "prior_artifacts_unchanged": true,
+  "invalid_inputs_rejected": true
+}

@@ -36,7 +36,7 @@ for directory, manifest in [
 
 assert json.loads((ROOT / "models/active_model.json").read_text())["version"] == "brfss2022_expanded"
 assert {p.name for p in (ROOT / "models").iterdir()} == {
-    "current_models", "active_model.json", "README.md"
+    "current_models", "active_model.json", "README.md", "training_preview.json", "ACTIVE_MODELS.md", "path_aliases.json"
 }
 for name in ["legacy/original_dashboard.py", "server.py", "training/train_original_models.py",
              "training/train_baseline_models.py", "training/tune_baseline_models.py",

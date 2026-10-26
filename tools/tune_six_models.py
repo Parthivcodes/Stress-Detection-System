@@ -18,18 +18,21 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, roc_auc_score, cohen_kappa_score, log_loss
 from xgboost import XGBClassifier
 
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from src.project_paths import resolve_path
+
 NAMES=['Logistic Regression','Random Forest','XGBoost','1D CNN','LSTM','CNN-LSTM']
 FILES=['logistic_regression.joblib','random_forest.joblib','xgboost.joblib','conv1d_net.pt','lstm_net.pt','cnn_lstm_net.pt']
 SEED=20261023
 
 def sha(p):
-    with Path(p).open('rb') as f: return hashlib.file_digest(f,'sha256').hexdigest()
+    with resolve_path(p).open('rb') as f: return hashlib.file_digest(f,'sha256').hexdigest()
 
 def save(p,obj):
     Path(p).parent.mkdir(parents=True,exist_ok=True)
     Path(p).write_text(json.dumps(obj,indent=2,allow_nan=False,default=lambda v:v.item() if isinstance(v,np.generic) else str(v))+'\n')
 
-def read(p): return json.loads(Path(p).read_text())
+def read(p): return json.loads(resolve_path(p).read_text())
 
 def metric(y,p,pred=None):
     p=np.asarray(p,dtype=float);p=p/p.sum(1,keepdims=True)

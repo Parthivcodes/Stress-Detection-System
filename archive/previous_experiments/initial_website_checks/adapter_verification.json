@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "rows_checked": 12,
+  "all_six_parity": {
+    "Logistic Regression": 1.1102230246251565e-16,
+    "Random Forest": 2.220446049250313e-16,
+    "XGBoost": 0.0,
+    "1D CNN": 5.960464477539063e-08,
+    "LSTM": 5.960464477539063e-08,
+    "CNN-LSTM": 1.043081283569336e-07
+  },
+  "invalid_inputs_rejected": [
+    "missing",
+    "extra",
+    "boolean",
+    "nonfinite",
+    "range",
+    "category",
+    "string"
+  ],
+  "mean_prediction_seconds": 0.08226030933334035,
+  "data_sha256": "eae884b43a8e63507ba00429c7bf99f3fbf5276b5fe1ae7e9b0b6521b888db70",
+  "benchmarks_match": true,
+  "production_model_selection": {
+    "version": "brfss2022_expanded",
+    "note": "Default expanded 19-input models. Older checkpoints and the previous default configuration are preserved under backups/models/. Historical comparison metrics are unchanged."
+  }
+}

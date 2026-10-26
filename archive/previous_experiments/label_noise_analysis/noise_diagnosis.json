@@ -1,0 +1,46 @@
+{
+  "label_noise_sd": 1.0,
+  "boundaries": [
+    -0.65,
+    0.85
+  ],
+  "training_profiles": 7000,
+  "expected_best_accuracy_given_training_profiles": 0.6618943676083966,
+  "feature_sampling_standard_error": 0.00201801492962327,
+  "feature_sampling_interval95": [
+    0.657939058346335,
+    0.6658496768704582
+  ],
+  "expected_errors_even_with_known_rule": 2366.739426741224,
+  "conditional_entropy_nats": 0.7138050235257161,
+  "validation_known_rule_accuracy": 0.6453333333333333,
+  "validation_rows": 1500,
+  "validation_known_rule_confusion_matrix": [
+    [
+      408,
+      148,
+      9
+    ],
+    [
+      127,
+      263,
+      101
+    ],
+    [
+      13,
+      134,
+      297
+    ]
+  ],
+  "existing_validation_raw_accuracy": {
+    "Logistic Regression": 0.6553333333333333,
+    "Random Forest": 0.61,
+    "XGBoost": 0.6233333333333333,
+    "1D CNN": 0.604,
+    "LSTM": 0.6426666666666667,
+    "CNN-LSTM": 0.6273333333333333
+  },
+  "target80_gap_percentage_points": 13.810563239160345,
+  "production_changed": false,
+  "test_evaluated": false
+}

@@ -1,0 +1,229 @@
+[
+  {
+    "bytes_each": 9457,
+    "sha256": "f9ee3998df12adbe6197f94bfe9402b9af728ed64b8827d1b36a52d352c23445",
+    "paths": [
+      "frontend/landing.css",
+      "public/landing.css"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 12969,
+    "sha256": "cb897cff71cd6af08f3d1eed134a760d5fb9d6c0fcd359a4de7c074a85a8519c",
+    "paths": [
+      "frontend/landing.js",
+      "public/landing.js"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 12048,
+    "sha256": "4a13c2281250a481d8fbddd3488a9f3a1d3e2ea10eea727b43fb5387664dd487",
+    "paths": [
+      "frontend/prediction.css",
+      "public/prediction.css"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 603451,
+    "sha256": "7ae04663bb431808bc025280122162029ea3a354efc5fcca8bd8f95d1a1933e9",
+    "paths": [
+      "frontend/three.min.js",
+      "public/three.min.js"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 489,
+    "sha256": "fa9f98ebfbf1a39ffaefcd18fd3aa2ed35a244eb74bbbfdcd274091d68fbe25c",
+    "paths": [
+      "frontend/workspace.html",
+      "public/workspace.html"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 527,
+    "sha256": "46c8655059d52c84347b33a35412eaa7c8f761d7d9db605aeffb9101483cf150",
+    "paths": [
+      "frontend/dashboard/dist/index.html",
+      "public/dashboard/index.html"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 902425,
+    "sha256": "99b414ce2646b961c862d0ee37c9400069320120e479b02d94754863e9576068",
+    "paths": [
+      "frontend/dashboard/dist/assets/BodyViewer3D-D4uIVo9C.js",
+      "public/dashboard/assets/BodyViewer3D-D4uIVo9C.js"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 398197,
+    "sha256": "11a8ee5a7a47919ac1fd0724a5f3f33a168ca7cf6ca6b485368175a2e77db0de",
+    "paths": [
+      "frontend/dashboard/dist/assets/index-DtGDj18Y.js",
+      "public/dashboard/assets/index-DtGDj18Y.js"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 32991,
+    "sha256": "dc40b7ecd40b1e5d5b607d014dea9abc035d474832a9f415f8228f67a86be104",
+    "paths": [
+      "frontend/dashboard/dist/assets/index-gldJgElS.css",
+      "public/dashboard/assets/index-gldJgElS.css"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 18196,
+    "sha256": "bcc41559359a3cb79105f71979b7e70f9bba8ee39460db790057d3f3c0cc77eb",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-300-normal-AWLfuCom.woff",
+      "public/dashboard/assets/outfit-latin-300-normal-AWLfuCom.woff"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 13956,
+    "sha256": "ef88e74f63ce75b54cce4d5a4087c6f180750b9ebae6ab6e5bf2a9939bf6958f",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-300-normal-CRYTwY6m.woff2",
+      "public/dashboard/assets/outfit-latin-300-normal-CRYTwY6m.woff2"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 14032,
+    "sha256": "71f028fd2349990b3f8aa643abe767e82e0f596be407ae66f0004ff164121bdb",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "frontend/fonts/outfit-latin-400-normal.woff2",
+      "public/dashboard/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "public/fonts/outfit-latin-400-normal.woff2"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 18232,
+    "sha256": "f329dc36d2d9285431fb8322f5e951def9cac4a42c1cada679747f7c64b04916",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-400-normal-DMwTpYkH.woff",
+      "public/dashboard/assets/outfit-latin-400-normal-DMwTpYkH.woff"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 17688,
+    "sha256": "40083be5d9c1935c562bfe9be662d5a2798910deee9e8049509142549a995626",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-500-normal-ClnHRwRh.woff",
+      "public/dashboard/assets/outfit-latin-500-normal-ClnHRwRh.woff"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 13528,
+    "sha256": "fc9bff941def6d924a71632bd8a93190528872eae6414844f3c367ff948d92fd",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-500-normal-DKnIMDSk.woff2",
+      "public/dashboard/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 6384,
+    "sha256": "463eec2e5944ce6534089376531a533eae99b6dfae1af87924756fa5af6ba1c0",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-ext-300-normal-BYS6Dpvq.woff2",
+      "public/dashboard/assets/outfit-latin-ext-300-normal-BYS6Dpvq.woff2"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 8548,
+    "sha256": "5c78f172cf303e7df8fba666f3cc1d7003de656e6822b0f99bfc733e4a9aff38",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-ext-300-normal-CMIMshEd.woff",
+      "public/dashboard/assets/outfit-latin-ext-300-normal-CMIMshEd.woff"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 6380,
+    "sha256": "e279fd5005b5936e4f4d20fd21e1fdd6a35d724ff576623d31e7c425c356b7ac",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-ext-400-normal-5tcqmc2S.woff2",
+      "public/dashboard/assets/outfit-latin-ext-400-normal-5tcqmc2S.woff2"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 8640,
+    "sha256": "a6697dab76ab8386fc4244f9f6d3ed8639fce59e3be228c146d6c4586c835022",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-ext-400-normal-DHm7mdGe.woff",
+      "public/dashboard/assets/outfit-latin-ext-400-normal-DHm7mdGe.woff"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 8492,
+    "sha256": "0bee549f28f292ac938f04ff97b235dc9fa0b42fbbd8b53a279355da59443cd2",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-ext-500-normal-DrCvqoFD.woff",
+      "public/dashboard/assets/outfit-latin-ext-500-normal-DrCvqoFD.woff"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 6244,
+    "sha256": "89894a600bea0ec4724988d191ea32a0353bb1c9c130cbdf346654d356b1ba84",
+    "paths": [
+      "frontend/dashboard/dist/assets/outfit-latin-ext-500-normal-zeox_O30.woff2",
+      "public/dashboard/assets/outfit-latin-ext-500-normal-zeox_O30.woff2"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 4405,
+    "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+    "paths": [
+      "frontend/fonts/instrument-serif-OFL.txt",
+      "public/fonts/instrument-serif-OFL.txt"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 71592,
+    "sha256": "08939b8bdf534afec24ae0ef5e03f948940cd9a8fe08e7fecbad040e62327385",
+    "paths": [
+      "frontend/fonts/InstrumentSerif-Italic.ttf",
+      "public/fonts/InstrumentSerif-Italic.ttf"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 70012,
+    "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88",
+    "paths": [
+      "frontend/fonts/InstrumentSerif-Regular.ttf",
+      "public/fonts/InstrumentSerif-Regular.ttf"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  },
+  {
+    "bytes_each": 4387,
+    "sha256": "0e5fcef5d93bfcae273c11c00f0bb453d3b5491860e1ac8b658767b7577c938f",
+    "paths": [
+      "frontend/fonts/outfit-LICENSE.txt",
+      "public/fonts/outfit-LICENSE.txt"
+    ],
+    "action": "Preserve source; generated public snapshot archived. Other identical files are not automatically deleted."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "activated_models": [
+    "Random Forest",
+    "1D CNN"
+  ],
+  "dataset_unchanged": true,
+  "other_four_checkpoints_unchanged": true,
+  "local_port": 8001,
+  "model_revision": "rf_cnn_tuned_20261026",
+  "api_verified": true,
+  "browser_verified": true,
+  "pdf_download_verified": true,
+  "pdf_pages": 2,
+  "pdf_both_pages_rendered_and_inspected": true,
+  "browser_console_errors": 0,
+  "peak_rss_mib": 429.13671875,
+  "rollback_verified": true,
+  "real_data_selection_unchanged": true,
+  "cloud_deployed": false,
+  "backup": "backups/before_rf_cnn_promotion"
+}

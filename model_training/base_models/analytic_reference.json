@@ -1,0 +1,5 @@
+{
+  "noise_sd": 0.25,
+  "training_profile_expected_optimal_accuracy": 0.9023900977761964,
+  "note": "Known hypothetical generator,not a trainedmodel or realpopulationceiling."
+}

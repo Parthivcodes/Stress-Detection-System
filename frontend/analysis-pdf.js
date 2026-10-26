@@ -10,6 +10,7 @@
   function create(report, options = {}) {
     if (!report?.consensus || !report.models || !report.profile) throw new Error('Run an analysis before downloading its PDF.');
     const names = options.modelOrder || Object.keys(report.models);
+    const simulation = report.data_origin === 'synthetic_simulation';
     if (names.length !== 6 || names.some(n => !report.models[n])) throw new Error('The report requires all six model results.');
     const pages = []; let commands = []; const height = 841.89;
     const ink = '0.13 0.15 0.15', muted = '0.37 0.40 0.40', gold = '0.57 0.43 0.26';
@@ -40,13 +41,14 @@
     };
     const finish = () => pages.push(commands.join('\n'));
     const date = new Date(report.created_at); const dateText = Number.isNaN(date.getTime()) ? 'Unavailable' : date.toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'});
-    page(1,'Your stress-frequency analysis');
+    page(1,simulation?'Simulation model analysis':'Your stress-frequency analysis');
     text(`Prepared ${dateText}`,44,127,9,'F1',muted);
+    if(simulation)text('GENERATED DATA / EDUCATIONAL SIMULATION',270,127,8,'F2',gold);
     rect(44,147,507,89,'0.96 0.95 0.92');text('COMBINED MODEL RESULT',58,168,8,'F2',gold);
     text(report.consensus.label || labels[report.consensus.predicted_class] || 'Unavailable',58,195,21,'F2');
     text('Frequency of reported stress; this is not a severity diagnosis.',58,220,9,'F1',muted);
     const soft=report.consensus.method==='weighted_raw_probabilities_with_high_cutoff';
-    let top=paragraph(soft ? 'The combined result averages selected models and applies a validation-selected decision threshold. Individual models can disagree.' : 'The combined result uses the decision rule configured by the prediction service. Individual models can disagree.',257);
+    let top=paragraph(simulation?'This educational simulation uses generated training records. It is not validated for real people. The combined result averages all six raw probability vectors equally.':soft ? 'The combined result averages selected models and applies a validation-selected decision threshold. Individual models can disagree.' : 'The combined result uses the decision rule configured by the prediction service. Individual models can disagree.',257);
     const cp=report.consensus.probabilities;
     if(Array.isArray(cp)&&cp.length===3){
       labels.forEach((label,i)=>{text(label,44,top+15,9);rect(192,top+6,260,10,'0.91 0.92 0.90');rect(192,top+6,260*Math.max(0,Math.min(1,Number(cp[i])||0)),10,gold);text(pct(cp[i]),474,top+15,10,'F2');top+=27;});

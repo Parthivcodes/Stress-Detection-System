@@ -1,0 +1,33 @@
+{
+  "prefixes": {
+    "experiments/lower_noise_simulation_20261026": "model_training/base_models",
+    "experiments/lower_noise_rf_cnn_tuning_20261026": "model_training/improved_models",
+    "experiments/synthetic_simulation_20261026": "archive/previous_experiments/initial_training",
+    "experiments/bounded_evidence_tuning_20261026": "archive/previous_experiments/general_model_tuning",
+    "experiments/depression_history_20261025": "archive/previous_experiments/depression_feature_test",
+    "experiments/evidence_diagnosis_20261026": "archive/previous_experiments/model_diagnostics",
+    "experiments/history_recall_margin_20261025": "archive/previous_experiments/class_recall_test",
+    "experiments/hyperparameter_tuning_20261023": "archive/previous_experiments/first_model_tuning",
+    "experiments/lower_noise_website_connection": "archive/previous_experiments/website_checks",
+    "experiments/predictor_audit_20261025": "archive/previous_experiments/feature_audit",
+    "experiments/soft_ordinal_20261022": "archive/previous_experiments/ensemble_ordinal_test",
+    "experiments/subset_10000_six_models_20261025": "archive/previous_experiments/small_dataset_test",
+    "experiments/training_data_noise_audit": "archive/previous_experiments/label_noise_analysis",
+    "experiments/training_preview_connection": "archive/previous_experiments/initial_website_checks",
+    "experiments/two_boundary_constrained_20261023": "archive/previous_experiments/decision_boundary_test",
+    "experiments/two_stage_20261025": "archive/previous_experiments/two_stage_classifier",
+    "experiments/xgb_features_calibration_20261023": "archive/previous_experiments/feature_calibration_test"
+  },
+  "components": {
+    "report_synthetic_and_pdf.py": "report_generated_and_pdf.py",
+    "SYNTHETIC_stress_10000.csv": "generated_stress_10000.csv",
+    "synthetic_stress_experiment.py": "simulation_training.py",
+    "SYNTHETIC_comparison.csv": "generated_comparison.csv",
+    "Synthetic_Simulation_Explained.ipynb": "generated_Simulation_Explained.ipynb",
+    "SYNTHETIC_test_metrics.json": "generated_test_metrics.json",
+    "SYNTHETIC_test_predictions.npz": "generated_test_predictions.npz",
+    "verify_synthetic_models.py": "verify_training_models.py",
+    "synthetic_simulation_20261026": "initial_training"
+  },
+  "note": "Relocation only. Dataset origin and historical manifest contents retained accurately."
+}

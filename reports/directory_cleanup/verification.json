@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "protected_file_count": 944,
+  "all_protected_files_unchanged": true,
+  "archived_file_hashes_verified": true,
+  "historical_scripts_archived": 37,
+  "tools_before": 53,
+  "tools_after": 16,
+  "compiled_cache_files_removed": 8,
+  "layout_validation_passed": true,
+  "friendly_training_entry_points_checked": 3,
+  "launcher_syntax_checks_passed": 2,
+  "live_servers": [
+    {
+      "six_predictions": true,
+      "revision": null,
+      "model_version": "brfss2022_expanded",
+      "port": 8000
+    },
+    {
+      "six_predictions": true,
+      "revision": "rf_cnn_tuned_20261026",
+      "model_version": "model_training_simulation",
+      "port": 8001
+    }
+  ],
+  "pdf_export_asset_http_status": 200,
+  "walkthrough_pdf_pages": 11,
+  "all_walkthrough_pages_rendered_and_visually_checked": true,
+  "no_dataset_or_model_deleted": true
+}

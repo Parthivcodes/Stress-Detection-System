@@ -1,0 +1,28 @@
+{
+  "Random Forest": {
+    "id": "risk_deep",
+    "encoder": "engineered",
+    "params": {
+      "n_estimators": 450,
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "max_features": 0.85,
+      "max_samples": 0.9,
+      "bootstrap": true,
+      "class_weight": "balanced"
+    }
+  },
+  "1D CNN": {
+    "id": "position_skip",
+    "encoder": "original",
+    "architecture": "position_cnn",
+    "dropout": 0.15,
+    "lr": 0.001,
+    "decay": 0.0003,
+    "epochs": 80,
+    "patience": 10,
+    "scheduler": true,
+    "channels": 16,
+    "hidden": 64
+  }
+}

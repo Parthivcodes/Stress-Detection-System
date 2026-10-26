@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "all_prior_artifacts_unchanged": true,
+  "feature_profiles_identical": true,
+  "split_roles_identical": true,
+  "all_six_loaded": {
+    "Logistic Regression": true,
+    "Random Forest": true,
+    "XGBoost": true,
+    "1D CNN": true,
+    "LSTM": true,
+    "CNN-LSTM": true
+  },
+  "production_changed": false,
+  "one_final_generated_test_pass": true
+}

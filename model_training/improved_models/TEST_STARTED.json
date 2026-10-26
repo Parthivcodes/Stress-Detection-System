@@ -1,0 +1,4 @@
+{
+  "frozen_sha256": "0ae757dd92f40ca35df15b73145438cb618ae70076f4444e666c6c747be94317",
+  "note": "Single frozen pass on reused lower-noise internalholdout."
+}

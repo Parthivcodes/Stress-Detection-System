@@ -1,0 +1,104 @@
+{
+  "created_at": "2026-10-26T12:00:00+05:30",
+  "profile": {
+    "age": 36.0,
+    "sleep_duration": 6.0,
+    "unhealthy_days": 12.0,
+    "bmi": 27.87,
+    "sex": 1.0,
+    "exercise": 1.0,
+    "general_health": 3.0,
+    "marital": 5.0,
+    "education": 2.0,
+    "employment": 4.0,
+    "income": 5.0,
+    "support": 4.0,
+    "isolation": 3.0,
+    "job_loss": 2.0,
+    "food_insecurity": 4.0,
+    "bill_difficulty": 2.0,
+    "utility_threat": 2.0,
+    "transport_barrier": 2.0,
+    "medical_cost": 2.0
+  },
+  "status": "success",
+  "dataset": "Generated training-data simulation",
+  "model_version": "model_training_simulation",
+  "data_origin": "synthetic_simulation",
+  "target": "Simulated stress-frequency class",
+  "models": {
+    "Logistic Regression": {
+      "predicted_class": 1,
+      "label": "Sometimes",
+      "confidence": 0.5169640254082392,
+      "probabilities": [
+        0.06972832478294527,
+        0.5169640254082392,
+        0.4133076498088155
+      ]
+    },
+    "Random Forest": {
+      "predicted_class": 2,
+      "label": "Usually / always",
+      "confidence": 0.49521280950273744,
+      "probabilities": [
+        0.06268172696902678,
+        0.44210546352823593,
+        0.49521280950273744
+      ]
+    },
+    "XGBoost": {
+      "predicted_class": 1,
+      "label": "Sometimes",
+      "confidence": 0.46169862151145935,
+      "probabilities": [
+        0.08436451107263565,
+        0.46169862151145935,
+        0.4539368152618408
+      ]
+    },
+    "1D CNN": {
+      "predicted_class": 2,
+      "label": "Usually / always",
+      "confidence": 0.4349488615989685,
+      "probabilities": [
+        0.13675861805677414,
+        0.42829249799251556,
+        0.4349488615989685
+      ]
+    },
+    "LSTM": {
+      "predicted_class": 1,
+      "label": "Sometimes",
+      "confidence": 0.5000183433294296,
+      "probabilities": [
+        0.08907986804842949,
+        0.5000183433294296,
+        0.4109017699956894
+      ]
+    },
+    "CNN-LSTM": {
+      "predicted_class": 1,
+      "label": "Sometimes",
+      "confidence": 0.4620782881975174,
+      "probabilities": [
+        0.1333829164505005,
+        0.4620782881975174,
+        0.4045387953519821
+      ]
+    }
+  },
+  "consensus": {
+    "class_id": 1,
+    "label": "Sometimes",
+    "agreement_rate": 66.7,
+    "probabilities": [
+      0.0959993275633853,
+      0.4685262066612328,
+      0.435474450253339
+    ],
+    "method": "equal_raw_probability_mean",
+    "decision_rule": "Average six raw probability vectors equally; choose largest class probability; lower-class tie break."
+  },
+  "limitations": "Educational simulation trained from generated records. Accuracy is measured on generated test profiles and does not establish accuracy for real people. Each neural family averages two fixed seeds. Individual labels use raw-probability argmax."
+}

@@ -1,0 +1,1 @@
+Current training moved to model_training/. Earlier experiments moved to archive/previous_experiments/. See models/path_aliases.json for the complete relocation map. No datasets or checkpoints deleted.

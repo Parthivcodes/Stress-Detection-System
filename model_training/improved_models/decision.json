@@ -1,0 +1,10 @@
+{
+  "status": "activated_local_simulation",
+  "performance_passed": [
+    "Random Forest",
+    "1D CNN"
+  ],
+  "production_changed": false,
+  "test_evaluated": true,
+  "simulation_activated": true
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="NERVA — twelve signals, six trained models, one connected picture. Explore the patterns behind stress.">
+  <title>NERVA — Algorithmic patterns</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23101010'/%3E%3Ctext x='9' y='29' fill='%23c8ac87' font-size='28' font-family='serif'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/InstrumentSerif-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/InstrumentSerif-Italic.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="prediction.css">
+  <script defer src="three.min.js"></script>
+  <script defer src="landing.js"></script>
+  <script defer src="analysis-pdf.js?v=2"></script>
+  <script defer src="prediction.js?v=5"></script>
+</head>
+<body>
+  <a class="skip-link" href="#introduction">Skip to introduction</a>
+  <div class="experience" id="experience">
+    <div id="particle-field" aria-hidden="true"><canvas id="particle-fallback"></canvas></div>
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="NERVA home">NERVA</a>
+      <nav aria-label="Main navigation">
+        <a href="#predictions"><span>01</span> Predictions</a>
+        <a href="#method"><span>02</span> Method</a>
+        <a href="#benchmarks"><span>03</span> Evidence</a>
+        <a href="/dashboard"><span>04</span> 3D Cockpit</a>
+        <button type="button" id="about-open"><span>05</span> About</button>
+      </nav>
+    </header>
+    <section class="introduction" id="introduction" aria-labelledby="hero-title">
+      <div class="lab-badge"><span aria-hidden="true">✦</span> HUMAN SIGNALS LAB</div>
+      <h1 id="hero-title"><span class="headline-lead">We reveal</span><span class="headline-serif">Algorithmic</span><em>patterns</em></h1>
+      <p class="intro-copy">Twelve signals, six trained models,<br class="desktop-break"> one connected picture. Explore the patterns<br class="desktop-break"> behind stress. Move your cursor, watch the<br class="desktop-break"> field bend.</p>
+      <div class="hero-actions">
+        <a class="action-primary" href="#predictions">EXPLORE PROFILE <span aria-hidden="true">↓</span></a>
+        <a class="action-secondary" href="#method">HOW WE THINK</a>
+      </div>
+    </section>
+    <aside class="form-readout" aria-label="Particle sculpture">
+      <span class="micro-label">ACTIVE FORM</span>
+      <span class="form-name" id="form-name">Helix</span>
+      <span class="form-index" id="form-index">03 / 05</span>
+      <span class="form-progress" aria-hidden="true"><span id="form-progress"></span></span>
+    </aside>
+    <footer class="colophon"><span>Somewhere between signals &amp; understanding</span><span>© 2026 · NERVA Lab <span class="colophon-divider">/</span> Research, not diagnosis</span></footer>
+    <div class="sculpture-controls">
+      <button class="motion-toggle" type="button" id="particle-motion" aria-label="Pause animation" aria-pressed="false"><span aria-hidden="true">Ⅱ</span></button>
+      <div class="form-selectors" role="group" aria-label="Choose particle form">
+        <button type="button" data-form="0" aria-label="Sphere" aria-pressed="false"><span></span></button>
+        <button type="button" data-form="1" aria-label="Diamond" aria-pressed="false"><span></span></button>
+        <button type="button" data-form="2" aria-label="Helix" aria-pressed="true"><span></span></button>
+        <button type="button" data-form="3" aria-label="Torus" aria-pressed="false"><span></span></button>
+        <button type="button" data-form="4" aria-label="Wave" aria-pressed="false"><span></span></button>
+      </div>
+    </div>
+    <span class="render-status" id="render-status" role="status"></span>
+    <noscript><p class="noscript-note">Enable JavaScript for the interactive particle field and model analysis.</p></noscript>
+  </div>
+  <main class="prediction-page">
+    <section id="predictions" class="prediction-section" aria-labelledby="prediction-heading">
+      <div class="prediction-heading"><div><span class="micro-label">01 / YOUR SIGNALS, DECODED</span><h2 id="prediction-heading">One profile.<br><em>Six perspectives.</em></h2></div><div class="prediction-intro"><span class="connection-pill" id="connection">Connecting to models</span><p>Explore how your daily rhythms come together.<br>Adjust your profile. Compare every model.</p></div></div>
+      <div class="prediction-layout">
+        <form id="prediction-form" class="glass-panel profile-panel">
+          <div class="panel-title"><div><span class="micro-label">THE INPUT</span><h3>Your survey profile</h3></div><span class="subtle-count">12 signals</span></div>
+          <div class="profile-presets" role="group" aria-label="Example profiles"><button type="button" data-profile="rest" aria-pressed="false">Example A</button><button type="button" data-profile="day" aria-pressed="true">Example B</button><button type="button" data-profile="busy" aria-pressed="false">Example C</button></div>
+          <div id="prediction-sliders"></div>
+          <details class="personal-context" open><summary>Personal context <span aria-hidden="true">+</span></summary><div id="prediction-context"></div></details>
+          <button class="glass-button analyze-button" type="submit" id="run-prediction">Analyze all six models <span aria-hidden="true">↗</span></button>
+          <p class="input-caption">Examples are illustrative, not real respondent profiles. US survey categories; income is in USD. All twelve inputs are required. Your profile is processed locally.</p>
+        </form>
+        <div class="prediction-output" id="prediction-output" aria-busy="false">
+          <section class="glass-panel consensus-panel" aria-labelledby="consensus-title"><div><span class="micro-label">ENSEMBLE PREDICTION</span><h3 id="consensus-title">Ready when <em>you are.</em></h3><p id="prediction-message" role="status">Set your profile and run an analysis to hear from all six models.</p></div><div class="agreement-block"><span class="micro-label">MODEL AGREEMENT</span><strong id="model-agreement">—</strong><div class="agreement-track"><span id="agreement-fill"></span></div><span class="agreement-caption">Shared votes, not certainty</span></div></section>
+          <div class="models-heading"><span class="micro-label">SIX INDEPENDENT PERSPECTIVES</span><span class="subtle-count">LIVE MODEL OUTPUTS</span></div>
+          <div id="prediction-cards" class="prediction-cards"></div>
+          <div class="prediction-bottom"><p>For academic exploration, not a clinical diagnosis.<br>Probabilities are uncalibrated model estimates.</p><button type="button" class="glass-button" id="download-prediction" disabled>Download analysis <span aria-hidden="true">↓</span></button></div>
+        </div>
+      </div>
+    </section>
+    <section id="method" class="prediction-method" aria-labelledby="method-title"><div><span class="micro-label">02 / THE METHOD</span><h2 id="method-title">Patterns, with<br><em>perspective.</em></h2></div><article><span class="method-number">01</span><h3>Bring the context</h3><p>Twelve BRFSS survey inputs describe sleep, physical health, social support and personal context.</p></article><article><span class="method-number">02</span><h3>Compare every model</h3><p>Three classical models and three neural networks each predict a stress category. The ensemble uses majority voting.</p></article><article><span class="method-number">03</span><h3>Understand the limits</h3><p>Trained on 30,000 unique CDC BRFSS 2022 respondent records. Predicts reported stress frequency, not a diagnosis or future stress. US survey findings may not generalize elsewhere.</p></article></section>
+    <section id="benchmarks" class="prediction-evidence" aria-labelledby="evidence-title"><div class="evidence-heading"><div><span class="micro-label">03 / THE EVIDENCE</span><h2 id="evidence-title">Behind the <em>models.</em></h2></div><span class="subtle-count">BRFSS HOLDOUT · 5,998 RESPONDENTS</span></div><p>Held-out respondents; identical input profiles stay in one split. Unweighted complete-case sample, not a population estimate. Majority-class baseline accuracy: 64.85%; macro F1: 0.2623. Class-weighted models prioritize all three classes, not accuracy alone.</p><div class="glass-panel evidence-table"><table><thead><tr><th>Model</th><th>Accuracy</th><th>Macro F1</th><th>ROC-AUC</th></tr></thead><tbody id="prediction-benchmarks"></tbody></table></div></section>
+    <footer class="prediction-footer"><a class="wordmark" href="#experience">NERVA</a><span>HUMAN SIGNALS LAB / A UNIVERSITY RESEARCH PROJECT</span><a href="#experience">Back to the beginning ↑</a></footer>
+  </main>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button class="dialog-close" type="button" id="about-close" aria-label="Close about">×</button>
+    <span class="micro-label">NERVA / HUMAN SIGNALS LAB</span>
+    <h2 id="about-title">Understanding<br><em>the patterns.</em></h2>
+    <p>A university research project exploring self-reported stress frequency using CDC BRFSS 2022 survey responses. Compare three classical models and three neural networks using twelve profile inputs.</p>
+    <p>The particle sculpture is an interactive illustration, not a visualization of your health data. Model outputs are for academic exploration and are not a clinical diagnosis.</p>
+    <a class="action-primary" id="about-predictions" href="#predictions">EXPLORE YOUR PROFILE <span aria-hidden="true">↓</span></a>
+  </dialog>
+</body>
+</html>

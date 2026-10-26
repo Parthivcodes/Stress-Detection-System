@@ -1,0 +1,41 @@
+{
+  "data_origin": "synthetic_simulation",
+  "purpose": "Controlled easier generated-data benchmark, not improved real-person prediction.",
+  "seed": 20261026,
+  "neural_seeds": [
+    20261026,
+    20261027
+  ],
+  "rows": 10000,
+  "previous_noise_sd": 1.0,
+  "noise_sd": 0.25,
+  "source_dataset_sha256": "eae884b43a8e63507ba00429c7bf99f3fbf5276b5fe1ae7e9b0b6521b888db70",
+  "features": [
+    "age",
+    "sleep_duration",
+    "unhealthy_days",
+    "bmi",
+    "sex",
+    "exercise",
+    "general_health",
+    "marital",
+    "education",
+    "employment",
+    "income",
+    "support",
+    "isolation",
+    "job_loss",
+    "food_insecurity",
+    "bill_difficulty",
+    "utility_threat",
+    "transport_barrier",
+    "medical_cost"
+  ],
+  "comparison": "Same10000featureprofiles/sampleIDs in sameorder; same train/validation/test and fit/dev roles as prior simulation. Only the independentlabelnoise scale changes. New target labels yield a different,easier simulation. Do not interpret accuracy delta as an improvement on unchanged labels or BRFSS.",
+  "generation": "Reuse prior exact generator with fixedseed and fixedscoreboundaries; .25 is predeclared toy_easy noise. Restore original profile split assignments after generation; no re-stratification by new labels. Neither rows nor coefficients filtered for accuracy. Features checked identical before fitting.",
+  "fitting": "Reuse prior model classes and settings exactly:3classical activeconfiguration clones; neural existingarchitecture,AdamW .0007 decay.001,weightedCE sqrtinversefrequency,batch256,max40epochs,patience6,120secsoftcap.2fixedneural seeds averaged. Fit-only standardnumeric/onehot preprocessing. Devlogloss selects checkpoint; seednotcherry-picked.",
+  "decisions": "Rawprobability argmax for every family, matching website rawdecisionrule. No thresholdsearch or ensembleweightselection.",
+  "freeze": "Freeze ALLcheckpoints/preprocessors and choices before one final1500profile generatedtestevaluation. Do not regenerate/change noise or tuneafterseeingtest.",
+  "safety": "Writesonlyfresh experimentfolder. Hash every previous simulation artifact plusactive realmodels/data before/after. No modelactivation,websitechange or deployment.",
+  "limits": "More separable inventedlabels can produce higher scores without adding evidence of clinical or realpopulation utility. Minorityrecalls reported onchangedlabels; these are not same-groundtruth recallpreservation claims. Sameprofiles enable descriptive pairedaccuracy differences acrossdifferent simulationoutcomes,not fixedlabel modelcomparison."
+}

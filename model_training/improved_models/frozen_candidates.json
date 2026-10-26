@@ -1,0 +1,64 @@
+{
+  "models": {
+    "Random Forest": {
+      "config": {
+        "id": "risk_deep",
+        "encoder": "engineered",
+        "params": {
+          "n_estimators": 450,
+          "max_depth": null,
+          "min_samples_leaf": 2,
+          "max_features": 0.85,
+          "max_samples": 0.9,
+          "bootstrap": true,
+          "class_weight": "balanced"
+        }
+      },
+      "paths": [
+        [
+          "models/Random_Forest_20261026.encoder.joblib",
+          "models/Random_Forest_20261026.joblib",
+          33
+        ]
+      ],
+      "eligible": true
+    },
+    "1D CNN": {
+      "config": {
+        "id": "position_skip",
+        "encoder": "original",
+        "architecture": "position_cnn",
+        "dropout": 0.15,
+        "lr": 0.001,
+        "decay": 0.0003,
+        "epochs": 80,
+        "patience": 10,
+        "scheduler": true,
+        "channels": 16,
+        "hidden": 64
+      },
+      "paths": [
+        [
+          "models/1D_CNN_20261026.encoder.joblib",
+          "models/1D_CNN_20261026.pt",
+          69
+        ],
+        [
+          "models/1D_CNN_20261027.encoder.joblib",
+          "models/1D_CNN_20261027.pt",
+          69
+        ]
+      ],
+      "eligible": true
+    }
+  },
+  "hashes": {
+    "models/1D_CNN_20261026.encoder.joblib": "a87b0819ae3442ac4e44dc9f150b568b136a4b59656443564af5e281ed977ded",
+    "models/1D_CNN_20261026.pt": "3431bc37f0a3f4c248b0e8d8537e9703e38a6578b0d957c4ff87df5ea3b0ebea",
+    "models/1D_CNN_20261027.encoder.joblib": "a87b0819ae3442ac4e44dc9f150b568b136a4b59656443564af5e281ed977ded",
+    "models/1D_CNN_20261027.pt": "8f68276af5e4be95b2c5a46001623e11817102e74e404c96352201ff5ed6a442",
+    "models/Random_Forest_20261026.encoder.joblib": "fc29c10a79beca8575f0250bf7d65c68ef648a320f146903d247ca9136597f84",
+    "models/Random_Forest_20261026.joblib": "ecb1e32d48f7c2fe8e11aa4fd9116684228afdf06093fd744c485c7274c29b44"
+  },
+  "data_sha256": "e26075ea7b48e3413bced84d97a8d85c8e7aff76e81d0803f1a560e0448b7837"
+}

@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "model": "Logistic Regression",
+      "previous_noise_accuracy": 0.6493333333333333,
+      "lower_noise_accuracy": 0.9,
+      "accuracy_difference_percentage_points": 25.06666666666667,
+      "accuracy_interval95": [
+        0.8837814259620523,
+        0.9141750294618026
+      ],
+      "macro_f1": 0.9014224928240959,
+      "qwk": 0.9169464647985897,
+      "macro_auc": 0.9837390055722933,
+      "sometimes_recall": 0.864406779661017,
+      "high_recall": 0.9074550128534704,
+      "high_detected": 353,
+      "high_missed": 36,
+      "training_seconds": 4.273850496999785,
+      "seed_validation_accuracy": [
+        0.8733333333333333
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "previous_noise_accuracy": 0.61,
+      "lower_noise_accuracy": 0.7673333333333333,
+      "accuracy_difference_percentage_points": 15.733333333333333,
+      "accuracy_interval95": [
+        0.7452842084934089,
+        0.7880166892148673
+      ],
+      "macro_f1": 0.7703756757990942,
+      "qwk": 0.8060185610183643,
+      "macro_auc": 0.9184368204503318,
+      "sometimes_recall": 0.6745762711864407,
+      "high_recall": 0.7917737789203085,
+      "high_detected": 308,
+      "high_missed": 81,
+      "training_seconds": 6.949668419000318,
+      "seed_validation_accuracy": [
+        0.7493333333333333
+      ]
+    },
+    {
+      "model": "XGBoost",
+      "previous_noise_accuracy": 0.6326666666666667,
+      "lower_noise_accuracy": 0.8693333333333333,
+      "accuracy_difference_percentage_points": 23.666666666666657,
+      "accuracy_interval95": [
+        0.8513295558561914,
+        0.8854502379851678
+      ],
+      "macro_f1": 0.8714777387720907,
+      "qwk": 0.8880366924576115,
+      "macro_auc": 0.969852173211252,
+      "sometimes_recall": 0.847457627118644,
+      "high_recall": 0.8534704370179949,
+      "high_detected": 332,
+      "high_missed": 57,
+      "training_seconds": 0.7451716939999642,
+      "seed_validation_accuracy": [
+        0.8433333333333334
+      ]
+    },
+    {
+      "model": "1D CNN",
+      "previous_noise_accuracy": 0.62,
+      "lower_noise_accuracy": 0.7806666666666666,
+      "accuracy_difference_percentage_points": 16.066666666666663,
+      "accuracy_interval95": [
+        0.7590236740286166,
+        0.8008757721937881
+      ],
+      "macro_f1": 0.7863213389895861,
+      "qwk": 0.8125988270623242,
+      "macro_auc": 0.929838417861216,
+      "sometimes_recall": 0.7559322033898305,
+      "high_recall": 0.7866323907455013,
+      "high_detected": 306,
+      "high_missed": 83,
+      "training_seconds": 37.35768703699978,
+      "seed_validation_accuracy": [
+        0.7553333333333333,
+        0.7686666666666667
+      ]
+    },
+    {
+      "model": "LSTM",
+      "previous_noise_accuracy": 0.6626666666666666,
+      "lower_noise_accuracy": 0.914,
+      "accuracy_difference_percentage_points": 25.13333333333334,
+      "accuracy_interval95": [
+        0.8987330726208017,
+        0.9271518587428881
+      ],
+      "macro_f1": 0.9158943499320401,
+      "qwk": 0.9284386080920957,
+      "macro_auc": 0.9857064152044505,
+      "sometimes_recall": 0.8864406779661017,
+      "high_recall": 0.9305912596401028,
+      "high_detected": 362,
+      "high_missed": 27,
+      "training_seconds": 51.08014385300021,
+      "seed_validation_accuracy": [
+        0.884,
+        0.8873333333333333
+      ]
+    },
+    {
+      "model": "CNN-LSTM",
+      "previous_noise_accuracy": 0.6366666666666667,
+      "lower_noise_accuracy": 0.846,
+      "accuracy_difference_percentage_points": 20.933333333333326,
+      "accuracy_interval95": [
+        0.826851922864597,
+        0.8633804110770373
+      ],
+      "macro_f1": 0.8485650545598612,
+      "qwk": 0.874789147091856,
+      "macro_auc": 0.9607194445963169,
+      "sometimes_recall": 0.7627118644067796,
+      "high_recall": 0.8894601542416453,
+      "high_detected": 346,
+      "high_missed": 43,
+      "training_seconds": 42.86443297300002,
+      "seed_validation_accuracy": [
+        0.8293333333333334,
+        0.8133333333333334
+      ]
+    }
+  ],
+  "old_majority_baseline": {
+    "accuracy": 0.37733333333333335,
+    "balanced_accuracy": 0.3333333333333333,
+    "macro_f1": 0.18263956114875768,
+    "qwk": 0.0,
+    "recall": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "precision": [
+      0.37733333333333335,
+      0.0,
+      0.0
+    ],
+    "f1": [
+      0.547918683446273,
+      0.0,
+      0.0
+    ],
+    "macro_auc": 0.5,
+    "confusion_matrix": [
+      [
+        566,
+        0,
+        0
+      ],
+      [
+        490,
+        0,
+        0
+      ],
+      [
+        444,
+        0,
+        0
+      ]
+    ],
+    "high_detected": 0,
+    "high_missed": 444
+  },
+  "new_majority_baseline": {
+    "accuracy": 0.3933333333333333,
+    "balanced_accuracy": 0.3333333333333333,
+    "macro_f1": 0.18819776714513556,
+    "qwk": 0.0,
+    "recall": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "precision": [
+      0.0,
+      0.3933333333333333,
+      0.0
+    ],
+    "f1": [
+      0.0,
+      0.5645933014354066,
+      0.0
+    ],
+    "macro_auc": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        521,
+        0
+      ],
+      [
+        0,
+        590,
+        0
+      ],
+      [
+        0,
+        389,
+        0
+      ]
+    ],
+    "high_detected": 0,
+    "high_missed": 389
+  },
+  "mean_accuracy": 0.8462222222222221,
+  "population": "paired inputprofiles; different targetlabels/noiseassumptions; not a fixedlabel modelcomparison",
+  "confidence": "Wilson95% intervals for this separate generatedtest only; no multiplecomparison adjustment; neural2seed stability is limited."
+}

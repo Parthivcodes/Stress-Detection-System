@@ -27,3 +27,9 @@ figures/
 docs/
 deploy/
 server.py
+
+# Local history and scientific experiments are not frontend deployment inputs
+archive/
+experiments/
+
+model_training/

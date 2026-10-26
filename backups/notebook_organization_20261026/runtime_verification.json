@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "six_family_parity": {
+    "Logistic Regression": 2.220446049250313e-16,
+    "Random Forest": 5.551115123125783e-17,
+    "XGBoost": 0,
+    "1D CNN": 8.940696716308594e-08,
+    "LSTM": 1.341104507446289e-07,
+    "CNN-LSTM": 2.980232238769531e-07
+  },
+  "peak_rss_mib": 429.53515625,
+  "memory_limit_mib": 512,
+  "memory_passed": true,
+  "mean_prediction_seconds": 0.10614005266612973,
+  "max_prediction_seconds": 0.11880893099987588,
+  "override_artifact_bytes": 31681899,
+  "invalid_inputs_rejected": true,
+  "benchmarks_match": true,
+  "active_config_unchanged": true
+}

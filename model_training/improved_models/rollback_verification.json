@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "original_six_predictions_restored": true,
+  "active_config_unchanged": true,
+  "instructions": "Remove overrides field from models/training_preview.json, restart port8001 and refresh."
+}

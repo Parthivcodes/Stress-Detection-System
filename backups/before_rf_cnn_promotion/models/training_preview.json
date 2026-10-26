@@ -1,0 +1,4 @@
+{
+  "experiment": "lower_noise",
+  "note": "Separate generated-data simulation preview, noise standard deviation 0.25. Production real-data model selection is unchanged. Set experiment to original to restore the prior simulation."
+}

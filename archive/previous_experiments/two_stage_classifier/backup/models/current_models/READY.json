@@ -1,0 +1,24 @@
+{
+  "version": "brfss2022_expanded",
+  "dataset_sha256": "77a74029db2ef51193b8e58a4c3ff56fb87b99c576d4f75a2db827e325dcadbe",
+  "selection_sha256": "a089ded428672dc1974f0bdf92045556a61e25fa3ace870af4f1c476fdc05f2d",
+  "models": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "1D CNN",
+    "LSTM",
+    "CNN-LSTM"
+  ],
+  "approved_models": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "1D CNN",
+    "LSTM",
+    "CNN-LSTM"
+  ],
+  "all_six_pass": true,
+  "originals_unchanged": true,
+  "active_version_not_changed": true
+}
